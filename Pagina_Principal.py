@@ -8,8 +8,6 @@ def set_image_size():
         img {
             max-width: 100%;
             height: auto;
-            text-align: center;
-            display: block;
         }
         </style>
     </div>
