@@ -8,9 +8,7 @@ def set_image_size():
         .css-9aoz2h e1vs0wn30 img {
             max-width: 100%;
             height: auto;
-            display: block;
-            margin: 0 auto;
-            justify-content: center;
+
         }
         </style>
 
