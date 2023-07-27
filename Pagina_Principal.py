@@ -5,7 +5,7 @@ def set_image_size():
     st.write("""
 
         <style>
-        img {
+        .css-9aoz2h e1vs0wn30 img {
             max-width: 100%;
             height: auto;
             display: block;
