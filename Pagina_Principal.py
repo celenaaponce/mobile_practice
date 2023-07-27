@@ -3,7 +3,7 @@ from PIL import Image
 
 def set_image_size():
     st.write("""
-     <div style="display: flex; justify-content: center;">
+
         <style>
         img {
             max-width: 100%;
@@ -12,7 +12,7 @@ def set_image_size():
             margin: 0 auto;
         }
         </style>
-    </div>
+
     """, unsafe_allow_html=True)
   
 image = Image.open('image-153x153.jpg')
