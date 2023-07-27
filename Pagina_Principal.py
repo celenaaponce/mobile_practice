@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 import streamlit_nested_layout
 
-image = Image.open('image-153x153.jpg')
+image = Image.open('Online world-cuate (2).png')
 
 outer_cols = st.columns([1, 1])
 m = st.markdown("""
@@ -17,11 +17,12 @@ div.stButton > button:first-child {
 }
 </style>""", unsafe_allow_html=True)
 with outer_cols[0]:
-    st.title('¡Aprender Lengua de Señas Americana en Su Propia Idioma!')
-    st.caption('Para padres Latinos de niños Sordos, sé que hay muchos retos.  Hay bastante que aprender, no solo idioma, pero cultura y más. Mi meta es ayudar padres Latinos entender la lengua de señas americana, sin necesitar saber ingles.  Tambien, quiero ayudar encontrar los recursos que necesitan para que sus hijos pueden tener exitó.')
+    st.markdown("<h1 style='text-align: center; color: white;'>¡Aprender Lengua de Señas Americana en Su Propia Idioma!</h1>", unsafe_allow_html=True)
+
+    st.markdown("<h5 style='text-align: center; color: white;'>Para padres Latinos de niños Sordos, sé que hay muchos retos.  Hay bastante que aprender, no solo idioma, pero cultura y más. Mi meta es ayudar padres Latinos entender la lengua de señas americana, sin necesitar saber ingles.  Tambien, quiero ayudar encontrar los recursos que necesitan para que sus hijos pueden tener exitó. </h5>", unsafe_allow_html=True)
 
 with outer_cols[1]:
-    inner_cols = st.columns([1, 1, 1])
+    inner_cols = st.columns([1, 6, 1])
     with inner_cols[1]:
         st.image(image)
     if st.button('Quien Soy'):
