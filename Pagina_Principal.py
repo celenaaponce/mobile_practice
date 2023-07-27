@@ -5,8 +5,9 @@ def set_image_size():
     st.write("""
 
         <style>
-        .css-9aoz2h e1vs0wn30 img {
-            max-width: 100%;
+        .fullScreenFrame > div {
+            display: flex;
+            justify-content: center;
         }
         </style>
 
