@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-from streamlit_nested_layout import .
+
 
 image = Image.open('Online world-cuate (2).png')
 
