@@ -10,6 +10,7 @@ def set_image_size():
             height: auto;
             display: block;
             margin: 0 auto;
+            justify-content: center;
         }
         </style>
 
