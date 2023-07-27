@@ -35,6 +35,6 @@ with col1:
 
 with col2:
     set_image_size()
-    st.image(image, width=153)
+    st.image(image)
     if st.button('Quien Soy'):
         st.write('Go to quien soy page')
