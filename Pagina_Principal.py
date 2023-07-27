@@ -7,6 +7,7 @@ def set_image_size():
         img {
             max-width: 100%;
             height: auto;
+            text-align: center;
         }
         </style>
     """, unsafe_allow_html=True)
