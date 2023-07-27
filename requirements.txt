@@ -1,1 +1,2 @@
-streamlit-nested-layout
+Pillow==10.0.0
+streamlit_nested_layout==0.1.1
