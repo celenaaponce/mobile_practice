@@ -5,7 +5,7 @@ def set_image_size():
     st.write("""
         <style>
         img {
-            max-width: 50%;
+            max-width: 100%;
             height: auto;
         }
         </style>
@@ -31,6 +31,6 @@ with col1:
 
 with col2:
     set_image_size()
-    st.image(image)
+    st.image(image, width=153)
     if st.button('Quien Soy'):
         st.write('Go to quien soy page')
