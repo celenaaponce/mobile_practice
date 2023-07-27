@@ -15,10 +15,8 @@ def set_image_size():
     </div>
     """, unsafe_allow_html=True)
   
-image = Image.open('Online world-cuate (2).png')
+image = Image.open('image-153x153.jpg')
 
-half = 0.5
-out = image.resize( [int(half * s) for s in image.size] )
 
 col1, col2 = st.columns(2)
 m = st.markdown("""
@@ -38,6 +36,6 @@ with col1:
 
 with col2:
     set_image_size()
-    st.image(out)
+    st.image(image)
     if st.button('Quien Soy'):
         st.write('Go to quien soy page')
