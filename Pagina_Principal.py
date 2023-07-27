@@ -5,7 +5,7 @@ def set_image_size():
     st.write("""
         <style>
         img {
-            max-width: 100%;
+            max-width: 50%;
             height: auto;
         }
         </style>
