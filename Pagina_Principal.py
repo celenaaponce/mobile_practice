@@ -17,6 +17,9 @@ def set_image_size():
   
 image = Image.open('Online world-cuate (2).png')
 
+half = 0.5
+out = image.resize( [int(half * s) for s in image.size] )
+
 col1, col2 = st.columns(2)
 m = st.markdown("""
 <style>
@@ -35,6 +38,6 @@ with col1:
 
 with col2:
     set_image_size()
-    st.image(image)
+    st.image(out)
     if st.button('Quien Soy'):
         st.write('Go to quien soy page')
