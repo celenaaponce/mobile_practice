@@ -1,20 +1,7 @@
 import streamlit as st
 from PIL import Image
-
-def set_image_size():
-    st.write("""
-
-        <style>
-        .fullScreenFrame > div {
-            display: flex;
-            justify-content: center;
-        }
-        </style>
-
-    """, unsafe_allow_html=True)
   
 image = Image.open('image-153x153.jpg')
-
 
 col1, col2 = st.columns(2)
 m = st.markdown("""
@@ -33,7 +20,8 @@ with col1:
     st.caption('Para padres Latinos de niños Sordos, sé que hay muchos retos.  Hay bastante que aprender, no solo idioma, pero cultura y más. Mi meta es ayudar padres Latinos entender la lengua de señas americana, sin necesitar saber ingles.  Tambien, quiero ayudar encontrar los recursos que necesitan para que sus hijos pueden tener exitó.')
 
 with col2:
-    set_image_size()
-    st.image(image)
+    col2a, col2b, col2c = col2
+    with col2b:
+        st.image(image)
     if st.button('Quien Soy'):
         st.write('Go to quien soy page')
