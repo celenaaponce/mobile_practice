@@ -8,6 +8,7 @@ def set_image_size():
             max-width: 100%;
             height: auto;
             text-align: center;
+            display: block;
         }
         </style>
     """, unsafe_allow_html=True)
