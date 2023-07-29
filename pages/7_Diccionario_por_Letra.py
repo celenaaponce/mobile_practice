@@ -105,7 +105,7 @@ def reset_start():
 placeholder = st.empty()
 
 placeholder_2 = st.empty()
-other = img_to_html('otra.png')
+
 def images(size):
       content= f"""
          <br>
