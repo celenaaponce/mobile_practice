@@ -47,11 +47,6 @@ def download_csv(file_id, output_file):
 
 download_csv('1ynYsJEwmJEiCqfDEbTzvBDvHWHKNZeLG', 'Small Preview2.csv')
 
-csv_length = 0    
-for chunk in pd.read_csv('Small Preview2.csv', names=['Palabra', 'Tema', 'Video', 'Imagen', 'Sinómino'], chunksize=10000, skiprows=1):
-        data = pd.DataFrame(chunk)
-        csv_length += chunk.count()
-
 word_data = data
 word_data.columns = ['Palabra', 'Tema', 'Video', 'Imagen', 'Sinómino']
 word_data.sort_values(by=['Palabra'])
@@ -76,7 +71,7 @@ def back_start(i):
 
 if st.session_state.start == 0:
   start = st.session_state.start
-  table = load_words_completo(first_50)
+  table = load_words_completo()
   html_string = f'''
 
       <body>
@@ -94,8 +89,9 @@ if st.session_state.start == 0:
 
 if st.session_state.start >= offset:
   start = st.session_state.start
+  word_data = load_words_completo()
   next_list = word_data[start:start+offset]
-  table = load_words_completo(next_list)
+  table = next_list.to_html(classes='mystyle', escape=False, index=False)
   html_string = f'''
 
       <body>
