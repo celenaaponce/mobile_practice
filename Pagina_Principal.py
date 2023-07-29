@@ -1,6 +1,8 @@
 import streamlit as st
 from PIL import Image
 import streamlit.components.v1 as components
+from streamlit_extras.switch_page_button import switch_page
+
 
 def ChangeButtonColour(widget_label, font_color, background_color='transparent'):
     htmlstr = f"""
@@ -12,6 +14,14 @@ def ChangeButtonColour(widget_label, font_color, background_color='transparent')
                     elements[i].style.background = '{background_color}'
                 }}
             }}
+        function goTo(page) {{
+        page_links = parent.document.querySelectorAll('[data-testid="stSidebarNav"] ul li a')
+        page_links.forEach((link) => {{
+            if (link.text == page) {{
+                link.click()
+            }}
+        }})
+    }}
         </script>
         """
     components.html(f"{htmlstr}", height=0, width=0)
@@ -54,8 +64,10 @@ with cont_1:
         inner_cols = st.columns([1, 6, 1])
         with inner_cols[1]:
             st.image(image)
-        st.button('Quien Soy', key='Quien')
+        quien = st.button('Quien Soy', key='Quien')
         ChangeButtonColour('Quien Soy', '#fffff', '#94387f') 
+        if quien:
+            switch_page('Sobre_Yo')
 
 
 st.divider()
@@ -74,8 +86,10 @@ with cont_2:
         inner_col_2 = st.columns([1, 6, 1])
         with inner_col_2[1]:
             st.image(image2)
-        st.button('Diccionario', key='Dict')
+        dict = st.button('Diccionario', key='Dict')
         ChangeButtonColour('Diccionario', '#fffff', '#407bff') 
+        if dict:
+            switch_page('Diccionario')
 
 st.divider()
 image3 = Image.open('Online learning-rafiki.png')
@@ -92,8 +106,10 @@ with cont_3:
         inner_col_3 = st.columns([1, 6, 1])
         with inner_col_3[1]:
             st.image(image3)
-        st.button('Clases', key='Clases')
+        classes = st.button('Clases', key='Clases')
         ChangeButtonColour('Clases', '#fffff', '#92E3A9') 
+        if classes:
+            switch_page('Clases')
 
 st.divider()
 image4 = Image.open('Absorbed in-pana.png')
@@ -111,8 +127,10 @@ with cont_4:
         inner_col_4 = st.columns([1, 6, 1])
         with inner_col_4[1]:
             st.image(image4)
-        st.button('Libros', key='Libros')
+        books = st.button('Libros', key='Libros')
         ChangeButtonColour('Libros', '#fffff', '#FF725E') 
+        if books:
+            switch_page('Libros')
 
 st.divider()
 image5 = Image.open('Selecting team-pana.png')
@@ -129,5 +147,7 @@ with cont_5:
         inner_col_5 = st.columns([1, 6, 1])
         with inner_col_5[1]:
             st.image(image5)
-        st.button('Recursos', key='Recursos')
+        resources = st.button('Recursos', key='Recursos')
         ChangeButtonColour('Recursos', '#fffff', '#C53F3F') 
+        if resources:
+            switch_page('Recursos')
