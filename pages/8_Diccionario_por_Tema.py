@@ -28,7 +28,7 @@ def download_csv(file_id, output_file):
     st.session_state.download = True
 
 @st.cache_data
-def load_words():
+def load_words_tema():
   csv_length = 0    
   for chunk in pd.read_csv('Themes2.csv', names=['Palabra', 'Tema', 'Video', 'Imagen', 'Sinómino'], chunksize=10000, skiprows=1):
           data = pd.DataFrame(chunk)
@@ -46,7 +46,7 @@ with open("css/responsive.css") as file2:
 #start with download
 if st.session_state.download == False:
   download_csv('1IM-icAYQD-IVRUaV7NypfJTjRo6enwuE', 'Themes2.csv')
-word_data = load_words()
+word_data = load_words_tema()
 
 if st.session_state.clicked == "":
     size = 20
@@ -143,7 +143,7 @@ if st.session_state.clicked != "" and not (reset1 or reset2):
     placeholder.empty()
     with page_one.container():
         
-        word_data = load_words()
+        word_data = load_words_tema()
         tema = themes[int(st.session_state.clicked[6:])]
         alpha_list = word_data.loc[word_data['Tema']== tema]
         alpha_list.sort_values(by=['Tema'])
@@ -167,7 +167,7 @@ if st.session_state.clicked != "" and not (reset1 or reset2):
 if increment:
     page_one.empty()
     with page_two.container():
-        word_data = load_words()
+        word_data = load_words_tema()
         tema = themes[int(st.session_state.clicked[6:])]
         alpha_list = word_data.loc[word_data['Tema']== tema]
         alpha_list.sort_values(by=['Tema'])
