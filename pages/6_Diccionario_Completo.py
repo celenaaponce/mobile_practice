@@ -47,18 +47,18 @@ def download_csv(file_id, output_file):
 
 download_csv('1ynYsJEwmJEiCqfDEbTzvBDvHWHKNZeLG', 'Small Preview2.csv')
 
-word_data = data
-word_data.columns = ['Palabra', 'Tema', 'Video', 'Imagen', 'Sinómino']
-word_data.sort_values(by=['Palabra'])
-first_50 = word_data.head(offset)
-pd.set_option('colheader_justify', 'center')   # FOR TABLE <th>
-
 @st.cache_data
 def load_words_completo():
   csv_length = 0    
   for chunk in pd.read_csv('Search Preview2.csv', names=['Palabra', 'Tema', 'Video', 'Imagen', 'Sinómino'], chunksize=10000, skiprows=1):
           data = pd.DataFrame(chunk)
   return data
+    
+word_data = load_words_completo()
+word_data.columns = ['Palabra', 'Tema', 'Video', 'Imagen', 'Sinómino']
+word_data.sort_values(by=['Palabra'])
+first_50 = word_data.head(offset)
+pd.set_option('colheader_justify', 'center')   # FOR TABLE <th>
 
 if 'start' not in st.session_state:
    st.session_state.start = 0
@@ -70,8 +70,7 @@ def back_start(i):
    st.session_state.start = i-2*offset
 
 if st.session_state.start == 0:
-  start = st.session_state.start
-  table = load_words_completo()
+  table = first_50.to_html(classes='mystyle', escape=False, index=False)
   html_string = f'''
 
       <body>
@@ -89,7 +88,6 @@ if st.session_state.start == 0:
 
 if st.session_state.start >= offset:
   start = st.session_state.start
-  word_data = load_words_completo()
   next_list = word_data[start:start+offset]
   table = next_list.to_html(classes='mystyle', escape=False, index=False)
   html_string = f'''
