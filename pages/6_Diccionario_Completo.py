@@ -130,7 +130,7 @@ if st.session_state.start == 0:
         increment = col3.button("Proximas Palabras", on_click=set_start, args=[start])
         reset1 = col2.button("Empezar de Nuevo", key="First", on_click=set_start, args=[0])
                 
-if increment:
+if st.session_state.start != 0:
     page_one.empty()
     with page_two.container():
         start = st.session_state.start
