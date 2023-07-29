@@ -35,7 +35,7 @@ def set_styles():
         </style>
     """, unsafe_allow_html=True)
   
-image = Image.open('/Users/celenap/streamlit/Online world-cuate (2).png')
+image = Image.open('Online world-cuate (2).png')
 cont_1 = st.container()
 cont_2 = st.container()
 cont_3 = st.container()
@@ -59,7 +59,7 @@ with cont_1:
 
 
 st.divider()
-image2 = Image.open('/Users/celenap/streamlit/dictionary.png')
+image2 = Image.open('dictionary.png')
 
 outer_col_2 = st.columns([1, 1])            
 with cont_2:
@@ -78,7 +78,7 @@ with cont_2:
         ChangeButtonColour('Diccionario', '#fffff', '#407bff') 
 
 st.divider()
-image3 = Image.open('/Users/celenap/streamlit/Online learning-rafiki.png')
+image3 = Image.open('Online learning-rafiki.png')
 outer_col_3 = st.columns([1, 1])            
 with cont_3:
     
@@ -96,7 +96,7 @@ with cont_3:
         ChangeButtonColour('Clases', '#fffff', '#92E3A9') 
 
 st.divider()
-image4 = Image.open('/Users/celenap/streamlit/Absorbed in-pana.png')
+image4 = Image.open('Absorbed in-pana.png')
 
 outer_col_4 = st.columns([1, 1])            
 with cont_4:
@@ -115,7 +115,7 @@ with cont_4:
         ChangeButtonColour('Libros', '#fffff', '#FF725E') 
 
 st.divider()
-image5 = Image.open('/Users/celenap/streamlit/Selecting team-pana.png')
+image5 = Image.open('Selecting team-pana.png')
 outer_col_5 = st.columns([1, 1])            
 with cont_5:
     
