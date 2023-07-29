@@ -88,7 +88,7 @@ st.markdown("<h3>Escuelas para los Sordos</h3>\
 st.divider()
 st.markdown("<h3>Centros para Sordos</h3>\
               <p><a href='https://www.nad.org/resources/directories/state-agencies-of-deaf-hoh/' target='_blank'>Centros para Sordos</a> son\
-                  lugares que ayudan personas sordos encontrar recursos de cualquier tipo.  Algunos tambien tienen actividades o otros \
+                  lugares que ayudan personas sordos encontrar recursos de cualquier tipo.  Algunos también tienen actividades o otros \
                     servicios.</p>", unsafe_allow_html=True)
 
 st.divider()
