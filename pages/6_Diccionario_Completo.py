@@ -21,7 +21,9 @@ hide_menu_style = """
         </style>
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
-
+placeholder = st.empty()
+page_one = st.empty()
+page_two = st.empty()
 with open("css/style.css") as f:
     style = f.read()
 
@@ -55,10 +57,7 @@ def load_words_completo():
   return data
     
 word_data = load_words_completo()
-word_data.columns = ['Palabra', 'Tema', 'Video', 'Imagen', 'Sinómino']
 word_data.sort_values(by=['Palabra'])
-first_50 = word_data.head(offset)
-pd.set_option('colheader_justify', 'center')   # FOR TABLE <th>
 
 if 'start' not in st.session_state:
    st.session_state.start = 0
@@ -69,43 +68,84 @@ def set_start(i):
 def back_start(i):
    st.session_state.start = i-2*offset
 
+# if st.session_state.start == 0:
+#   st.write(st.session_state.download)
+#   start = st.session_state.start
+#   table = first_50.to_html(classes='mystyle', escape=False, index=False)
+#   html_string = f'''
+
+#       <body>
+#           {table}
+#       </body>
+#       '''
+#   st.markdown(
+#           html_string,
+#       unsafe_allow_html=True
+#   )
+#   start += offset
+#   col1, col2, col3 = st.columns([1,1,1])
+#   st.write("")
+#   col3.button('Proximas Palabras', on_click=set_start, args=[start])
+
+# if st.session_state.start >= offset:
+#   st.write(st.session_state.download)
+#   start = st.session_state.start
+#   next_list = word_data[start:start+offset]
+#   table = next_list.to_html(classes='mystyle', escape=False, index=False)
+#   html_string = f'''
+
+#       <body>
+#           {table}
+#       </body>
+#       '''
+#   st.markdown(
+#           html_string,
+#       unsafe_allow_html=True
+#   )
+#   start += offset
+#   st.write("")
+#   col1, col2, col3 = st.columns([1,1,1])
+#   col3.button('Proximas Palabras', on_click=set_start, args=[start])
+#   col1.button('Palabras Anteriores', on_click=back_start, args=[start])
+#   col2.button('Regresar al Principio', on_click=set_start, args=[0])
+
 if st.session_state.start == 0:
-  st.write(st.session_state.download)
-  start = st.session_state.start
-  table = first_50.to_html(classes='mystyle', escape=False, index=False)
-  html_string = f'''
+    page_two.empty()
+    placeholder.empty()
+    with page_one.container():
 
-      <body>
-          {table}
-      </body>
-      '''
-  st.markdown(
-          html_string,
-      unsafe_allow_html=True
-  )
-  start += offset
-  col1, col2, col3 = st.columns([1,1,1])
-  st.write("")
-  col3.button('Proximas Palabras', on_click=set_start, args=[start])
+        max_len = len(word_data)
+        next_list = word_data[0:offset]
+        table = next_list.to_html(classes='mystyle', escape=False, index=False)
+        html_string = f'''
 
-if st.session_state.start >= offset:
-  st.write(st.session_state.download)
-  start = st.session_state.start
-  next_list = word_data[start:start+offset]
-  table = next_list.to_html(classes='mystyle', escape=False, index=False)
-  html_string = f'''
+            <body>
+                {table}
+            </body>
+            '''
+        st.markdown(
+                html_string,
+            unsafe_allow_html=True)
+        col1, col2, col3 = st.columns([1,1,1])
+        increment = col3.button("Proximas Palabras", on_click=set_start, args=[start])
+        reset1 = col2.button("Empezar de Nuevo", key="First", on_click=set_start, args=[0])
+                
+if increment:
+    page_one.empty()
+    with page_two.container():
+        start = st.session_state.start
+        next_list = word_data[start:start+offset]
+        table = next_list.to_html(classes='mystyle', escape=False, index=False)
+        html_string = f'''
 
-      <body>
-          {table}
-      </body>
-      '''
-  st.markdown(
-          html_string,
-      unsafe_allow_html=True
-  )
-  start += offset
-  st.write("")
-  col1, col2, col3 = st.columns([1,1,1])
-  col3.button('Proximas Palabras', on_click=set_start, args=[start])
-  col1.button('Palabras Anteriores', on_click=back_start, args=[start])
-  col2.button('Regresar al Principio', on_click=set_start, args=[0])
+            <body>
+                {table}
+            </body>
+            '''
+        st.markdown(
+                html_string,
+            unsafe_allow_html=True)
+        col1, col2, col3 = st.columns([1,1,1])
+        increment = col3.button("Proximas Palabras", on_click=set_start, args=[start])
+        reset1 = col2.button("Empezar de Nuevo", on_click=set_start, args=[0])
+        reset2 = st.button("Palabras Anteriores", on_click=back_start, args=[start])
