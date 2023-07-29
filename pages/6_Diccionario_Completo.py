@@ -31,36 +31,19 @@ with open("css/bootstrap.css") as file:
 with open("css/responsive.css") as file2:
     resp = file2.read()
 
+if 'download' not in st.session_state:
+   st.session_state.download = False
+    
 def remote_css(url):
     st.markdown(f'<link href="{url}" rel="stylesheet">', unsafe_allow_html=True)   
 
 remote_css("https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap")
 remote_css("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
-def create_bulleted_list(lst):
-
-    if type(lst) == str:
-        lst = lst.split(',')
-    tag = "<ul>"
-    for word in lst:
-       if word != 'nan':
-        tag += "<li>{}</li>".format(word)
-    tag += "</ul>"
-
-    return tag
-def img_to_bytes(img_path):
-    img_bytes = Path(img_path).read_bytes()
-    encoded = base64.b64encode(img_bytes).decode()
-    return encoded
-
-def img_to_html(img_path):
-    img_html = "<img src='data:image/png;base64,{}' class='img-fluid' width=150>".format(
-      img_to_bytes(img_path)
-    )
-    return img_html
     
 def download_csv(file_id, output_file):
     url = f'https://drive.google.com/uc?id={file_id}'
     gdown.download(url, output_file, quiet=False)
+    st.session_state.download = True
 
 download_csv('1ynYsJEwmJEiCqfDEbTzvBDvHWHKNZeLG', 'Small Preview2.csv')
 
@@ -70,36 +53,12 @@ for chunk in pd.read_csv('Small Preview2.csv', names=['Palabra', 'Tema', 'Video'
         csv_length += chunk.count()
 
 word_data = data
-# groupby_column = 'word'
-# aggregate_column = 'theme'
-# agg_df = word_data.groupby(groupby_column).aggregate({aggregate_column: list})
-# df_alias = word_data.drop(columns=aggregate_column).set_index(groupby_column)
-# word_data = agg_df.join(df_alias).reset_index(groupby_column).drop_duplicates(groupby_column).reset_index(drop=True)
-# word_data.columns = ['word', 'theme', 'link', 'image', 'synonym']
-# word_data = word_data.rename(columns={"word": "Palabra", "theme": "Tema", "link": "Enlace", "image": "Imagen", "synonym": "Sinómino"})
-# for index, row in word_data.iterrows():
-#   link = row['Enlace']
-#   lst = row['Tema']
-#   tag = create_bulleted_list(lst)
-#   try:
-#     lst2 = row['Sinónimo']
-#     tag2 = create_bulleted_list(lst2)
-#     word_data.at[index, 'Sinómino'] = tag2
-#   except:
-#      word_data.at[index, 'Sinómino'] = "<ul>""</ul>"
-#   word_data.at[index, 'Tema'] = tag
-
-#   word_data.at[index, 'Enlace'] = f"<iframe width='210' height='158' src=https://www.youtube.com/embed/{link}></iframe>"
-#   if type(row['Imagen']) != float:
-#     word_data.at[index, 'Imagen'] = img_to_html('images/dict/{}'.format(row['Imagen']))
-#   else:
-#     word_data.at[index, 'Imagen'] =  "<ul>""</ul>"
-
 word_data.columns = ['Palabra', 'Tema', 'Video', 'Imagen', 'Sinómino']
 word_data.sort_values(by=['Palabra'])
 first_50 = word_data.head(offset)
 pd.set_option('colheader_justify', 'center')   # FOR TABLE <th>
 
+@st.cache_data
 def load_data(frame):
   table = frame.to_html(classes='mystyle', escape=False, index=False)
   return table
