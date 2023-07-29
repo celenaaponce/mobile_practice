@@ -57,7 +57,7 @@ div.stButton > button:first-child {
   margin: 0 auto;
 }
 </style>""", unsafe_allow_html=True)
-image3 = Image.open('celena2.jpeg')
+image3 = Image.open('/Users/celenap/streamlit/celena2.jpeg')
 outer_col_3 = st.columns([1, 1])            
 
 with outer_col_3[0]:
