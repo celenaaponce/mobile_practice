@@ -113,7 +113,7 @@ if st.session_state.start == 0:
     page_two.empty()
     placeholder.empty()
     with page_one.container():
-
+        start = st.session_state.start
         max_len = len(word_data)
         next_list = word_data[0:offset]
         table = next_list.to_html(classes='mystyle', escape=False, index=False)
