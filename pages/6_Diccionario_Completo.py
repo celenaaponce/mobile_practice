@@ -63,8 +63,6 @@ def download_csv(file_id, output_file):
     gdown.download(url, output_file, quiet=False)
 
 download_csv('1ynYsJEwmJEiCqfDEbTzvBDvHWHKNZeLG', 'Small Preview2.csv')
-st.success("File downloaded successfully!")
-
 
 csv_length = 0    
 for chunk in pd.read_csv('Small Preview2.csv', names=['Palabra', 'Tema', 'Video', 'Imagen', 'Sinómino'], chunksize=10000, skiprows=1):
