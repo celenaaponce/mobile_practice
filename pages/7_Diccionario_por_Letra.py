@@ -69,7 +69,7 @@ def download_csv(file_id, output_file):
     st.session_state.download = True
   
 @st.cache_data
-def load_words():
+def load_words_letra():
   csv_length = 0    
   for chunk in pd.read_csv('Search List2.csv', names=['Palabra', 'Tema', 'Video', 'Imagen', 'Sinómino'], chunksize=10000, skiprows=1):
           data = pd.DataFrame(chunk)
@@ -158,7 +158,7 @@ def print_list(next_list):
 #start with download
 if st.session_state.download == False:
   download_csv('1bii0vusXl-640sgVhRK2NVj8XCZtGgDx', 'Search List2.csv')
-word_data = load_words()
+word_data = load_words_letra()
 
 
 #set up main page with images  
