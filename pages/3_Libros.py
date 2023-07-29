@@ -57,7 +57,7 @@ div.stButton > button:first-child {
   margin: 0 auto;
 }
 </style>""", unsafe_allow_html=True)
-image4 = Image.open('/Users/celenap/streamlit/Absorbed in-pana.png')
+image4 = Image.open('Absorbed in-pana.png')
 outer_col_4 = st.columns([1, 1])      
 with outer_col_4[1]:
     set_styles()
@@ -69,10 +69,10 @@ with outer_col_4[0]:
     inner_col_4 = st.columns([1, 6, 1])
     with inner_col_4[1]:
         st.image(image4)
-image = Image.open('/Users/celenap/streamlit/jirafas no pueden bailar.jpg')
-image2 = Image.open('/Users/celenap/streamlit/la arana muy ocupada.jpg')
-image3 = Image.open('/Users/celenap/streamlit/el libro de colores de coneja blanca.jpeg')
-image5 = Image.open('/Users/celenap/streamlit/como dan las buenas noches los dinosaurios.jpg')
+image = Image.open('jirafas no pueden bailar.jpg')
+image2 = Image.open('la arana muy ocupada.jpg')
+image3 = Image.open('el libro de colores de coneja blanca.jpeg')
+image5 = Image.open('como dan las buenas noches los dinosaurios.jpg')
 outer_col = st.columns([1,1])
 with outer_col[0]:
     st.image(image)
