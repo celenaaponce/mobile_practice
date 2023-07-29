@@ -66,7 +66,7 @@ with outer_col_3[0]:
 
     st.markdown("<p> Me llamo Celena Ponce.  Crecí en Vancouver, WA.  Hablo español, lengua de señas americana e inglés.\
                 He trabajado con la comunidad sorda por 10 años.  He trabajado por Purple, una de las companias de \
-                teléfonos de video para personas Sordas.  Tambien tengo certificado como interprete de español en el \
+                teléfonos de video para personas Sordas.  Tambien tengo certificado como intérprete de español en el \
                 estado de Washington.  Enseño clases de lengua de señas americana en español para CDHY.\
               </p>", unsafe_allow_html=True)
 
