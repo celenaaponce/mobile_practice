@@ -57,7 +57,7 @@ div.stButton > button:first-child {
   margin: 0 auto;
 }
 </style>""", unsafe_allow_html=True)
-image3 = Image.open('/Users/celenap/streamlit/Online learning-rafiki.png')
+image3 = Image.open('Online learning-rafiki.png')
 outer_col_3 = st.columns([1, 1])            
 
 with outer_col_3[0]:
