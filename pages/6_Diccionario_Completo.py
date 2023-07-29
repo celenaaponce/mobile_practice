@@ -50,7 +50,7 @@ download_csv('1ynYsJEwmJEiCqfDEbTzvBDvHWHKNZeLG', 'Small Preview2.csv')
 @st.cache_data
 def load_words_completo():
   csv_length = 0    
-  for chunk in pd.read_csv('Search Preview2.csv', names=['Palabra', 'Tema', 'Video', 'Imagen', 'Sinómino'], chunksize=10000, skiprows=1):
+  for chunk in pd.read_csv('Small Preview2.csv', names=['Palabra', 'Tema', 'Video', 'Imagen', 'Sinómino'], chunksize=10000, skiprows=1):
           data = pd.DataFrame(chunk)
   return data
     
