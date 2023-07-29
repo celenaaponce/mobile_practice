@@ -44,7 +44,7 @@ div.stButton > button:first-child {
   margin: 0 auto;
 }
 </style>""", unsafe_allow_html=True)
-image2 = Image.open('/Users/celenap/streamlit/dictionary.png')
+image2 = Image.open('dictionary.png')
 
 outer_col_2 = st.columns([1, 1])            
 
