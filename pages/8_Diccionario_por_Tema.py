@@ -34,13 +34,13 @@ def load_words():
           data = pd.DataFrame(chunk)
   return data
 
-with open("streamlit_website/css/style.css") as f:
+with open("css/style.css") as f:
     style = f.read()
 
-with open("streamlit_website/css/bootstrap.css") as file:
+with open("css/bootstrap.css") as file:
     boot = file.read()
 
-with open("streamlit_website/css/responsive.css") as file2:
+with open("css/responsive.css") as file2:
     resp = file2.read()
 
 #start with download
