@@ -58,7 +58,7 @@ div.stButton > button:first-child {
 }
 </style>""", unsafe_allow_html=True)
 
-image5 = Image.open('/Users/celenap/streamlit/Selecting team-pana.png')
+image5 = Image.open('Selecting team-pana.png')
 outer_col_5 = st.columns([1, 1])            
 
     
