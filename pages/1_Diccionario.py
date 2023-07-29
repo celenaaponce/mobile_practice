@@ -52,7 +52,7 @@ with outer_col_2[1]:
     set_styles()
     st.markdown("<h2 style='text-align: center; color: white;'>Diccionario</h1>", unsafe_allow_html=True)
 
-    st.markdown("<h5 style='text-align: center; color: white;'> Este diccionario es señas en la lengua de ASL, con videos. Tambien tiene fotos, y voz español. </h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='text-align: center; color: white;'> Este diccionario es señas en la lengua de ASL, con videos. También tiene fotos, y voz español. </h5>", unsafe_allow_html=True)
 
 with outer_col_2[0]:
     inner_col_2 = st.columns([1, 6, 1])
