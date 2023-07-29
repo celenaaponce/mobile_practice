@@ -70,6 +70,7 @@ def back_start(i):
    st.session_state.start = i-2*offset
 
 if st.session_state.start == 0:
+  st.write(st.session_state.download)
   start = st.session_state.start
   table = first_50.to_html(classes='mystyle', escape=False, index=False)
   html_string = f'''
@@ -88,6 +89,7 @@ if st.session_state.start == 0:
   col3.button('Proximas Palabras', on_click=set_start, args=[start])
 
 if st.session_state.start >= offset:
+  st.write(st.session_state.download)
   start = st.session_state.start
   next_list = word_data[start:start+offset]
   table = next_list.to_html(classes='mystyle', escape=False, index=False)
