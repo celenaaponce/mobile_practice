@@ -5,6 +5,7 @@ import pandas as pd
 from pathlib import Path 
 import gdown
 
+#formatting
 offset = 50
 st.set_page_config(layout="wide", page_title="Diccionario Completo")
 hide_streamlit_style = """
@@ -21,9 +22,7 @@ hide_menu_style = """
         </style>
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
-placeholder = st.empty()
-page_one = st.empty()
-page_two = st.empty()
+
 with open("css/style.css") as f:
     style = f.read()
 
@@ -33,15 +32,23 @@ with open("css/bootstrap.css") as file:
 with open("css/responsive.css") as file2:
     resp = file2.read()
 
-if 'download' not in st.session_state:
-   st.session_state.download = False
-    
+placeholder = st.empty()
+page_one = st.empty()
+page_two = st.empty()
+
 def remote_css(url):
     st.markdown(f'<link href="{url}" rel="stylesheet">', unsafe_allow_html=True)   
 
 remote_css("https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap")
 remote_css("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
+
+#session states
+if 'download' not in st.session_state:
+   st.session_state.download = False
     
+if 'start' not in st.session_state:
+   st.session_state.start = 0   
+     
 def download_csv(file_id, output_file):
     url = f'https://drive.google.com/uc?id={file_id}'
     gdown.download(url, output_file, quiet=False)
@@ -60,9 +67,7 @@ def load_words_completo():
 word_data = load_words_completo()
 word_data.sort_values(by=['Palabra'])
 
-if 'start' not in st.session_state:
-   st.session_state.start = 0
-
+#change states
 def set_start(i):
    st.session_state.start = i
 
