@@ -50,7 +50,6 @@ if 'start' not in st.session_state:
    st.session_state.start = 0   
      
 def download_csv(file_id, output_file):
-    st.write('state', st.session_state.download)
     url = f'https://drive.google.com/uc?id={file_id}'
     gdown.download(url, output_file, quiet=False)
     st.session_state.download = True
@@ -59,8 +58,7 @@ if st.session_state.download == False:
     download_csv('1ynYsJEwmJEiCqfDEbTzvBDvHWHKNZeLG', 'Small Preview2.csv')
 
 @st.cache_data
-def load_words_completo():
-  csv_length = 0    
+def load_words_completo():  
   for chunk in pd.read_csv('Small Preview2.csv', names=['Palabra', 'Tema', 'Video', 'Imagen', 'Sinómino'], chunksize=10000, skiprows=1):
           data = pd.DataFrame(chunk)
   return data
@@ -74,47 +72,6 @@ def set_start(i):
 
 def back_start(i):
    st.session_state.start = i-2*offset
-
-# if st.session_state.start == 0:
-#   st.write(st.session_state.download)
-#   start = st.session_state.start
-#   table = first_50.to_html(classes='mystyle', escape=False, index=False)
-#   html_string = f'''
-
-#       <body>
-#           {table}
-#       </body>
-#       '''
-#   st.markdown(
-#           html_string,
-#       unsafe_allow_html=True
-#   )
-#   start += offset
-#   col1, col2, col3 = st.columns([1,1,1])
-#   st.write("")
-#   col3.button('Proximas Palabras', on_click=set_start, args=[start])
-
-# if st.session_state.start >= offset:
-#   st.write(st.session_state.download)
-#   start = st.session_state.start
-#   next_list = word_data[start:start+offset]
-#   table = next_list.to_html(classes='mystyle', escape=False, index=False)
-#   html_string = f'''
-
-#       <body>
-#           {table}
-#       </body>
-#       '''
-#   st.markdown(
-#           html_string,
-#       unsafe_allow_html=True
-#   )
-#   start += offset
-#   st.write("")
-#   col1, col2, col3 = st.columns([1,1,1])
-#   col3.button('Proximas Palabras', on_click=set_start, args=[start])
-#   col1.button('Palabras Anteriores', on_click=back_start, args=[start])
-#   col2.button('Regresar al Principio', on_click=set_start, args=[0])
 
 if st.session_state.start == 0:
     page_two.empty()
