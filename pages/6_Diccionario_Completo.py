@@ -50,6 +50,7 @@ if 'start' not in st.session_state:
    st.session_state.start = 0   
      
 def download_csv(file_id, output_file):
+    st.write('state', st.session_state.download)
     url = f'https://drive.google.com/uc?id={file_id}'
     gdown.download(url, output_file, quiet=False)
     st.session_state.download = True
