@@ -6,7 +6,7 @@ from pathlib import Path
 import gdown
 
 #formatting
-offset = 50
+offset = 20
 st.set_page_config(layout="wide", page_title="Diccionario Completo")
 hide_streamlit_style = """
 <style>
