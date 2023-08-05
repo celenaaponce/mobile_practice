@@ -148,7 +148,7 @@ if st.session_state.clicked != "" and not (reset1 or reset2):
         alpha_list = word_data.loc[word_data['Tema']== tema]
         alpha_list.sort_values(by=['Tema'])
         max_len = len(alpha_list)
-        next_list = alpha_list[0:20]
+        next_list = alpha_list[0:10]
         table = next_list.to_html(classes='mystyle', escape=False, index=False)
         html_string = f'''
 
@@ -172,7 +172,7 @@ if increment:
         alpha_list = word_data.loc[word_data['Tema']== tema]
         alpha_list.sort_values(by=['Tema'])
         max_len = len(alpha_list)
-        next_list = alpha_list[20:]
+        next_list = alpha_list[10:]
         table = next_list.to_html(classes='mystyle', escape=False, index=False)
         html_string = f'''
 
