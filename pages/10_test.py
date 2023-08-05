@@ -10,13 +10,4 @@ def load_data(sheets_url):
 
 df = load_data(st.secrets["public_gsheets_url"])
 
-next_list = df[0:50]
-table = next_list.to_html(classes='mystyle', escape=False, index=False)
-html_string = f'''
-    <body>
-        {table}
-    </body>
-    '''
-st.markdown(
-        html_string,
-    unsafe_allow_html=True)
+st.dataframe(df.head(5))
