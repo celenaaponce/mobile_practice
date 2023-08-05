@@ -96,7 +96,7 @@ def set_prev(i):
    st.session_state.prev_letter = i
 
 def back_offset(i):
-   st.session_state.offset = i - 20
+   st.session_state.offset = i - 10
 
 def reset_start():
    set_start("")
@@ -173,7 +173,7 @@ if st.session_state.letter == '27':
     alpha_list = word_data[~word_data.Palabra.str.startswith(alpha_tuple)]
     alpha_list.sort_values(by=['Palabra'])
     max_len = len(alpha_list)
-    next_list = alpha_list[0:20]
+    next_list = alpha_list[0:10]
     print_list(next_list)
 
   
@@ -185,15 +185,15 @@ if st.session_state.letter != "":
 
   if st.session_state.prev_letter != st.session_state.letter:
     set_prev(st.session_state.letter)
-    next_list = alpha_list[0:20]
+    next_list = alpha_list[0:10]
     offset = st.session_state.offset
 
   if st.session_state.prev_letter == st.session_state.letter:
-    next_list = alpha_list[st.session_state.offset:st.session_state.offset+20]
-    offset = st.session_state.offset+20
+    next_list = alpha_list[st.session_state.offset:st.session_state.offset+10]
+    offset = st.session_state.offset+10
   print_list(next_list)
   col1, col2, col3 = st.columns([1,1,1])
   if offset < max_len:
-      col3.button('Proximas Palabras', on_click=set_offset, args=[st.session_state.offset+20])
-  if st.session_state.offset >= 20:
+      col3.button('Proximas Palabras', on_click=set_offset, args=[st.session_state.offset+10])
+  if st.session_state.offset >= 10:
       col1.button('Palabras Anteriores', on_click = back_offset, args=[st.session_state.offset])
