@@ -12,8 +12,9 @@ if 'download' not in st.session_state:
    st.session_state.download = False
     
 if 'start' not in st.session_state:
-   st.session_state.start = 0   
-     
+   st.session_state.start = 0 
+   
+@st.cache_data     
 def download_csv(file_id, output_file):
     st.write('state', st.session_state.download)
     url = f'https://drive.google.com/uc?id={file_id}'
