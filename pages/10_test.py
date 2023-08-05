@@ -9,7 +9,6 @@ def load_data(sheets_url):
     return pd.read_csv(csv_url)
 
 df = load_data(st.secrets["public_gsheets_url"])
-df.sort_values(by=['Palabra'])
 
 next_list = df[0:50]
 table = next_list.to_html(classes='mystyle', escape=False, index=False)
