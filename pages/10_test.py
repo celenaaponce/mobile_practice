@@ -22,7 +22,7 @@ def download_csv(file_id, output_file):
     st.session_state.download = True
     
 if st.session_state.download == False:
-    download_csv('1ynYsJEwmJEiCqfDEbTzvBDvHWHKNZeLG', 'Small Preview2.csv')
+    download_csv('1YzrMUWmZ0W8AUwsm5rD-trrBEzMI0bgt', 'Small Preview2.csv')
 
 @st.cache_data(ttl=600)
 def load_words_completo():   
