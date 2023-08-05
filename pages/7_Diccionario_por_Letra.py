@@ -44,8 +44,8 @@ with open("css/responsive.css") as file2:
     resp = file2.read()
 
 #initialize states
-if 'download' not in st.session_state:
-   st.session_state.download = False
+if 'download_letter' not in st.session_state:
+   st.session_state.download_letter = False
   
 if 'letter' not in st.session_state:
    st.session_state.letter = ""
@@ -66,7 +66,7 @@ def empty():
 def download_csv(file_id, output_file):
     url = f'https://drive.google.com/uc?id={file_id}'
     gdown.download(url, output_file, quiet=False)
-    st.session_state.download = True
+    st.session_state.download_letter = True
   
 @st.cache_data
 def load_words_letra():
