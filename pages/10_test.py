@@ -51,7 +51,7 @@ if st.session_state.clicked == "":
     clicked = click_detector(content)
     st.session_state.clicked = clicked
 
-if st.session_state.clicked != "" and not (reset1 or reset2) or if increment:        
+if (st.session_state.clicked != "" and not (reset1 or reset2)) or increment:        
      word_data = load_words_tema()
      tema = themes[int(st.session_state.clicked[6:])]
      alpha_list = word_data.loc[word_data['Tema']== tema]
