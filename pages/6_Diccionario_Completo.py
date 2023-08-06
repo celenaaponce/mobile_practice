@@ -32,10 +32,6 @@ with open("css/bootstrap.css") as file:
 with open("css/responsive.css") as file2:
     resp = file2.read()
 
-placeholder = st.empty()
-page_one = st.empty()
-page_two = st.empty()
-
 def remote_css(url):
     st.markdown(f'<link href="{url}" rel="stylesheet">', unsafe_allow_html=True)   
 
@@ -43,18 +39,19 @@ remote_css("https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,
 remote_css("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
 
 #session states
-if 'download' not in st.session_state:
-   st.session_state.download = False
+if 'download_completo' not in st.session_state:
+   st.session_state.download_completo = False
     
 if 'start' not in st.session_state:
    st.session_state.start = 0   
-     
+
+@st.cache_data
 def download_csv(file_id, output_file):
     url = f'https://drive.google.com/uc?id={file_id}'
     gdown.download(url, output_file, quiet=False)
-    st.session_state.download = True
+    st.session_state.download_completo = True
     
-if st.session_state.download == False:
+if st.session_state.download_completo == False:
     download_csv('1ynYsJEwmJEiCqfDEbTzvBDvHWHKNZeLG', 'Small Preview2.csv')
 
 @st.cache_data
@@ -73,45 +70,24 @@ def set_start(i):
 def back_start(i):
    st.session_state.start = i-2*offset
 
-if st.session_state.start == 0:
-    page_two.empty()
-    placeholder.empty()
-    with page_one.container():
-        start = st.session_state.start
-        max_len = len(word_data)
-        next_list = word_data[0:offset]
-        table = next_list.to_html(classes='mystyle', escape=False, index=False)
-        html_string = f'''
+start = st.session_state.start
+max_len = len(word_data)
+next_list = word_data[start:offset+start]
+table = next_list.to_html(classes='mystyle', escape=False, index=False)
+html_string = f'''
+    <body>
+        {table}
+    </body>
+    '''
+st.markdown(
+        html_string,
+    unsafe_allow_html=True)
+start += offset
+col1, col2, col3 = st.columns([1,1,1])
+if start == offset:
+    increment = col3.button("Proximas Palabras", on_click=set_start, args=[start])
 
-            <body>
-                {table}
-            </body>
-            '''
-        st.markdown(
-                html_string,
-            unsafe_allow_html=True)
-        start += offset
-        col1, col2, col3 = st.columns([1,1,1])
-        increment = col3.button("Proximas Palabras", on_click=set_start, args=[start])
-        reset1 = col2.button("Empezar de Nuevo", key="First", on_click=set_start, args=[0])
-                
-if st.session_state.start != 0:
-    page_one.empty()
-    with page_two.container():
-        start = st.session_state.start
-        next_list = word_data[start:start+offset]
-        table = next_list.to_html(classes='mystyle', escape=False, index=False)
-        html_string = f'''
-
-            <body>
-                {table}
-            </body>
-            '''
-        st.markdown(
-                html_string,
-            unsafe_allow_html=True)
-        start += offset
-        col1, col2, col3 = st.columns([1,1,1])
-        increment = col3.button("Proximas Palabras", on_click=set_start, args=[start])
-        reset1 = col2.button("Empezar de Nuevo", on_click=set_start, args=[0])
-        reset2 = st.button("Palabras Anteriores", on_click=back_start, args=[start])
+else:              
+    increment = col3.button("Proximas Palabras", on_click=set_start, args=[start])
+    reset1 = col2.button("Empezar de Nuevo", on_click=set_start, args=[0])
+    reset2 = st.button("Palabras Anteriores", on_click=back_start, args=[start])
