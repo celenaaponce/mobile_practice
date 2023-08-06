@@ -190,8 +190,8 @@ if increment:
         st.markdown(
                 html_string,
             unsafe_allow_html=True)
-        reset1 = col2.button("Empezar de Nuevo", key="First2")
-        reset2 = st.button("Palabras Anteriores", key="Second")
+        reset1 = col2.button("Empezar de Nuevo")
+        reset2 = col1.button("Palabras Anteriores", key="Second")
 
 
 if reset1 or reset2:
