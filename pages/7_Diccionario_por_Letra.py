@@ -62,7 +62,8 @@ if 'count' not in st.session_state:
 def empty():
     placeholder.empty()
     sleep(0.01)
-   
+
+@st.cache_data
 def download_csv(file_id, output_file):
     url = f'https://drive.google.com/uc?id={file_id}'
     gdown.download(url, output_file, quiet=False)
@@ -74,17 +75,6 @@ def load_words_letra():
   for chunk in pd.read_csv('Search List2.csv', names=['Palabra', 'Tema', 'Video', 'Imagen', 'Sinómino'], chunksize=10000, skiprows=1):
           data = pd.DataFrame(chunk)
   return data
-
-def img_to_bytes(img_path):
-    img_bytes = Path(img_path).read_bytes()
-    encoded = base64.b64encode(img_bytes).decode()
-    return encoded
-
-def img_to_html(img_path):
-    img_html = "<img src='data:image/png;base64,{}' class='img-fluid' width=150>".format(
-      img_to_bytes(img_path)
-    )
-    return img_html
 
 def set_start(i):
    st.session_state.letter = i
@@ -100,7 +90,6 @@ def back_offset(i):
 
 def reset_start():
    set_start("")
-
 
 placeholder = st.empty()
 
@@ -176,7 +165,6 @@ if st.session_state.letter == '27':
     next_list = alpha_list[0:10]
     print_list(next_list)
 
-  
 if st.session_state.letter != "":
   letter = alpha_num[int(st.session_state.letter)]
   alpha_list = word_data.loc[word_data['Palabra'].str.startswith(letter, na=False)]
