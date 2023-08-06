@@ -173,24 +173,24 @@ if st.session_state.clicked != "" and not (reset1 or reset2):
            
 if increment:
     page_one.empty()
-    with page_two.container():
-        word_data = load_words_tema()
-        tema = themes[int(st.session_state.clicked[6:])]
-        alpha_list = word_data.loc[word_data['Tema']== tema]
-        alpha_list.sort_values(by=['Tema'])
-        max_len = len(alpha_list)
-        next_list = alpha_list[10:]
-        table = next_list.to_html(classes='mystyle', escape=False, index=False)
-        html_string = f'''
+    # with page_two.container():
+    word_data = load_words_tema()
+    tema = themes[int(st.session_state.clicked[6:])]
+    alpha_list = word_data.loc[word_data['Tema']== tema]
+    alpha_list.sort_values(by=['Tema'])
+    max_len = len(alpha_list)
+    next_list = alpha_list[10:]
+    table = next_list.to_html(classes='mystyle', escape=False, index=False)
+    html_string = f'''
 
-            <body>
-                {table}
-            </body>
-            '''
-        st.markdown(
-                html_string,
-            unsafe_allow_html=True)
-        reset2 = col1.button("Palabras Anteriores", key="Second")
+        <body>
+            {table}
+        </body>
+        '''
+    st.markdown(
+            html_string,
+        unsafe_allow_html=True)
+    reset2 = col1.button("Palabras Anteriores", key="Second")
 
 
 if reset1 or reset2:
