@@ -39,53 +39,6 @@ with open("css/bootstrap.css") as file:
 with open("css/responsive.css") as file2:
     resp = file2.read()
 
-#start with download
-if st.session_state.download_tema == False:
-  download_csv('1IM-icAYQD-IVRUaV7NypfJTjRo6enwuE', 'Themes2.csv')
-    
-word_data = load_words_tema()
-
-if st.session_state.clicked == "":
-    size = 20
-    content = get_content(size)
-    clicked = click_detector(content)
-    st.session_state.clicked = clicked
-
-if (st.session_state.clicked != "" and not (reset1 or reset2)) or increment:        
-     word_data = load_words_tema()
-     tema = themes[int(st.session_state.clicked[6:])]
-     alpha_list = word_data.loc[word_data['Tema']== tema]
-     alpha_list.sort_values(by=['Tema'])
-     max_len = len(alpha_list)
-     if increment:
-        next_list = alpha_list[10:]
-     else:
-        next_list = alpha_list[0:10]
-     table = next_list.to_html(classes='mystyle', escape=False, index=False)
-     html_string = f'''
-
-         <body>
-             {table}
-         </body>
-         '''
-     st.markdown(
-             html_string,
-         unsafe_allow_html=True)
-     col1, col2, col3 = st.columns([1,1,1])
-     if increment:
-        reset1 = col2.button("Empezar de Nuevo", key="First")
-        reset2 = col1.button("Palabras Anteriores", key="Second")
-     else:
-        increment = col3.button("Proximas Palabras")
-        reset1 = col2.button("Empezar de Nuevo", key="First")
-
-if reset1 or reset2:
-    st.session_state.clicked = ""
-    size = 20
-
-    content = get_content(size)
-    clicked = click_detector(content)
-
 def get_content(size):
       content= f"""
         <style>{style}</style>
@@ -171,4 +124,51 @@ def get_content(size):
          </div>
          """
       return content
+
+#start with download
+if st.session_state.download_tema == False:
+  download_csv('1IM-icAYQD-IVRUaV7NypfJTjRo6enwuE', 'Themes2.csv')
+    
+word_data = load_words_tema()
+
+if st.session_state.clicked == "":
+    size = 20
+    content = get_content(size)
+    clicked = click_detector(content)
+    st.session_state.clicked = clicked
+
+if (st.session_state.clicked != "" and not (reset1 or reset2)) or increment:        
+     word_data = load_words_tema()
+     tema = themes[int(st.session_state.clicked[6:])]
+     alpha_list = word_data.loc[word_data['Tema']== tema]
+     alpha_list.sort_values(by=['Tema'])
+     max_len = len(alpha_list)
+     if increment:
+        next_list = alpha_list[10:]
+     else:
+        next_list = alpha_list[0:10]
+     table = next_list.to_html(classes='mystyle', escape=False, index=False)
+     html_string = f'''
+
+         <body>
+             {table}
+         </body>
+         '''
+     st.markdown(
+             html_string,
+         unsafe_allow_html=True)
+     col1, col2, col3 = st.columns([1,1,1])
+     if increment:
+        reset1 = col2.button("Empezar de Nuevo", key="First")
+        reset2 = col1.button("Palabras Anteriores", key="Second")
+     else:
+        increment = col3.button("Proximas Palabras")
+        reset1 = col2.button("Empezar de Nuevo", key="First")
+
+if reset1 or reset2:
+    st.session_state.clicked = ""
+    size = 20
+
+    content = get_content(size)
+    clicked = click_detector(content)
 
