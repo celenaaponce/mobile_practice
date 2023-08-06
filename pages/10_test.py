@@ -83,8 +83,8 @@ if reset1 or reset2:
     st.session_state.clicked = ""
     size = 20
 
-     content = get_content(size)
-     clicked = click_detector(content)
+    content = get_content(size)
+    clicked = click_detector(content)
 
 def get_content(size):
       content= f"""
