@@ -16,12 +16,13 @@ if "count" not in st.session_state:
 if "clicked" not in st.session_state:
     st.session_state.clicked = ""
     
-if 'download' not in st.session_state:
-    st.session_state.download = False
+if 'download_tema' not in st.session_state:
+    st.session_state.download_tema = False
 
 themes = {1: 'Plano de Casa', 2: 'Día de los Muertos', 4: 'Dia de San Valentin', 3: 'Halloween', 5: 'Primavera', 6: 'Quehaceres', 7: 'Exterior de Casa', 8: 'Más Comida', 9: 'Día de Acción de Gracias', 
           10: 'Frutas', 11: 'Verduras', 12: 'Carnes', 13: 'Interior de Casa', 14: 'Bravo 1', 15: 'Bravo 2', 16: 'Bravo 3', 17: 'Bravo 4', 18: 'Números', 19: "Pascua", 20: "Colores"}
 
+@st.cache_data
 def download_csv(file_id, output_file):
     url = f'https://drive.google.com/uc?id={file_id}'
     gdown.download(url, output_file, quiet=False)
@@ -44,8 +45,10 @@ with open("css/responsive.css") as file2:
     resp = file2.read()
 
 #start with download
-if st.session_state.download == False:
+if st.session_state.download_tema == False:
   download_csv('1IM-icAYQD-IVRUaV7NypfJTjRo6enwuE', 'Themes2.csv')
+  st.session_state.download_tema = True
+    
 word_data = load_words_tema()
 
 if st.session_state.clicked == "":
