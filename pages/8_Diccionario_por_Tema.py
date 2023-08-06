@@ -119,7 +119,7 @@ def download_csv(file_id, output_file):
 def load_words_tema():
   csv_length = 0    
   for chunk in pd.read_csv('Themes2.csv', names=['Palabra', 'Tema', 'Video', 'Imagen', 'Sinómino'], chunksize=10000, skiprows=1):
-          data = pd.DataFrame(chunk)
+        data = pd.DataFrame(chunk)
   return data
 
 with open("css/style.css") as f:
@@ -190,6 +190,7 @@ if increment:
         st.markdown(
                 html_string,
             unsafe_allow_html=True)
+        col1, col2, col3 = st.columns([1,1,1])
         reset1 = col2.button("Empezar de Nuevo")
         reset2 = col1.button("Palabras Anteriores", key="Second")
 
