@@ -146,7 +146,7 @@ def print_list(next_list):
   
 #start with download
 if st.session_state.download_letter == False:
-  download_csv('1bii0vusXl-640sgVhRK2NVj8XCZtGgDx', 'Search List2.csv')
+  download_csv(st.secrets['diccionario_letras'], 'Search List2.csv')
 word_data = load_words_letra()
 
 
