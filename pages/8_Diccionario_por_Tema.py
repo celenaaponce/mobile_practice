@@ -133,7 +133,7 @@ with open("css/responsive.css") as file2:
 
 #start with download
 if st.session_state.download_tema == False:
-  download_csv('1IM-icAYQD-IVRUaV7NypfJTjRo6enwuE', 'Themes2.csv')
+  download_csv(st.secrets['diccionario_tema'], 'Themes2.csv')
   st.session_state.download_tema = True
     
 word_data = load_words_tema()
