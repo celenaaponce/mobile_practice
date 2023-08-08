@@ -66,7 +66,7 @@ def get_content(size):
          <p class="caption">Día de Acción de Gracias</p> 
          </div>
         <div class="cat-container">
-         <a href='#' id='Image 10'><img class = "cat" width='{size}%' src='https://images.unsplash.com/photo-1584559582128-b8be739912e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZydWl0fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60'></a>
+         <a href='#' id='Image 10'><img class = "cat" width='{size}%' src='https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZnJ1aXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60'></a>
          <p class="caption">Frutas</p> 
          </div>
         <div class="cat-container">
