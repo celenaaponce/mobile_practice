@@ -3,7 +3,7 @@ from PIL import Image
 import streamlit.components.v1 as components
 from streamlit_extras.switch_page_button import switch_page
 from streamlit.components.v1 import html
-
+st.write("DB username:", st.secrets["test"])
 def open_page(url):
     open_script= """
         <script type="text/javascript">
