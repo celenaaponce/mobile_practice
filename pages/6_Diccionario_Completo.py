@@ -52,7 +52,7 @@ def download_csv(file_id, output_file):
     st.session_state.download_completo = True
     
 if st.session_state.download_completo == False:
-    download_csv('1ynYsJEwmJEiCqfDEbTzvBDvHWHKNZeLG', 'Small Preview2.csv')
+    download_csv(st.secrets['diccionario_completo'], 'Small Preview2.csv')
 
 @st.cache_data
 def load_words_completo():  
