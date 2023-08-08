@@ -172,10 +172,11 @@ if st.session_state.letter != "":
   max_len = len(alpha_list)
 
   if st.session_state.prev_letter != st.session_state.letter:
+    st.session_state.offset = 0
     set_prev(st.session_state.letter)
     next_list = alpha_list[0:10]
     offset = st.session_state.offset
-    st.write('offset', offset)
+    
 
   if st.session_state.prev_letter == st.session_state.letter:
     next_list = alpha_list[st.session_state.offset:st.session_state.offset+10]
