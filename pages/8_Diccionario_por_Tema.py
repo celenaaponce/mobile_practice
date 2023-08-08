@@ -94,7 +94,7 @@ def get_content(size):
          <p class="caption">Bravo 3</p> 
          </div>
         <div class="cat-container">
-         <a href='#' id='Image 17'><img class = "cat" width='{size}%' src='https://org-dcmp-staticassets.s3.us-east-1.amazonaws.com/posterimages/1329_1.jpg'></a>
+         <a href='#' id='Image 17'><img class = "cat" width='{size}%' src='https://org-dcmp-staticassets.s3.us-east-1.amazonaws.com/posterimages/1283_1.jpg'></a>
          <p class="caption">Bravo 4</p> 
          </div>
         <div class="cat-container">
