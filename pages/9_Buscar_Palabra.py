@@ -74,10 +74,10 @@ if 'download' not in st.session_state:
     
 #start with download
 if st.session_state.download == False:
-  download_csv('1bii0vusXl-640sgVhRK2NVj8XCZtGgDx', 'Search List2.csv')
+  download_csv(st.secrets['diccionario_letras'], 'Search List2.csv')
 
 if st.session_state.download_no_acc == False:
-    download_csv('1fzLfxTI_aw2Zaj4sL1sc_teTHUmM0X9c', 'Search List no acc.csv')
+    download_csv(st.secrets['diccionario_no_acc'], 'Search List no acc.csv')
 word_data = load_words()
 word_data_no_acc = load_words_no_acc()
 
