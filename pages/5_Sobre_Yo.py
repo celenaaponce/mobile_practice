@@ -62,7 +62,7 @@ outer_col_3 = st.columns([1, 1])
 
 with outer_col_3[0]:
     set_styles()
-    st.markdown("<h2 style='text-align: center; color: white;'>Sobre Yo</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center; color: white;'>De Mi</h2>", unsafe_allow_html=True)
 
     st.markdown("<p> Me llamo Celena Ponce.  Crecí en Vancouver, WA.  Hablo español, lengua de señas americana e inglés.\
                 He trabajado con la comunidad sorda por 10 años.  He trabajado por Purple, una de las companias de \
