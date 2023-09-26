@@ -116,7 +116,7 @@ elif not word_list_no_acc.empty:
             html_string,
         unsafe_allow_html=True)
     
-if word_list.empty and word != "":
+if word_list.empty and word_list_no_acc.empty and word != "":
     filePath = "pages/10000_frecuencias.txt"
 
     spanishWords = SpanishWordFreq(filePath)
