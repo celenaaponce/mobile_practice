@@ -39,6 +39,7 @@ st.markdown(
 )
 
 def download_csv(file_id, output_file):
+    st.write('downloading')
     url = f'https://drive.google.com/uc?id={file_id}'
     gdown.download(url, output_file, quiet=False)
     st.session_state.download = True
@@ -73,9 +74,11 @@ if 'download' not in st.session_state:
    st.session_state.download = False
     
 #start with download
+@st.cache_data
 if st.session_state.download == False:
   download_csv(st.secrets['diccionario_letras'], 'Search List2.csv')
 
+@st.cache_data
 if st.session_state.download_no_acc == False:
     download_csv(st.secrets['diccionario_no_acc'], 'Search List no acc.csv')
 word_data = load_words()
