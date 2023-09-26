@@ -103,6 +103,7 @@ if not word_list.empty:
     
 elif not word_list_no_acc.empty:
     link = word_list_no_acc['Video'].to_list()[0]
+    st.write(link)
     word_list = word_data.loc[word_data['Video']==link]
     table = word_list.to_html(classes='mystyle', escape=False, index=False)
 
