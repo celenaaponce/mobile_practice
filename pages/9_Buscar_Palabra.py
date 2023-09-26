@@ -51,13 +51,6 @@ def load_words():
         data = pd.DataFrame(chunk)
   return data
     
-@st.cache_data
-def load_words_no_acc():
-  csv_length = 0    
-  for chunk in pd.read_csv('Search List no acc.csv', names=['Palabra', 'Tema', 'Video', 'Imagen', 'Sinómino'], chunksize=10000, skiprows=1):
-        data = pd.DataFrame(chunk)
-  return data
-    
 with open("css/style.css") as f:
     style = f.read()
 
@@ -67,9 +60,6 @@ with open("css/bootstrap.css") as file:
 with open("css/responsive.css") as file2:
     resp = file2.read()
     
-if 'download_no_acc' not in st.session_state:
-    st.session_state.download_no_acc = False
-    
 if 'download' not in st.session_state:
    st.session_state.download = False
     
@@ -78,18 +68,13 @@ if 'download' not in st.session_state:
 if st.session_state.download == False:
   download_csv(st.secrets['diccionario_letras'], 'Search List2.csv')
 
-@st.cache_data
-if st.session_state.download_no_acc == False:
-    download_csv(st.secrets['diccionario_no_acc'], 'Search List no acc.csv')
 word_data = load_words()
-word_data_no_acc = load_words_no_acc()
 
 st.write("")
 st.header("Buscar Palabra")
 word = st.text_input("Buscar Palabra", label_visibility="hidden")
 
 word_list = word_data.loc[word_data['Palabra']==word]
-word_list_no_acc = word_data_no_acc.loc[word_data_no_acc['Palabra']==word]
 
 if not word_list.empty:
     table = word_list.to_html(classes='mystyle', escape=False, index=False)
@@ -104,9 +89,9 @@ if not word_list.empty:
             html_string,
         unsafe_allow_html=True)
     
-elif not word_list_no_acc.empty:
-    link = word_list_no_acc['Video'].to_list()[0]
-    word_list = word_data.loc[word_data['Video']==link]
+else:
+    word_data['Palabra'] = word_data['Palabra'].str.normalize('NFKD').str.encode('ascii', errors='ignore').str.decode('utf-8')
+    word_list = word_data.loc[word_data['Palabra']==word]
     table = word_list.to_html(classes='mystyle', escape=False, index=False)
 
     html_string = f'''
@@ -119,7 +104,7 @@ elif not word_list_no_acc.empty:
             html_string,
         unsafe_allow_html=True)
     
-if word_list.empty and word_list_no_acc.empty and word != "":
+if word_list.empty and word != "":
     filePath = "pages/10000_frecuencias.txt"
 
     spanishWords = SpanishWordFreq(filePath)
