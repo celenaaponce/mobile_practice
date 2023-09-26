@@ -64,7 +64,6 @@ if 'download' not in st.session_state:
    st.session_state.download = False
     
 #start with download
-@st.cache_data
 if st.session_state.download == False:
   download_csv(st.secrets['diccionario_letras'], 'Search List2.csv')
 
