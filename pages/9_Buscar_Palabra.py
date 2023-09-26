@@ -86,7 +86,7 @@ st.header("Buscar Palabra")
 word = st.text_input("Buscar Palabra", label_visibility="hidden")
 
 word_list = word_data.loc[word_data['Palabra']==word]
-word_list_no_acc = word_data_no_acc.index[word_data_no_acc['Palabra']==word]
+word_list_no_acc = word_data_no_acc.loc[word_data_no_acc['Palabra']==word]
 
 if not word_list.empty:
     table = word_list.to_html(classes='mystyle', escape=False, index=False)
@@ -102,8 +102,8 @@ if not word_list.empty:
         unsafe_allow_html=True)
     
 elif not word_list_no_acc.empty:
-    wl = word_data.iloc[word_list_no_acc[0]]['Palabra']
-    word_list = word_data.loc[word_data['Palabra']==wl]
+    link = word_list_no_acc[0]['Video']
+    word_list = word_data.loc[word_data['Video']==link]
     table = word_list.to_html(classes='mystyle', escape=False, index=False)
 
     html_string = f'''
