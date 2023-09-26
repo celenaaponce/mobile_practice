@@ -102,7 +102,7 @@ if not word_list.empty:
         unsafe_allow_html=True)
     
 elif not word_list_no_acc.empty:
-    link = word_list_no_acc[0]['Video']
+    link = word_list_no_acc['Video']
     word_list = word_data.loc[word_data['Video']==link]
     table = word_list.to_html(classes='mystyle', escape=False, index=False)
 
