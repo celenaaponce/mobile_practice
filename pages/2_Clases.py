@@ -64,11 +64,11 @@ with outer_col_3[0]:
     set_styles()
     st.markdown("<h2 style='text-align: center; color: white;'>Clases</h1>", unsafe_allow_html=True)
 
-    st.markdown("<p> Con <a href='https://www.cdhy.wa.gov' target='_blank'>CDHY</a> ofrezco clases todo el año.  Ahorita tenemos clases un vez a la mes, ofrecido en linea.  Durante el año escolar, tenemos clases cada semana.  Las clases son individuos y a su nivel.  ¡También son gratis!  Si quiere mirar clases del pasado, se puede <a href='https://www.youtube.com/playlist?list=PLAsRcYXV-4XDbhawYIWMukc53mP-zbRqv' target='_blank'>mirar las clases.</a> </p>", unsafe_allow_html=True)
+    st.markdown("<p> Con <a href='https://www.cdhy.wa.gov' target='_blank'>CDHY</a> ofrezco clases todo el año.  Empezando el 15 de octubre, tenemos clases a la semana, ofrecido en linea.  Las clases son individuos y a su nivel.  ¡También son gratis!  Si quiere mirar clases del pasado, se puede <a href='https://www.youtube.com/playlist?list=PLAsRcYXV-4XDbhawYIWMukc53mP-zbRqv' target='_blank'>mirar las clases.</a> </p>", unsafe_allow_html=True)
 
 with outer_col_3[1]:
     inner_col_3 = st.columns([1, 6, 1])
     with inner_col_3[1]:
         st.image(image3)
-    st.button('Registrar para Clases', key='Clases', on_click = open_page, args =('https://forms.gle/JUcjHnvhpGVrg6t17',))
+    st.button('Registrar para Clases', key='Clases', on_click = open_page, args =('https://forms.gle/LennkBdrMvUrF7WQ8',))
     ChangeButtonColour('Registrar para Clases', '#fffff', '#92E3A9') 
