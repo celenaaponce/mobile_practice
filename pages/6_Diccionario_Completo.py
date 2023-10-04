@@ -45,7 +45,6 @@ if 'download_completo' not in st.session_state:
 if 'start' not in st.session_state:
    st.session_state.start = 0   
 
-@st.cache_data
 def download_csv(file_id, output_file):
     url = f'https://drive.google.com/uc?id={file_id}'
     gdown.download(url, output_file, quiet=False)
