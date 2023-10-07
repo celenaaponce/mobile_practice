@@ -139,6 +139,7 @@ if st.session_state.download_tema == False:
   st.session_state.download_tema = True
     
 word_data = load_words_tema()
+word_data = word_data[['Palabra', 'Imagen', 'Video', 'Tema', 'Sinómino']]
 
 if st.session_state.clicked == "":
     size = 20
