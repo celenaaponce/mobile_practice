@@ -68,6 +68,7 @@ if st.session_state.download == False:
   download_csv(st.secrets['diccionario_letras'], 'Search List2.csv')
 
 word_data = load_words()
+word_data = word_data[['Palabra', 'Imagen', 'Video', 'Tema', 'Sinómino']]
 
 st.write("")
 st.header("Buscar Palabra")
