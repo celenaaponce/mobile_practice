@@ -60,6 +60,7 @@ def load_words_completo():
   return data
     
 word_data = load_words_completo()
+word_data = word_data[['Palabra', 'Imagen', 'Video', 'Tema', 'Sinómino']]
 word_data.sort_values(by=['Palabra'])
 
 #change states
