@@ -7,7 +7,22 @@ import requests
 import gdown
 from time import sleep
 from st_click_detector import click_detector
+from st_pages import Page, Section,show_pages, add_page_title
 
+show_pages(
+[
+    Page("Pagina_Principal.py", "Pagina Principal"),
+    Page("pages/1_Diccionario.py", "Diccionario"),
+    Page("pages/2_Clases.py", "Clases"),
+    Page("pages/3_Libros.py", "Libros"),
+    Page("pages/4_Recursos.py", "Recursos"),
+    Page("pages/5_Sobre_Yo.py", "Sobre Yo"),
+    Page("pages/6_Diccionario_Completo.py", "Diccionario Completo"),
+    Page("pages/7_Diccionario_por_Letra.py", "Diccionario Por Letra"),
+    Page("pages/8_Diccionario_por_Tema.py", "Diccionario Por Tema"),
+    Page("pages/9_Buscar_Palabra.py", "Buscar Palabra"),
+    Page("pages/10_Entrar.py", "Entrar")
+])
 ##constants
 alpha_num = {1: 'a', 2: 'b', 3: 'c', 4: 'd', 5: 'e', 6: 'f', 7: 'g', 8: 'h', 9: 'i', 10: 'j', 11: 'k',
              12: 'l', 13: 'm', 14: 'n', 15: 'o', 16: 'p', 17: 'q', 18: 'r', 19: 's', 20: 't', 21: 'u',
