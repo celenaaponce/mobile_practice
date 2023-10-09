@@ -19,7 +19,6 @@ def primera_semana():
     # if st.button("Salir"):
     #     switch_page('Pagina Principal')
     st.subheader('Primera Semana: Introducción')
-    image2 = Image.open('asl_one.png')
     cont_2 = st.container()
 
     outer_col_2 = st.columns([4, 1])            
