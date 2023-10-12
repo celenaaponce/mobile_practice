@@ -65,10 +65,6 @@ def ChangeButtonColour(widget_label, font_color, background_color='transparent')
         """
     components.html(f"{htmlstr}", height=0, width=0)
 
-classes = {'ASL1': ['allelugo2009@hotmail.com', 'Maria789sy@gmail.com', 'prepez.2013@gmail.com', 'hernandezmarili64@icloud.com', 'ivonnemercadoj@yahoo.com', 'Yetzabelcerrada831@gmail.com','arbe0320@gmail.com'], 
-           'ASL2': 'rbriggs',
-           'ASL En Casa': ['santyortega588@gmail.com', 'groisabel17@gmail.com', 'carinad1989@gmail.com', 'eloinar493@gmail.com']}
-
 def set_styles():
     st.write("""
         <style>
@@ -103,13 +99,13 @@ name, authentication_status, username = authenticator.login('Entrar', 'main')
 if authentication_status:
     authenticator.logout('Salir', 'main')
     st.title(f'Bienvenido *{name}*')
-    if username in classes['ASL1']:
+    if username in st.secrets.ASL1:
         login_sidebar()
         st.header("Bienvenido a la clase de ASL 1. \n Se puede mirar nuestro curiculo aqui:")
         tab1, tab2, tab3 = st.tabs(["Primera Semana", "🔒Segunda Semana", "🔒Tercera Semana"])
         with tab1:
              Primera_Semana.primera_semana()
-    elif username in classes['ASL2']:
+    elif username in st.secrets['ASL2']:
         login_sidebar()
         st.header("Bienvenido a la clase de ASL 2.  Se puede mirar nuestro curiculo aqui:")
         tab1, tab2, tab3 = st.tabs(["Primera Semana", "🔒Segunda Semana", "🔒Tercera Semana"])
@@ -129,3 +125,4 @@ elif authentication_status == False:
 elif authentication_status == None:
     st.warning('Escriba su nombre de usario y contraseña.')
     regular_sidebar()
+
