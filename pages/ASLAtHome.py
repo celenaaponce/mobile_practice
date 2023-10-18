@@ -43,23 +43,23 @@ def primera_semana():
             components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vQ4wlJOjhmNap4RDFiDtqNi1cv2PvEsdZnP4ANcRsVCCDgK0NrpYYLfI5BgwVZzlycwNwmvlwU4qnNt/embed?start=false&loop=false&delayms=3000", height=480)
 
 def segunda_semana():
-    set_styles()
-    st.subheader('Segunda Semana: Capitulo 1')
-    cont_2 = st.container()
+    # set_styles()
+    # st.subheader('Segunda Semana: Capitulo 1')
+    # cont_2 = st.container()
 
-    outer_col_2 = st.columns([4, 1])            
-    with cont_2:
+    # outer_col_2 = st.columns([4, 1])            
+    # with cont_2:
         
-        with outer_col_2[0]:
-            st.markdown("<h4 style='text-align: center; color: white;'><u>Videos</u></h4>", unsafe_allow_html=True)
-            st.markdown("<h5> <a href='https://youtu.be/F_TOHsNTfwo' target='_blank'>Vocabulario</a></h5>", unsafe_allow_html=True)
-            st.markdown("<h5> <a href='https://youtu.be/UaxbOjwRDDw' target='_blank'>Libro</a></h5>", unsafe_allow_html=True)
+    #     with outer_col_2[0]:
+    #         st.markdown("<h4 style='text-align: center; color: white;'><u>Videos</u></h4>", unsafe_allow_html=True)
+    #         st.markdown("<h5> <a href='https://youtu.be/F_TOHsNTfwo' target='_blank'>Vocabulario</a></h5>", unsafe_allow_html=True)
+    #         st.markdown("<h5> <a href='https://youtu.be/UaxbOjwRDDw' target='_blank'>Libro</a></h5>", unsafe_allow_html=True)
 
-            st.divider()
+    #         st.divider()
 
-            st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
+    #         st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
         
-            st.markdown("<h5> <a href='https://youtu.be/F_TOHsNTfwo' target='_blank'>Practicar Vocabulario</a> para la semana que viene</h5>", unsafe_allow_html=True)
-            st.divider()
+    #         st.markdown("<h5> <a href='https://youtu.be/F_TOHsNTfwo' target='_blank'>Practicar Vocabulario</a> para la semana que viene</h5>", unsafe_allow_html=True)
+    #         st.divider()
             
-            components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vSb2QAbLy6AheIEJ30YPF-RYjE5gw1Yt7Ovw2wO8Mz2XFUc_MGg2P-8E2i4tlHoiwxXYPGFRE3y1HQn/embed?start=false&loop=false&delayms=3000", height=480)
+    #         components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vSb2QAbLy6AheIEJ30YPF-RYjE5gw1Yt7Ovw2wO8Mz2XFUc_MGg2P-8E2i4tlHoiwxXYPGFRE3y1HQn/embed?start=false&loop=false&delayms=3000", height=480)
