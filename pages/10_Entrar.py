@@ -105,7 +105,7 @@ if authentication_status:
         tab1, tab2, tab3 = st.tabs(["Primera Semana", "🔒Segunda Semana", "🔒Tercera Semana"])
         with tab1:
              Primera_Semana.primera_semana()
-    elif username in st.secrets['ASL2']:
+    elif username in st.secrets.ASL2:
         login_sidebar()
         st.header("Bienvenido a la clase de ASL 2.  Se puede mirar nuestro curiculo aqui:")
         tab1, tab2, tab3 = st.tabs(["Primera Semana", "🔒Segunda Semana", "🔒Tercera Semana"])
