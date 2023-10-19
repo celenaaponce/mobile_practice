@@ -53,7 +53,7 @@ def primera_semana():
     #     with outer_col_2[0]:
     #         st.markdown("<h4 style='text-align: center; color: white;'><u>Videos</u></h4>", unsafe_allow_html=True)
     #         st.markdown("<h5> <a href='https://youtu.be/F_TOHsNTfwo' target='_blank'>Vocabulario</a></h5>", unsafe_allow_html=True)
-    #         st.markdown("<h5> <a href='https://youtu.be/UaxbOjwRDDw' target='_blank'>Libro</a></h5>", unsafe_allow_html=True)
+    #         st.markdown("<h5> <a href='https://youtu.be/q7QTDovFA74' target='_blank'>Libro</a></h5>", unsafe_allow_html=True)
 
     #         st.divider()
 
