@@ -124,8 +124,8 @@ if authentication_status:
         tab1, tab2, tab3 = st.tabs(["Primera Semana", "🔒Segunda Semana", "🔒Tercera Semana"])
         with tab1:
              ASLAtHome.primera_semana()
-        with tab2:
-             ASLAtHome.segunda_semana()
+        # with tab2:
+        #      ASLAtHome.segunda_semana()
 
 elif authentication_status == False:
     st.error('Nombre/contraseña es mal')
