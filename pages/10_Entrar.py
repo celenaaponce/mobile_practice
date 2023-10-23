@@ -103,29 +103,38 @@ if authentication_status:
     st.title(f'Bienvenido *{name}*')
     if username in st.secrets.ASL1:
         login_sidebar()
-        st.header("Bienvenido a la clase de ASL 1. \n Se puede mirar nuestro curiculo aqui:")
-        tab1, tab2, tab3 = st.tabs(["Primera Semana", "🔒Segunda Semana", "🔒Tercera Semana"])
+        st.header("Bienvenido a la clase de ASL 1.")
+        st.header("Se puede mirar nuestro curiculo aqui:")
+        tab1, tab2, tab3, tab4 = st.tabs(["Primera Semana", "Segunda Semana", "Halloween/Dia de los Muertos", "🔒Tercera Semana"])
         with tab1:
              ASL1.primera_semana()
         with tab2:
              ASL1.segunda_semana()
+        with tab3:
+             holidays.halloween()
     elif username in st.secrets['ASL2']:
         login_sidebar()
-        st.header("Bienvenido a la clase de ASL 2.  Se puede mirar nuestro curiculo aqui:")
-        tab1, tab2, tab3, tab4 = st.tabs(["Primera Semana", "Repaso", "🔒Segunda Semana", "🔒Tercera Semana"])
+        st.header("Bienvenido a la clase de ASL 2.")
+        st.header("Se puede mirar nuestro curiculo aqui:")
+        tab1, tab2, tab3, tab4 = st.tabs(["Primera Semana", "Segunda Semana", "Halloween/Dia de los Muertos", "🔒Tercera Semana"])
         with tab1:
              ASL2.primera_semana()
         with tab2:
              ASL2.segunda_semana()
+        with tab3:
+             holidays.halloween()
 
     else:
         login_sidebar()
-        st.header("Bienvenido a la clase de ASL En Casa.  Se puede mirar nuestro curiculo aqui:")
-        tab1, tab2, tab3 = st.tabs(["Primera Semana", "🔒Segunda Semana", "🔒Tercera Semana"])
+        st.header("Bienvenido a la clase de ASL En Casa.")
+        st.header("Se puede mirar nuestro curiculo aqui:")
+        tab1, tab2, tab3, tab4 = st.tabs(["Primera Semana", "Segunda Semana", "Halloween/Dia de los Muertos", "🔒Tercera Semana"])
         with tab1:
              ASLAtHome.primera_semana()
-        # with tab2:
-        #      ASLAtHome.segunda_semana()
+        with tab2:
+             ASLAtHome.segunda_semana()
+        with tab3:
+             holidays.halloween()
 
 elif authentication_status == False:
     st.error('Nombre/contraseña es mal')
