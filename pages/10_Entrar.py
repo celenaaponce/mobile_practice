@@ -11,6 +11,7 @@ import streamlit.components.v1 as components
 from pages import ASL1
 from pages import ASL2
 from pages import ASLAtHome
+from pages import holidays
 
 def regular_sidebar():
         show_pages(
