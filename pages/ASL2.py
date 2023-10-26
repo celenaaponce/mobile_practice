@@ -254,9 +254,16 @@ def repaso_lecc4():
     with clms20[0]:
       st.title('')
       st.title('')
-      st.subheader('Vocabulario y Frases')
+      st.subheader('Vocabulario')
     with clms20[1]:
       st.video('https://youtu.be/OZL7UyN6wSw')
+    clms21 = st.columns([1,1])
+    with clms21[0]:
+      st.title('')
+      st.title('')
+      st.subheader('Frases')
+    with clms21[1]:
+      st.video('https://youtu.be/CpQNPG2ZxtQ')
     clms22=st.columns([1,1])
     with clms22[0]:
       st.title('')
