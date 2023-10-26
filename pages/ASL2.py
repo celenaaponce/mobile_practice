@@ -86,9 +86,7 @@ def primera_semana():
     
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vQ4wlJOjhmNap4RDFiDtqNi1cv2PvEsdZnP4ANcRsVCCDgK0NrpYYLfI5BgwVZzlycwNwmvlwU4qnNt/embed?start=false&loop=false&delayms=3000", height=480)
 
-def segunda_semana():
-    set_styles()
-    st.markdown("<h2 style='text-align: center; color: white;'><u>Videos</u></h2>", unsafe_allow_html=True)
+def repaso_general():
     clms2 = st.columns([1,1])
     with clms2[0]:
       st.title('')
@@ -96,7 +94,37 @@ def segunda_semana():
       st.subheader('Introducción')
     with clms2[1]:
       st.video('https://youtu.be/c1T1CoU0luo')
+    clms26=st.columns([1,1])
+    with clms26[0]:
+      st.title('')
+      st.title('')
+      st.subheader('Cultura')
+    with clms26[1]:
+      st.video('https://youtu.be/t7HzlXNmFJc')
+    clms27=st.columns([1,1])
+    with clms27[0]:
+      st.title('')
+      st.title('')
+      st.subheader('Gramática')
+    with clms27[1]:
+      st.video('https://youtu.be/nBCvy22r6bo')
+    clms28=st.columns([1,1])
+    with clms28[0]:
+      st.title('')
+      st.title('')
+      st.subheader('Cuento (sin subtítulos) 🔇')
+    with clms28[1]:
+      st.video('https://youtu.be/a0s8Zw6T3Fw')  
+    clms29=st.columns([1,1])
+    with clms29[0]:
+      st.title('')
+      st.title('')
+      st.subheader('Cuento (con subtítulos) 🔈')
+    with clms29[1]:
+      st.video('https://youtu.be/GLXz2s5jBAw')    
+    st.divider()
 
+def repaso_lecc1():
     st.markdown("<h3 style='text-align: center; color: white;'><u>Lección 1</u></h3>", unsafe_allow_html=True)
     clms3 = st.columns([1,1])
     with clms3[0]:
@@ -135,6 +163,7 @@ def segunda_semana():
     with clms7[1]:
       st.video('https://youtu.be/5gYPPZFOO6M')
 
+def repaso_lecc2():
     st.markdown("<h3 style='text-align: center; color: white;'><u>Lección 2</u></h3>", unsafe_allow_html=True)
     clms8 = st.columns([1,1])
     with clms8[0]:
@@ -172,6 +201,8 @@ def segunda_semana():
       st.subheader('Conversación (con subtítulos) 🔈')
     with clms12[1]:
       st.video('https://youtu.be/x494aKUmEKM')
+
+def repaso_lecc3():
     st.markdown("<h3 style='text-align: center; color: white;'><u>Lección 3</u></h3>", unsafe_allow_html=True)
     clms13=st.columns([1,1])
     with clms13[0]:
@@ -216,6 +247,8 @@ def segunda_semana():
     with clms18[1]:
       st.video('https://youtu.be/XeXLA8-rWyo')
     clms19=st.columns([1,1])
+
+def repaso_lecc4():
     st.markdown("<h3 style='text-align: center; color: white;'><u>Lección 4</u></h3>", unsafe_allow_html=True)
     clms20=st.columns([1,1])
     with clms20[0]:
@@ -252,37 +285,10 @@ def segunda_semana():
       st.subheader('Conversación (con subtítulos) 🔈')
     with clms25[1]:
       st.video('https://youtu.be/qktiKSw2kpQ')
+def segunda_semana():
+    set_styles()
+    st.markdown("<h2 style='text-align: center; color: white;'><u>Videos</u></h2>", unsafe_allow_html=True)
     st.divider()
-    clms26=st.columns([1,1])
-    with clms26[0]:
-      st.title('')
-      st.title('')
-      st.subheader('Cultura')
-    with clms26[1]:
-      st.video('https://youtu.be/t7HzlXNmFJc')
-    clms27=st.columns([1,1])
-    with clms27[0]:
-      st.title('')
-      st.title('')
-      st.subheader('Gramática')
-    with clms27[1]:
-      st.video('https://youtu.be/nBCvy22r6bo')
-    clms28=st.columns([1,1])
-    with clms28[0]:
-      st.title('')
-      st.title('')
-      st.subheader('Cuento (sin subtítulos) 🔇')
-    with clms28[1]:
-      st.video('https://youtu.be/a0s8Zw6T3Fw')  
-    clms29=st.columns([1,1])
-    with clms29[0]:
-      st.title('')
-      st.title('')
-      st.subheader('Cuento (con subtítulos) 🔈')
-    with clms29[1]:
-      st.video('https://youtu.be/GLXz2s5jBAw')    
-    st.divider()
-
     st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
     clms30=st.columns([1,1])
     with clms30[0]:
