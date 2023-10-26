@@ -106,7 +106,7 @@ if authentication_status:
         login_sidebar()
         st.header("Bienvenido a la clase de ASL 1.")
         st.header("Se puede mirar nuestro curiculo aqui:")
-        tab1, tab2, tab3, tab4 = st.tabs(["Primera Semana", "Segunda Semana", "Halloween/Dia de los Muertos", "🔒Tercera Semana"])
+        tab1, tab2, tab3, tab4 = st.tabs([":red[Primera Semana]", ":orange[Segunda Semana]", ":orange[Halloween/Dia de los Muertos]", ":green[🔒Tercera Semana]"])
         with tab1:
              ASL1.primera_semana()
         with tab2:
@@ -138,7 +138,7 @@ if authentication_status:
         login_sidebar()
         st.header("Bienvenido a la clase de ASL En Casa.")
         st.header("Se puede mirar nuestro curiculo aqui:")
-        tab1, tab2, tab3, tab4 = st.tabs(["Primera Semana", "Segunda Semana", "Halloween/Dia de los Muertos", "🔒Tercera Semana"])
+        tab1, tab2, tab3, tab4 = st.tabs([":red[Primera Semana]", ":orange[Segunda Semana]", ":orange[Halloween/Dia de los Muertos]", ":green[🔒Tercera Semana]"])
         with tab1:
              ASLAtHome.primera_semana()
         with tab2:
