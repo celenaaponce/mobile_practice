@@ -292,9 +292,6 @@ def repaso_lecc4():
       st.subheader('Conversación (con subtítulos) 🔈')
     with clms25[1]:
       st.video('https://youtu.be/qktiKSw2kpQ')
-def segunda_semana():
-    set_styles()
-    st.markdown("<h2 style='text-align: center; color: white;'><u>Videos</u></h2>", unsafe_allow_html=True)
     st.divider()
     st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
     clms30=st.columns([1,1])
