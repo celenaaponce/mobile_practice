@@ -142,3 +142,69 @@ def segunda_semana():
     st.divider()
             
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vQd8Y-xcWg9rS517V1gkm3m7O_sEKq_OSo4nQxS2RI2TFew0eR1yjqb1_mhLUfZ9CW1hrApe8mbHNLj/embed?start=false&loop=false&delayms=3000", height=480)
+
+def tercera_semana():
+    set_styles()
+    st.subheader('Tercera Semana: Conocer La Familia Bravo')
+    st.markdown("<h4 style='text-align: center; color: white;'><u>Videos</u></h4>", unsafe_allow_html=True)
+    clms23 = st.columns([1,1])
+    with clms23[0]:
+        st.title('')
+        st.markdown('<h5>Repaso y Explicacion</h5>', unsafe_allow_html=True)
+    with clms23[1]:
+        st.video('https://youtu.be/35oau3bfsnY')
+    clms24 = st.columns([1,1])
+    with clms24[0]:
+        st.title('')
+        st.markdown('<h5>Conversacion (sin subtitulos) 🔇</h5>', unsafe_allow_html=True)
+    with clms24[1]:    
+        st.video('https://youtu.be/RAoRBgN_BaQ')
+    clms25 = st.columns([1,1])
+    with clms25[0]:
+        st.title('')
+        st.markdown('<h5>Conversacion (con subtitulos) 🔈</h5>', unsafe_allow_html=True)
+    with clms25[1]: 
+        st.video('https://youtu.be/M9k6WcksVp0')
+    clms26 = st.columns([1,1])
+    with clms26[0]:
+        st.title('')
+        st.markdown('<h5>Gramatica</h5>', unsafe_allow_html=True)
+    with clms26[1]:
+        st.video('https://youtu.be/T-69bZ33l90')
+    clms29 = st.columns([1,1])
+    with clms29[0]:
+        st.title('')
+        st.markdown('<h5>Frases</h5>', unsafe_allow_html=True)
+    with clms29[1]:
+        st.video('https://youtu.be/PKULlbXRFic')
+    clms30 = st.columns([1,1])
+    with clms30[0]:
+        st.title('')
+        st.markdown('<h5>Cuento (sin subtitulos) 🔇</h5>', unsafe_allow_html=True)
+    with clms30[1]:    
+        st.video('https://youtu.be/__ZXhLplISE')
+    clms31 = st.columns([1,1])
+    with clms31[0]:
+        st.title('')
+        st.markdown('<h5>Cuento (con subtitulos) 🔈</h5>', unsafe_allow_html=True)
+    with clms31[1]: 
+        st.video('https://youtu.be/NDjz2eiNOv0')        
+    st.divider()
+
+    st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
+    clms27 = st.columns([1,1])
+    with clms27[0]:
+        st.title('')
+        st.markdown('<h5>Vocabulario para la semana que viene</h5>', unsafe_allow_html=True)
+    with clms27[1]:
+        st.video('https://youtu.be/uGtS3_zEGV8')
+    clms28 = st.columns([1,1])
+    with clms28[0]:
+        st.title('')
+        st.markdown('<h5>Practica</h5>', unsafe_allow_html=True)
+    with clms28[1]:
+        st.markdown("<a href='https://edpuzzle.com/media/6340a4165be52340dc956cb7' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
+        st.markdown("<a href='https://edpuzzle.com/media/6340a73092852240f8ac3087' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
+
+    st.divider()
+    components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vTxPJGXEYZG_-N-G7ypLyhScw07aukwDGxidek6zeh1iCQYRaRfuyTZ76xHec4iOGFz9fjTX31aICJ1/embed?start=false&loop=false&delayms=3000", height=480)
