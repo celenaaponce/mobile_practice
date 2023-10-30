@@ -106,19 +106,21 @@ if authentication_status:
         login_sidebar()
         st.header("Bienvenido a la clase de ASL 1.")
         st.header("Se puede mirar nuestro curiculo aqui:")
-        tab1, tab2, tab3, tab4 = st.tabs([":red[Primera Semana]", ":orange[Segunda Semana]", ":orange[Halloween/Dia de los Muertos]", ":green[🔒Tercera Semana]"])
+        tab1, tab2, tab3, tab4 = st.tabs([":red[Primera Semana]", ":orange[Segunda Semana]", ":orange[Halloween/Dia de los Muertos]", ":green[Tercera Semana]"])
         with tab1:
              ASL1.primera_semana()
         with tab2:
              ASL1.segunda_semana()
         with tab3:
              holidays.halloween()
+        with tab4:
+             ASL1.tercera_semana()
     elif username in st.secrets['ASL2']:
         login_sidebar()
         st.header("Bienvenido a la clase de ASL 2.")
         st.header("Se puede mirar nuestro curiculo aqui:")
         tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs([":red[Primera Semana]", ":orange[Repaso General]", ":orange[Repaso Leccion 1]", ":orange[Repaso Leccion 2]", 
-                                          ":orange[Repaso Leccion 3]", ":orange[Repaso Leccion 4]", ":orange[Halloween/Dia de los Muertos]", ":green[🔒Tercera Semana]"])
+                                          ":orange[Repaso Leccion 3]", ":orange[Repaso Leccion 4]", ":orange[Halloween/Dia de los Muertos]", ":green[Tercera Semana]"])
         with tab1:
              ASL2.primera_semana()
         with tab2:
@@ -133,6 +135,8 @@ if authentication_status:
              ASL2.repaso_lecc4()
         with tab7:
              holidays.halloween()
+        with tab8:
+             ASL2.tercera_semana()
 
     else:
         login_sidebar()
@@ -145,6 +149,8 @@ if authentication_status:
              ASLAtHome.segunda_semana()
         with tab3:
              holidays.halloween()
+        with tab4:
+             ASLAtHome.tercera_semana()
 
 elif authentication_status == False:
     st.error('Nombre/contraseña es mal')
