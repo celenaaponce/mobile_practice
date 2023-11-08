@@ -217,3 +217,52 @@ def segunda_semana():
     st.divider()
     
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vSb2QAbLy6AheIEJ30YPF-RYjE5gw1Yt7Ovw2wO8Mz2XFUc_MGg2P-8E2i4tlHoiwxXYPGFRE3y1HQn/embed?start=false&loop=false&delayms=3000", height=480)
+
+def cuarta_semana():
+    st.subheader('Cuarta Semana: Capitulo 2')
+    st.markdown("<h4 style='text-align: center; color: white;'><u>Videos</u></h4>", unsafe_allow_html=True)
+
+    clms1 = st.columns([1,1])
+    with clms1[0]:
+        st.title('')
+        st.markdown('<h5>Vocabulario</h5>', unsafe_allow_html=True)
+    with clms1[1]:
+        st.video('https://youtu.be/7361Wr6W9p4')
+    clms11 = st.columns([1,1])
+    with clms11[0]:
+        st.title('')
+        st.markdown('<h5>Libro de Hora de Bañarse</h5>', unsafe_allow_html=True)
+    with clms11[1]:  
+        st.video('https://youtu.be/4TmdTAaPYdA')
+    clms12 = st.columns([1,1])
+    with clms12[0]:
+        st.title('')
+        st.markdown('<h5>Vocabulario Extra</h5>', unsafe_allow_html=True)
+    with clms12[1]: 
+        st.video('https://youtu.be/gxGKiFP7G0U')
+    st.divider()
+    clms13 = st.columns([1,1])
+    with clms13[0]:
+        st.title('')
+        st.markdown('<h5>Vocabulario para de la Cabeza a los Pies</h5>', unsafe_allow_html=True)
+    with clms13[1]: 
+        st.video('https://youtu.be/UV-SadXiTh0')
+    clms14 = st.columns([1,1])
+    with clms14[0]:
+        st.title('')
+        st.markdown('<h5>Libro de la Cabeza a los Pies</h5>', unsafe_allow_html=True)
+    with clms14[1]: 
+        st.video('https://youtu.be/tvyr6wu4dL4')
+
+    st.divider()
+
+    st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
+    clms15 = st.columns([1,1])
+    with clms15[0]:
+        st.title('')
+        st.markdown('<h5>Practicar Vocabulario</h5>', unsafe_allow_html=True)
+    with clms15[1]:
+        st.video('https://youtu.be/7361Wr6W9p4')
+    st.divider()
+    
+    components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vS9kBtF4zqp1dtQBzaNHIxG22c8cTTME6K5xL09JldgZ3zX2ONGkYVX52FT0XL22vLjwWM23j0brXyk/embed?start=false&loop=false&delayms=3000", height=480)
