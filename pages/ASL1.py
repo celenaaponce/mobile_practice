@@ -265,3 +265,70 @@ def cuarta_semana():
     st.divider()
             
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vTFT1lpMkQ8BK-lt6v60NsP5ILZCDlxvaQ-gGrMX_GIEMXmDupalvjNxglS0hS1ar2c97U7Hpm9RLJO/embed?start=false&loop=false&delayms=3000", height=480)
+
+def quinta_semana():
+    set_styles()
+    st.subheader('Quinta Semana: Desayuno')
+    st.markdown("<h4 style='text-align: center; color: white;'><u>Videos</u></h4>", unsafe_allow_html=True)
+    clms23 = st.columns([1,1])
+    with clms23[0]:
+        st.title('')
+        st.markdown('<h5>Vocabulario</h5>', unsafe_allow_html=True)
+    with clms23[1]:
+        st.video('https://youtu.be/UITBHk6W-Vg')
+    clms24 = st.columns([1,1])
+    with clms24[0]:
+        st.title('')
+        st.markdown('<h5>Conversacion (sin subtitulos) 🔇</h5>', unsafe_allow_html=True)
+    with clms24[1]:    
+        st.video('https://youtu.be/qM8_5FGazmA')
+    clms25 = st.columns([1,1])
+    with clms25[0]:
+        st.title('')
+        st.markdown('<h5>Conversacion (con subtitulos) 🔈</h5>', unsafe_allow_html=True)
+    with clms25[1]: 
+        st.video('https://youtu.be/6Hxpc-49B3Q')
+    clms26 = st.columns([1,1])
+    with clms26[0]:
+        st.title('')
+        st.markdown('<h5>Gramatica</h5>', unsafe_allow_html=True)
+    with clms26[1]:
+        st.video('https://youtu.be/bWqtdt6RMKs')
+    clms29 = st.columns([1,1])
+    with clms29[0]:
+        st.title('')
+        st.markdown('<h5>Frases</h5>', unsafe_allow_html=True)
+    with clms29[1]:
+        st.video('https://youtu.be/8CvFI8d4aKg')
+    clms30 = st.columns([1,1])
+    with clms30[0]:
+        st.title('')
+        st.markdown('<h5>Cuento (sin subtitulos) 🔇</h5>', unsafe_allow_html=True)
+    with clms30[1]:    
+        st.video('https://youtu.be/V0pH_yLWG00')
+    clms31 = st.columns([1,1])
+    with clms31[0]:
+        st.title('')
+        st.markdown('<h5>Cuento (con subtitulos) 🔈</h5>', unsafe_allow_html=True)
+    with clms31[1]: 
+        st.video('https://youtu.be/QLsApezec98')        
+    st.divider()
+
+    st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
+    clms27 = st.columns([1,1])
+    with clms27[0]:
+        st.title('')
+        st.markdown('<h5>Vocabulario para la semana que viene</h5>', unsafe_allow_html=True)
+    with clms27[1]:
+        st.video('https://youtu.be/Ffrz8E11BtY')
+    clms28 = st.columns([1,1])
+    with clms28[0]:
+        st.title('')
+        st.markdown('<h5>Practica</h5>', unsafe_allow_html=True)
+    with clms28[1]:
+        st.markdown("<a href='https://edpuzzle.com/media/63dc6ad1fe545641336a03ae' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
+        st.markdown("<a href='https://edpuzzle.com/media/63dc7194d3243840f5b1480f' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
+
+    st.divider()
+            
+    components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vTSFKvUdTSTKb6VdPLTwvsTT4Pzn0L_DH_lfc6GBTp-mgi3uNN8GZZyL-AnDGrpNkLlFy2K4TfGIqvc/embed?start=false&loop=false&delayms=3000", height=480)
