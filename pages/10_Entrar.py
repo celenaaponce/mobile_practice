@@ -146,7 +146,7 @@ if authentication_status:
         login_sidebar()
         st.header("Bienvenido a la clase de ASL En Casa.")
         st.header("Se puede mirar nuestro curiculo aqui:")
-        tab1, tab2, tab3, tab4, tab5 = st.tabs([":red[Primera Semana]", ":orange[Segunda Semana]", ":orange[Halloween/Dia de los Muertos]", ":green[Tercera Semana]", ":blue[Cuarta Semana]"])
+        tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([":red[Primera Semana]", ":orange[Segunda Semana]", ":orange[Halloween/Dia de los Muertos]", ":green[Tercera Semana]", ":blue[Cuarta Semana]", ":purple[Quinta Semana]"])
         with tab1:
              ASLAtHome.primera_semana()
         with tab2:
@@ -157,6 +157,8 @@ if authentication_status:
              ASLAtHome.tercera_semana()
         with tab5:
              ASLAtHome.cuarta_semana()
+        with tab6:
+             ASLAtHoome.quinta_semana()
 
 elif authentication_status == False:
     st.error('Nombre/contraseña es mal')
