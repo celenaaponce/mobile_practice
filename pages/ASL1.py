@@ -82,7 +82,7 @@ def primera_semana():
 
 def segunda_semana():
     set_styles()
-    st.subheader('Segunda Semana: Conocer La Familia Bravo')
+    st.subheader('Conocer La Familia Bravo Pt 1')
     st.markdown("<h4 style='text-align: center; color: white;'><u>Videos</u></h4>", unsafe_allow_html=True)
     clms21 = st.columns([1,1])
     with clms21[0]:
@@ -145,7 +145,7 @@ def segunda_semana():
 
 def tercera_semana():
     set_styles()
-    st.subheader('Tercera Semana: Conocer La Familia Bravo')
+    st.subheader('Conocer La Familia Bravo Pt 2')
     st.markdown("<h4 style='text-align: center; color: white;'><u>Videos</u></h4>", unsafe_allow_html=True)
     clms23 = st.columns([1,1])
     with clms23[0]:
@@ -211,7 +211,7 @@ def tercera_semana():
 
 def cuarta_semana():
     set_styles()
-    st.subheader('Cuarta Semana: Desayuno')
+    st.subheader('Desayuno Pt 1')
     st.markdown("<h4 style='text-align: center; color: white;'><u>Videos</u></h4>", unsafe_allow_html=True)
     clms21 = st.columns([1,1])
     with clms21[0]:
@@ -268,7 +268,7 @@ def cuarta_semana():
 
 def quinta_semana():
     set_styles()
-    st.subheader('Quinta Semana: Desayuno')
+    st.subheader('Desayuno Pt 2')
     st.markdown("<h4 style='text-align: center; color: white;'><u>Videos</u></h4>", unsafe_allow_html=True)
     clms23 = st.columns([1,1])
     with clms23[0]:
