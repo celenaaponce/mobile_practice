@@ -146,7 +146,7 @@ if authentication_status:
         login_sidebar()
         st.header("Bienvenido a la clase de ASL En Casa.")
         st.header("Se puede mirar nuestro curiculo aqui:")
-        tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([":red[Primera Semana]", ":orange[Segunda Semana]", ":orange[Halloween/Dia de los Muertos]", ":green[Tercera Semana]", ":blue[Cuarta Semana]", ":purple[Quinta Semana]"])
+        tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([":red[Primera Semana]", ":orange[Capitulo 1 Pt 1]", ":orange[Halloween/Dia de los Muertos]", ":green[Capitulo 1 Pt 2]", ":blue[Capitulo 2 Pt 1]", ":purple[Capitulo 2 Pt 2]"])
         with tab1:
              ASLAtHome.primera_semana()
         with tab2:
