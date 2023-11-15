@@ -305,9 +305,9 @@ def repaso_lecc4():
     
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vQ1DBN424b45UbbrNNEHmSvzFqMDfsnLSR2nLK2eS93kdLU3bdQep_btALoKoWxZu0K644csijPRwuP/embed?start=false&loop=false&delayms=3000", height=480)
 
-def tercera_semana():
+def colores():
     set_styles()
-    st.subheader('Tercera Semana: Colores y Deletrear')
+    st.subheader('Lección 6: Colores')
     st.markdown("<h4 style='text-align: center; color: white;'><u>Videos</u></h4>", unsafe_allow_html=True)
     clms21 = st.columns([1,1])
     with clms21[0]:
@@ -361,3 +361,77 @@ def tercera_semana():
     st.divider()
             
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vS-egJOarNNRcNvBhPhStuG04-I0IXmy9eflIea8NagDNyx574U7FK8skAPB_9SP0u_W-3CIL67w62D/embed?start=false&loop=false&delayms=3000", height=480)
+
+def deletrear():
+    set_styles()
+    st.subheader('Lección 6: Deletrear')
+    st.markdown("<h4 style='text-align: center; color: white;'><u>Videos</u></h4>", unsafe_allow_html=True)
+    clms21 = st.columns([1,1])
+    with clms21[0]:
+        st.title('')
+        st.markdown('<h5>Vocabulario </h5>', unsafe_allow_html=True)
+    with clms21[1]:
+        st.video('https://youtu.be/tMqFbxcjx2o')
+    clms23 = st.columns([1,1])
+    with clms23[0]:
+        st.title('')
+        st.markdown('<h5>Repaso y Explicacion</h5>', unsafe_allow_html=True)
+    with clms23[1]:
+        st.video('https://youtu.be/JrtFuHaFp90')
+    clms24 = st.columns([1,1])
+    with clms24[0]:
+        st.title('')
+        st.markdown('<h5>Entender Deletrear </h5>', unsafe_allow_html=True)
+    with clms24[1]:    
+        st.video('https://youtu.be/122DzyFbysE')
+    clms25 = st.columns([1,1])
+    with clms25[0]:
+        st.title('')
+        st.markdown('<h5>Cuento del Alfabeto</h5>', unsafe_allow_html=True)
+    with clms25[1]: 
+        st.video('https://youtu.be/G_clys0BzVM')
+    clms26 = st.columns([1,1])
+    with clms26[0]:
+        st.title('')
+        st.markdown('<h5>Gramatica</h5>', unsafe_allow_html=True)
+    with clms26[1]:
+        st.video('https://youtu.be/jDeJWEgCnF0')
+    clms29 = st.columns([1,1])
+    with clms29[0]:
+        st.title('')
+        st.markdown('<h5>Frases</h5>', unsafe_allow_html=True)
+    with clms29[1]:
+        st.video('https://youtu.be/0q9CCJWzFfU')
+    clms30 = st.columns([1,1])
+    with clms30[0]:
+        st.title('')
+        st.markdown('<h5>Cuento (sin subtitulos) 🔇</h5>', unsafe_allow_html=True)
+    with clms30[1]:    
+        st.video('https://youtu.be/VNnV8okNbP8')
+    clms31 = st.columns([1,1])
+    with clms31[0]:
+        st.title('')
+        st.markdown('<h5>Cuento (con subtitulos) 🔈</h5>', unsafe_allow_html=True)
+    with clms31[1]: 
+        st.video('https://youtu.be/P8IFhqRgEdI')        
+    st.divider()
+
+    st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
+    clms27 = st.columns([1,1])
+    with clms27[0]:
+        st.title('')
+        st.markdown('<h5>Vocabulario para la semana que viene</h5>', unsafe_allow_html=True)
+    with clms27[1]:
+        st.video('https://youtu.be/4kpYIF-edx0')
+    clms28 = st.columns([1,1])
+    with clms28[0]:
+        st.title('')
+        st.markdown('<h5>Practica</h5>', unsafe_allow_html=True)
+    with clms28[1]:
+        st.markdown("<a href='https://edpuzzle.com/media/6535ed2547faa53fdf53a7b9' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
+        st.markdown("<a href='https://edpuzzle.com/media/6535ed4ea59f3e4030d8a224' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
+        st.markdown("<a href='https://edpuzzle.com/media/6535f557ac44ed3fd6871438' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
+
+    st.divider()
+            
+    components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vQXb3L7FrMl7nGhW4MFw_6CT2CKW5MKOBCyI0x9HoNvGuLdhMqcN1fecVAXi2xRkTavM_dwXx1r1RQJ/embed?start=false&loop=false&delayms=3000", height=480)
