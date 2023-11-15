@@ -140,7 +140,9 @@ if authentication_status:
         with tab7:
              holidays.halloween()
         with tab8:
-             ASL2.tercera_semana()
+             ASL2.colores()
+        with tab9:
+             ASL2.deletrear()
 
     else:
         login_sidebar()
