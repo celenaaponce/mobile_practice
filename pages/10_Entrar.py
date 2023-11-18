@@ -105,7 +105,7 @@ if authentication_status:
     if username in st.secrets.ASL1:
         login_sidebar()
         st.header("Bienvenido a la clase de ASL 1.")
-        st.header("Se puede mirar nuestro curiculo aqui:")
+        st.header("Se puede mirar nuestro curriculo aqui:")
         tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([":red[Primera Semana]", ":orange[Conocer la Familia Bravo Pt 1]", ":orange[Halloween/Dia de los Muertos]", 
                                                             ":green[Conocer la Familia Bravo Pt 2]", ":blue[Desayuno Pt 1]", ":purple[Desayuno Pt 2]", ":black[Dia de Accion de Gracias]"])
         with tab1:
@@ -125,7 +125,7 @@ if authentication_status:
     elif username in st.secrets['ASL2']:
         login_sidebar()
         st.header("Bienvenido a la clase de ASL 2.")
-        st.header("Se puede mirar nuestro curiculo aqui:")
+        st.header("Se puede mirar nuestro curriculo aqui:")
         tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10 = st.tabs([":red[Primera Semana]", ":orange[Repaso General]", ":orange[Repaso Leccion 1]", ":orange[Repaso Leccion 2]", 
                                                                                ":orange[Repaso Leccion 3]", ":orange[Repaso Leccion 4]", ":orange[Halloween/Dia de los Muertos]", 
                                                                                ":green[Colores]", ":blue[Deletrear]", ":white[Dia de Accion de Gracias]"])
@@ -153,7 +153,7 @@ if authentication_status:
     else:
         login_sidebar()
         st.header("Bienvenido a la clase de ASL En Casa.")
-        st.header("Se puede mirar nuestro curiculo aqui:")
+        st.header("Se puede mirar nuestro curriculo aqui:")
         tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([":red[Primera Semana]", ":orange[Capitulo 1 Pt 1]", ":orange[Halloween/Dia de los Muertos]", 
                                                             ":green[Capitulo 1 Pt 2]", ":blue[Capitulo 2 Pt 1]", ":purple[Capitulo 2 Pt 2]", ":black[Dia de Accion de Gracias]"])
         with tab1:
