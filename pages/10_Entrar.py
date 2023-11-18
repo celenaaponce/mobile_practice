@@ -107,7 +107,7 @@ if authentication_status:
         st.header("Bienvenido a la clase de ASL 1.")
         st.header("Se puede mirar nuestro curiculo aqui:")
         tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([":red[Primera Semana]", ":orange[Conocer la Familia Bravo Pt 1]", ":orange[Halloween/Dia de los Muertos]", 
-                                                            ":green[Conocer la Familia Bravo Pt 2]", ":blue[Desayuno Pt 1]", ":purple[Desayuno Pt 2]", ":black[Dia de Accion de Gracias]")
+                                                            ":green[Conocer la Familia Bravo Pt 2]", ":blue[Desayuno Pt 1]", ":purple[Desayuno Pt 2]", ":black[Dia de Accion de Gracias]"])
         with tab1:
              ASL1.primera_semana()
         with tab2:
