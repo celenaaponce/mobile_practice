@@ -167,7 +167,7 @@ if authentication_status:
         with tab5:
              ASLAtHome.cuarta_semana()
         with tab6:
-             ASLAtHoome.quinta_semana()
+             ASLAtHome.quinta_semana()
         with tab7:
             holidays.thanksgiving()
 
