@@ -106,8 +106,8 @@ if authentication_status:
         login_sidebar()
         st.header("Bienvenido a la clase de ASL 1.")
         st.header("Se puede mirar nuestro curriculo aqui:")
-        tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([":red[Primera Semana]", ":orange[Conocer la Familia Bravo Pt 1]", ":orange[Halloween/Dia de los Muertos]", 
-                                                            ":green[Conocer la Familia Bravo Pt 2]", ":blue[Desayuno Pt 1]", ":purple[Desayuno Pt 2]", ":black[Dia de Accion de Gracias]"])
+        tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([":white[Primera Semana]", ":white[Conocer la Familia Bravo Pt 1]", ":white[Halloween/Dia de los Muertos]", 
+                                                            ":white[Conocer la Familia Bravo Pt 2]", ":white[Desayuno Pt 1]", ":white[Desayuno Pt 2]", ":white[Dia de Accion de Gracias]"])
         with tab1:
              ASL1.primera_semana()
         with tab2:
@@ -126,9 +126,9 @@ if authentication_status:
         login_sidebar()
         st.header("Bienvenido a la clase de ASL 2.")
         st.header("Se puede mirar nuestro curriculo aqui:")
-        tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10 = st.tabs([":red[Primera Semana]", ":orange[Repaso General]", ":orange[Repaso Leccion 1]", ":orange[Repaso Leccion 2]", 
-                                                                               ":orange[Repaso Leccion 3]", ":orange[Repaso Leccion 4]", ":orange[Halloween/Dia de los Muertos]", 
-                                                                               ":green[Colores]", ":blue[Deletrear]", ":white[Dia de Accion de Gracias]"])
+        tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10 = st.tabs([":white[Primera Semana]", ":white[Repaso General]", ":white[Repaso Leccion 1]", ":white[Repaso Leccion 2]", 
+                                                                               ":white[Repaso Leccion 3]", ":white[Repaso Leccion 4]", ":white[Halloween/Dia de los Muertos]", 
+                                                                               ":white[Colores]", ":white[Deletrear]", ":white[Dia de Accion de Gracias]"])
         with tab1:
              ASL2.primera_semana()
         with tab2:
@@ -154,8 +154,8 @@ if authentication_status:
         login_sidebar()
         st.header("Bienvenido a la clase de ASL En Casa.")
         st.header("Se puede mirar nuestro curriculo aqui:")
-        tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([":red[Primera Semana]", ":orange[Capitulo 1 Pt 1]", ":orange[Halloween/Dia de los Muertos]", 
-                                                            ":green[Capitulo 1 Pt 2]", ":blue[Capitulo 2 Pt 1]", ":purple[Capitulo 2 Pt 2]", ":black[Dia de Accion de Gracias]"])
+        tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([":white[Primera Semana]", ":white[Capitulo 1 Pt 1]", ":white[Halloween/Dia de los Muertos]", 
+                                                            ":white[Capitulo 1 Pt 2]", ":white[Capitulo 2 Pt 1]", ":white[Capitulo 2 Pt 2]", ":white[Dia de Accion de Gracias]"])
         with tab1:
              ASLAtHome.primera_semana()
         with tab2:
