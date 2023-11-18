@@ -106,7 +106,8 @@ if authentication_status:
         login_sidebar()
         st.header("Bienvenido a la clase de ASL 1.")
         st.header("Se puede mirar nuestro curiculo aqui:")
-        tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([":red[Primera Semana]", ":orange[Conocer la Familia Bravo Pt 1]", ":orange[Halloween/Dia de los Muertos]", ":green[Conocer la Familia Bravo Pt 2]", ":blue[Desayuno Pt 1]", ":purple[Desayuno Pt 2]"])
+        tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([":red[Primera Semana]", ":orange[Conocer la Familia Bravo Pt 1]", ":orange[Halloween/Dia de los Muertos]", 
+                                                            ":green[Conocer la Familia Bravo Pt 2]", ":blue[Desayuno Pt 1]", ":purple[Desayuno Pt 2]", ":black[Dia de Accion de Gracias]")
         with tab1:
              ASL1.primera_semana()
         with tab2:
@@ -119,11 +120,15 @@ if authentication_status:
              ASL1.cuarta_semana()
         with tab6:
              ASL1.quinta_semana()
+        with tab7:
+             holidays.thanksgiving()
     elif username in st.secrets['ASL2']:
         login_sidebar()
         st.header("Bienvenido a la clase de ASL 2.")
         st.header("Se puede mirar nuestro curiculo aqui:")
-        tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9 = st.tabs([":red[Primera Semana]", ":orange[Repaso General]", ":orange[Repaso Leccion 1]", ":orange[Repaso Leccion 2]", ":orange[Repaso Leccion 3]", ":orange[Repaso Leccion 4]", ":orange[Halloween/Dia de los Muertos]", ":green[Colores]", ":blue[Deletrear]"])
+        tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10 = st.tabs([":red[Primera Semana]", ":orange[Repaso General]", ":orange[Repaso Leccion 1]", ":orange[Repaso Leccion 2]", 
+                                                                               ":orange[Repaso Leccion 3]", ":orange[Repaso Leccion 4]", ":orange[Halloween/Dia de los Muertos]", 
+                                                                               ":green[Colores]", ":blue[Deletrear]", ":white[Dia de Accion de Gracias]")
         with tab1:
              ASL2.primera_semana()
         with tab2:
@@ -142,12 +147,15 @@ if authentication_status:
              ASL2.colores()
         with tab9:
              ASL2.deletrear()
+        with tab10:
+             holidays.thanksgiving()
 
     else:
         login_sidebar()
         st.header("Bienvenido a la clase de ASL En Casa.")
         st.header("Se puede mirar nuestro curiculo aqui:")
-        tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([":red[Primera Semana]", ":orange[Capitulo 1 Pt 1]", ":orange[Halloween/Dia de los Muertos]", ":green[Capitulo 1 Pt 2]", ":blue[Capitulo 2 Pt 1]", ":purple[Capitulo 2 Pt 2]"])
+        tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([":red[Primera Semana]", ":orange[Capitulo 1 Pt 1]", ":orange[Halloween/Dia de los Muertos]", 
+                                                            ":green[Capitulo 1 Pt 2]", ":blue[Capitulo 2 Pt 1]", ":purple[Capitulo 2 Pt 2]", ":black[Dia de Accion de Gracias]"])
         with tab1:
              ASLAtHome.primera_semana()
         with tab2:
@@ -160,6 +168,8 @@ if authentication_status:
              ASLAtHome.cuarta_semana()
         with tab6:
              ASLAtHoome.quinta_semana()
+        with tab7:
+            holidays.thanksgiving()
 
 elif authentication_status == False:
     st.error('Nombre/contraseña es mal')
