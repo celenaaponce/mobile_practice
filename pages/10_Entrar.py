@@ -131,7 +131,7 @@ if authentication_status:
         st.header("Se puede mirar nuestro curriculo aqui:")
         tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10 = st.tabs([":white[Primera Semana]", ":white[Repaso General]", ":white[Repaso Leccion 1]", ":white[Repaso Leccion 2]", 
                                                                                ":white[Repaso Leccion 3]", ":white[Repaso Leccion 4]", ":white[Halloween/Dia de los Muertos]", 
-                                                                               ":white[Colores]", ":white[Deletrear]", ":white[Dia de Accion de Gracias]"])
+                                                                               ":white[Colores]", ":white[Deletrear]", ":white[Dia de Accion de Gracias]", ":white[Escuela Pt 1]"])
         with tab1:
              ASL2.primera_semana()
         with tab2:
@@ -152,6 +152,8 @@ if authentication_status:
              ASL2.deletrear()
         with tab10:
              holidays.thanksgiving()
+        with tab11:
+             ASL2.escuela1()
 
     else:
         login_sidebar()
