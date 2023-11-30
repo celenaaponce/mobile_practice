@@ -450,7 +450,7 @@ def escuela1():
         st.title('')
         st.markdown('<h5>Repaso y Explicacion</h5>', unsafe_allow_html=True)
     with clms23[1]:
-        st.video('hhttps://youtu.be/U0I58rdwlDkg')
+        st.video('https://youtu.be/U0I58rdwlDkg')
     clms24 = st.columns([1,1])
     with clms24[0]:
         st.title('')
