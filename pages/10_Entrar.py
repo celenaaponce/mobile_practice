@@ -129,7 +129,7 @@ if authentication_status:
         login_sidebar()
         st.header("Bienvenido a la clase de ASL 2.")
         st.header("Se puede mirar nuestro curriculo aqui:")
-        tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10 = st.tabs([":white[Primera Semana]", ":white[Repaso General]", ":white[Repaso Leccion 1]", ":white[Repaso Leccion 2]", 
+        tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11 = st.tabs([":white[Primera Semana]", ":white[Repaso General]", ":white[Repaso Leccion 1]", ":white[Repaso Leccion 2]", 
                                                                                ":white[Repaso Leccion 3]", ":white[Repaso Leccion 4]", ":white[Halloween/Dia de los Muertos]", 
                                                                                ":white[Colores]", ":white[Deletrear]", ":white[Dia de Accion de Gracias]", ":white[Escuela Pt 1]"])
         with tab1:
