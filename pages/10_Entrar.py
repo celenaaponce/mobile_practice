@@ -106,9 +106,9 @@ if authentication_status:
         login_sidebar()
         st.header("Bienvenido a la clase de ASL 1.")
         st.header("Se puede mirar nuestro curriculo aqui:")
-        tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs([":white[Primera Semana]", ":white[Conocer la Familia Bravo Pt 1]", ":white[Halloween/Dia de los Muertos]", 
+        tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9 = st.tabs([":white[Primera Semana]", ":white[Conocer la Familia Bravo Pt 1]", ":white[Halloween/Dia de los Muertos]", 
                                                             ":white[Conocer la Familia Bravo Pt 2]", ":white[Desayuno Pt 1]", ":white[Desayuno Pt 2]", ":white[Dia de Accion de Gracias]",
-                                                                 ":white[Contról Pt 1]"])
+                                                                 ":white[Contról Pt 1]", ":white[Contról Pt 2]"])
         with tab1:
              ASL1.primera_semana()
         with tab2:
@@ -125,6 +125,8 @@ if authentication_status:
              holidays.thanksgiving()
         with tab8:
              ASL1.sexta_semana()
+        with tab9:
+             ASL1.septima_semana()
     elif username in st.secrets['ASL2']:
         login_sidebar()
         st.header("Bienvenido a la clase de ASL 2.")
