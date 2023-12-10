@@ -44,44 +44,45 @@ def primera_semana():
         st.title('')
         st.markdown('<h5>Alarma de Reloj para personas Sordos</h5>', unsafe_allow_html=True)
     with clms31[1]:
-        st.markdown("<a href='https://www.diglo.com/vibrating-clocks-and-watches/alarm-clocks;d=3;c=31;s=311' target='_blank'><img style='float: right;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/pages/clock.jpg' width='200' height='100'/></a>", unsafe_allow_html=True)     
+        st.markdown("<a href='https://www.diglo.com/vibrating-clocks-and-watches/alarm-clocks;d=3;c=31;s=311' target='_blank'><img style='float: right;' src='https://m.media-amazon.com/images/I/7100+aehKvL._AC_SY300_SX300_.jpg' width='200' height='100'/></a>", unsafe_allow_html=True)     
     clms32 = st.columns([1,1])
     with clms32[0]:
         st.title('')
         st.markdown('<h5>Timbre con luz para personas Sordos</h5>', unsafe_allow_html=True)
     with clms32[1]:    
-        st.markdown("<a href='https://www.diglo.com/shop-by-alert-trigger/doorbell-and-door-knock;d=3;c=32;s=323' target='_blank'><img style='float: right;' src = 'https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/pages/light.jpg' width = '200' height = '100'/></a>", unsafe_allow_html=True)     
+        st.markdown("<a href='https://www.diglo.com/shop-by-alert-trigger/doorbell-and-door-knock;d=3;c=32;s=323' target='_blank'><img style='float: right;' src = 'https://m.media-amazon.com/images/I/310R2UqXt0L._AC_.jpg' width = '200' height = '100'/></a>", unsafe_allow_html=True)     
     clms33 = st.columns([1,1])
     with clms33[0]:
         st.title('')
         st.markdown('<h5>Alarma de Incendios para personas Sordos</h5>', unsafe_allow_html=True)
     with clms33[1]:     
-        st.markdown("<a href='https://www.diglo.com/shop-by-alert-trigger/smoke-and-fire;d=3;c=32;s=328' target='_blank'><img style='float: right;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/pages/firealarm.webp' width='200' height = '100'/></a>", unsafe_allow_html=True)
+        st.markdown("<a href='https://www.diglo.com/shop-by-alert-trigger/smoke-and-fire;d=3;c=32;s=328' target='_blank'><img style='float: right;' src='https://m.media-amazon.com/images/I/41JvpGHNyKL.__AC_SX300_SY300_QL70_FMwebp_.jpg' width='200' height = '100'/></a>", unsafe_allow_html=True)
     clms34 = st.columns([1,1])
     with clms34[0]:
         st.title('')
         st.markdown('<h5>Teléfono de Vídeo para personas Sordos</h5>', unsafe_allow_html=True)
     with clms34[1]:         
-        st.markdown("<a href='https://purplevrs.com/espanol' target='_blank'><img style='float: right;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/pages/vp.jpg' width='150' height = '100'/></a>", unsafe_allow_html=True)
+        st.markdown("<a href='https://purplevrs.com/espanol' target='_blank'><img style='float: right;' src='https://www.purplevrs.com/media/1282/video-quality-slide-v2-450x450.png' width='150' height = '100'/></a>", unsafe_allow_html=True)
     clms35 = st.columns([1,1])
     with clms35[0]:
         st.title('')
         st.markdown('<h5>App para aprender para iPhone </h5>', unsafe_allow_html=True)
     with clms35[1]:      
-        st.markdown("<a href='https://apps.apple.com/us/app/intersign-asl-learn-now/id1567327543' target='_blank'><img style='float: right;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/pages/is.webp' height='100' width='100'/></a>", unsafe_allow_html=True)
+        st.markdown("<a href='https://apps.apple.com/us/app/intersign-asl-learn-now/id1567327543' target='_blank'><img style='float: right;' src='https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/25/02/e4/2502e491-82e5-8ee1-b462-78f521e117f1/AppIcon-1x_U007emarketing-0-7-0-85-220.png/460x0w.webp' height='100' width='100'/></a>", unsafe_allow_html=True)
     clms36 = st.columns([1,1])
     with clms36[0]:
         st.title('')
         st.markdown('<h5>App para aprender para Android</h5>', unsafe_allow_html=True)
     with clms36[1]:     
-        st.markdown("<a href='https://play.google.com/store/apps/details?id=intersign.learn.asl&hl=en_US&gl=US' target='_blank'><img style='float: right;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/pages/is.webp' height='100' width='100'/></a>", unsafe_allow_html=True)
-
+        st.markdown("<a href='https://play.google.com/store/apps/details?id=intersign.learn.asl&hl=en_US&gl=US' target='_blank'><img style='float: right;' src='https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/25/02/e4/2502e491-82e5-8ee1-b462-78f521e117f1/AppIcon-1x_U007emarketing-0-7-0-85-220.png/460x0w.webp' height='100' width='100'/></a>", unsafe_allow_html=True)
     clms37 = st.columns([1,1])
     with clms37[0]:
         st.title('')
         st.markdown('<h5>Historia de ASL</h5>', unsafe_allow_html=True)
     with clms37[1]: 
         st.video('https://youtu.be/Pt2_EjmtUp8')
+
+    st.divider()
     
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vQ4wlJOjhmNap4RDFiDtqNi1cv2PvEsdZnP4ANcRsVCCDgK0NrpYYLfI5BgwVZzlycwNwmvlwU4qnNt/embed?start=false&loop=false&delayms=3000", height=480)
 
@@ -121,7 +122,7 @@ def repaso_general():
       st.subheader('Cuento (con subtítulos) 🔈')
     with clms29[1]:
       st.video('https://youtu.be/GLXz2s5jBAw')    
-
+    st.divider()
 
 def repaso_lecc1():
     st.markdown("<h3 style='text-align: center; color: white;'><u>Lección 1</u></h3>", unsafe_allow_html=True)
@@ -291,7 +292,7 @@ def repaso_lecc4():
       st.subheader('Conversación (con subtítulos) 🔈')
     with clms25[1]:
       st.video('https://youtu.be/qktiKSw2kpQ')
-
+    st.divider()
     st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
     clms30=st.columns([1,1])
     with clms30[0]:
@@ -300,7 +301,7 @@ def repaso_lecc4():
       st.subheader('Vocabulario para la semana que viene')
     with clms30[1]:
       st.video('https://youtu.be/sVyvzKH_Nsg')  
-
+    st.divider()
     
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vQ1DBN424b45UbbrNNEHmSvzFqMDfsnLSR2nLK2eS93kdLU3bdQep_btALoKoWxZu0K644csijPRwuP/embed?start=false&loop=false&delayms=3000", height=480)
 
@@ -339,6 +340,8 @@ def colores():
     with clms26[1]:
         st.video('https://youtu.be/LUPeVp1Kbwg')
 
+    st.divider()
+
     st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
     clms27 = st.columns([1,1])
     with clms27[0]:
@@ -355,6 +358,7 @@ def colores():
         st.markdown("<a href='https://edpuzzle.com/media/6535ed4ea59f3e4030d8a224' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
         st.markdown("<a href='https://edpuzzle.com/media/6535f557ac44ed3fd6871438' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
 
+    st.divider()
             
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vS-egJOarNNRcNvBhPhStuG04-I0IXmy9eflIea8NagDNyx574U7FK8skAPB_9SP0u_W-3CIL67w62D/embed?start=false&loop=false&delayms=3000", height=480)
 
@@ -410,7 +414,7 @@ def deletrear():
         st.markdown('<h5>Cuento (con subtitulos) 🔈</h5>', unsafe_allow_html=True)
     with clms31[1]: 
         st.video('https://youtu.be/P8IFhqRgEdI')        
-
+    st.divider()
 
     st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
     clms27 = st.columns([1,1])
@@ -427,6 +431,7 @@ def deletrear():
         st.markdown("<a href='https://edpuzzle.com/media/6561ba3bf53b4c415ee4ec79' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
         st.markdown("<a href='https://edpuzzle.com/media/6561c188f996c941653fc5a0' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
 
+    st.divider()
             
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vQXb3L7FrMl7nGhW4MFw_6CT2CKW5MKOBCyI0x9HoNvGuLdhMqcN1fecVAXi2xRkTavM_dwXx1r1RQJ/embed?start=false&loop=false&delayms=3000", height=480)
 
@@ -465,6 +470,8 @@ def escuela1():
     with clms26[1]:
         st.video('https://youtu.be/HhilwM-rUPk')
 
+    st.divider()
+
     st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
     clms27 = st.columns([1,1])
     with clms27[0]:
@@ -480,4 +487,5 @@ def escuela1():
         st.markdown("<a href='https://edpuzzle.com/media/656832c8714d964171966867' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
         st.markdown("<a href='https://edpuzzle.com/media/65683015dc1e1641a09708ad' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
 
+    st.divider()
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vTaL-csLK4bnmmbonxNSjLb0lgzB22X8rQahAOtdtEo0zRHKgQ6RTWEBwIOw2yy4DXaI6PauEFEDu78/embed?start=false&loop=false&delayms=3000", height=480)
