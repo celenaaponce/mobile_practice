@@ -67,7 +67,7 @@ def primera_semana():
     with clms37[1]: 
         st.video('https://youtu.be/Pt2_EjmtUp8')
 
-    st.divider()
+    # st.divider()
 
     st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
     clms38 = st.columns([1,1])
@@ -76,7 +76,7 @@ def primera_semana():
         st.markdown('<h5>Vocabulario para la semana que viene</h5>', unsafe_allow_html=True)
     with clms38[1]: 
         st.video('https://youtu.be/dJBLpQFhujo')
-    st.divider()
+    # st.divider()
     
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vQ4wlJOjhmNap4RDFiDtqNi1cv2PvEsdZnP4ANcRsVCCDgK0NrpYYLfI5BgwVZzlycwNwmvlwU4qnNt/embed?start=false&loop=false&delayms=3000", height=480)
 
@@ -121,7 +121,7 @@ def segunda_semana():
     with clms26[1]:
         st.video('https://youtu.be/tKMpJxq7wNk')
 
-    st.divider()
+    # st.divider()
 
     st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
     clms27 = st.columns([1,1])
@@ -139,7 +139,7 @@ def segunda_semana():
         st.markdown("<a href='https://edpuzzle.com/media/633750f5389ee741763d8d57' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
         st.markdown("<a href='https://edpuzzle.com/media/63375bff25e87940d4c32e08' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
 
-    st.divider()
+    # st.divider()
             
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vQd8Y-xcWg9rS517V1gkm3m7O_sEKq_OSo4nQxS2RI2TFew0eR1yjqb1_mhLUfZ9CW1hrApe8mbHNLj/embed?start=false&loop=false&delayms=3000", height=480)
 
@@ -189,7 +189,7 @@ def tercera_semana():
         st.markdown('<h5>Cuento (con subtítulos) 🔈</h5>', unsafe_allow_html=True)
     with clms31[1]: 
         st.video('https://youtu.be/NDjz2eiNOv0')        
-    st.divider()
+    # st.divider()
 
     st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
     clms27 = st.columns([1,1])
@@ -206,7 +206,7 @@ def tercera_semana():
         st.markdown("<a href='https://edpuzzle.com/media/6340a4165be52340dc956cb7' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
         st.markdown("<a href='https://edpuzzle.com/media/6340a73092852240f8ac3087' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
 
-    st.divider()
+    # st.divider()
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vTxPJGXEYZG_-N-G7ypLyhScw07aukwDGxidek6zeh1iCQYRaRfuyTZ76xHec4iOGFz9fjTX31aICJ1/embed?start=false&loop=false&delayms=3000", height=480)
 
 def cuarta_semana():
@@ -244,7 +244,7 @@ def cuarta_semana():
     with clms26[1]:
         st.video('https://youtu.be/5dW7MzA8hRY')
 
-    st.divider()
+    # st.divider()
 
     st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
     clms27 = st.columns([1,1])
@@ -262,7 +262,7 @@ def cuarta_semana():
         st.markdown("<a href='https://edpuzzle.com/media/6344aa6069e69340e4b26847' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
         st.markdown("<a href='https://edpuzzle.com/media/6344ab67ba3797411f32bb8c' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
 
-    st.divider()
+    # st.divider()
             
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vTFT1lpMkQ8BK-lt6v60NsP5ILZCDlxvaQ-gGrMX_GIEMXmDupalvjNxglS0hS1ar2c97U7Hpm9RLJO/embed?start=false&loop=false&delayms=3000", height=480)
 
@@ -312,7 +312,7 @@ def quinta_semana():
         st.markdown('<h5>Cuento (con subtítulos) 🔈</h5>', unsafe_allow_html=True)
     with clms31[1]: 
         st.video('https://youtu.be/QLsApezec98')        
-    st.divider()
+    # st.divider()
 
     st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
     clms27 = st.columns([1,1])
@@ -329,7 +329,7 @@ def quinta_semana():
         st.markdown("<a href='https://edpuzzle.com/media/63dc6ad1fe545641336a03ae' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
         st.markdown("<a href='https://edpuzzle.com/media/63dc7194d3243840f5b1480f' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
 
-    st.divider()
+    # st.divider()
             
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vTSFKvUdTSTKb6VdPLTwvsTT4Pzn0L_DH_lfc6GBTp-mgi3uNN8GZZyL-AnDGrpNkLlFy2K4TfGIqvc/embed?start=false&loop=false&delayms=3000", height=480)
 
@@ -368,7 +368,7 @@ def sexta_semana():
     with clms26[1]:
         st.video('https://youtu.be/vas3L7L0Y_I')
 
-    st.divider()
+    # st.divider()
 
     st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
     clms27 = st.columns([1,1])
@@ -385,7 +385,7 @@ def sexta_semana():
         st.markdown("<a href='https://edpuzzle.com/media/63f44c53815430414f6aa6b3' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
         st.markdown("<a href='https://edpuzzle.com/media/63f45261eaf221415bb8ccf3' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
 
-    st.divider()
+    # st.divider()
             
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vRNtQCOLJbGm47vieTI6GLxfSgh-IdCzw5yKa6EArwBS2_rKsnr78pV3r9SksJW2gzF2Fuf7E8jzkzM/embed?start=false&loop=false&delayms=3000", height=480)
 
@@ -435,7 +435,7 @@ def septima_semana():
         st.markdown('<h5>Cuento (con subtítulos) 🔈</h5>', unsafe_allow_html=True)
     with clms31[1]: 
         st.video('https://youtu.be/EPMDpOO-lDI')        
-    st.divider()
+    # st.divider()
 
     st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
     clms28 = st.columns([1,1])
@@ -446,6 +446,6 @@ def septima_semana():
         st.markdown("<a href='https://edpuzzle.com/media/640bd6c89bbb9e42a124866b' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
         st.markdown("<a href='https://edpuzzle.com/media/640e37f0b6a56042bd07b94c' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
 
-    st.divider()
+    # st.divider()
             
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vQ8stRFQOfu2FuAFsKrcmFSnmB6MZv4hPdR5FLOoKKik-VRNJE8Py2PHiJ-7B2JXBEie2I_CvnwShjR/embed?start=false&loop=false&delayms=3000", height=480)
