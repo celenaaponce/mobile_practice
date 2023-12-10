@@ -28,7 +28,7 @@ def halloween():
         st.markdown('<h5>Cancion de Halloween</h5>', unsafe_allow_html=True)
     with clms3[1]:
         st.video('https://youtu.be/UR5sbc6vHBY')
-    st.divider()
+
     clms4 = st.columns([1,1])
     with clms4[0]:
         st.title('')
