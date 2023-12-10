@@ -41,7 +41,7 @@ def primera_semana():
         st.title('')
         st.markdown('<h5>Alarma de Incendios para personas Sordos</h5>', unsafe_allow_html=True)
     with clms33[1]:     
-        st.markdown("<a href='https://www.diglo.com/shop-by-alert-trigger/smoke-and-fire;d=3;c=32;s=328' target='_blank'><img style='float: right;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/pages/firealarm.jpg' width='200' height = '100'/></a>", unsafe_allow_html=True)
+        st.markdown("<a href='https://www.diglo.com/shop-by-alert-trigger/smoke-and-fire;d=3;c=32;s=328' target='_blank'><img style='float: right;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/pages/firealarm.webp' width='200' height = '100'/></a>", unsafe_allow_html=True)
     clms34 = st.columns([1,1])
     with clms34[0]:
         st.title('')
