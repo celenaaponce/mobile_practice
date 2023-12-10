@@ -47,7 +47,7 @@ def primera_semana():
         st.title('')
         st.markdown('<h5>Teléfono de Vídeo para personas Sordos</h5>', unsafe_allow_html=True)
     with clms34[1]:         
-        st.markdown("<a href='https://purplevrs.com/espanol' target='_blank'><img style='float: right;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/pages/vp.jpg' width='150' height = '100'/></a>", unsafe_allow_html=True)
+        st.markdown("<a href='https://purplevrs.com/espanol' target='_blank'><img style='float: right;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/pages/vp.png' width='150' height = '100'/></a>", unsafe_allow_html=True)
     clms35 = st.columns([1,1])
     with clms35[0]:
         st.title('')
