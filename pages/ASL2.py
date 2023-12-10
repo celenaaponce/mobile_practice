@@ -82,8 +82,6 @@ def primera_semana():
         st.markdown('<h5>Historia de ASL</h5>', unsafe_allow_html=True)
     with clms37[1]: 
         st.video('https://youtu.be/Pt2_EjmtUp8')
-
-    # st.divider()
     
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vQ4wlJOjhmNap4RDFiDtqNi1cv2PvEsdZnP4ANcRsVCCDgK0NrpYYLfI5BgwVZzlycwNwmvlwU4qnNt/embed?start=false&loop=false&delayms=3000", height=480)
 
@@ -123,7 +121,7 @@ def repaso_general():
       st.subheader('Cuento (con subtítulos) 🔈')
     with clms29[1]:
       st.video('https://youtu.be/GLXz2s5jBAw')    
-    # st.divider()
+
 
 def repaso_lecc1():
     st.markdown("<h3 style='text-align: center; color: white;'><u>Lección 1</u></h3>", unsafe_allow_html=True)
@@ -293,7 +291,7 @@ def repaso_lecc4():
       st.subheader('Conversación (con subtítulos) 🔈')
     with clms25[1]:
       st.video('https://youtu.be/qktiKSw2kpQ')
-    # st.divider()
+
     st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
     clms30=st.columns([1,1])
     with clms30[0]:
@@ -302,7 +300,7 @@ def repaso_lecc4():
       st.subheader('Vocabulario para la semana que viene')
     with clms30[1]:
       st.video('https://youtu.be/sVyvzKH_Nsg')  
-    # st.divider()
+
     
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vQ1DBN424b45UbbrNNEHmSvzFqMDfsnLSR2nLK2eS93kdLU3bdQep_btALoKoWxZu0K644csijPRwuP/embed?start=false&loop=false&delayms=3000", height=480)
 
@@ -341,8 +339,6 @@ def colores():
     with clms26[1]:
         st.video('https://youtu.be/LUPeVp1Kbwg')
 
-    # st.divider()
-
     st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
     clms27 = st.columns([1,1])
     with clms27[0]:
@@ -359,7 +355,6 @@ def colores():
         st.markdown("<a href='https://edpuzzle.com/media/6535ed4ea59f3e4030d8a224' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
         st.markdown("<a href='https://edpuzzle.com/media/6535f557ac44ed3fd6871438' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
 
-    # st.divider()
             
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vS-egJOarNNRcNvBhPhStuG04-I0IXmy9eflIea8NagDNyx574U7FK8skAPB_9SP0u_W-3CIL67w62D/embed?start=false&loop=false&delayms=3000", height=480)
 
@@ -415,7 +410,7 @@ def deletrear():
         st.markdown('<h5>Cuento (con subtitulos) 🔈</h5>', unsafe_allow_html=True)
     with clms31[1]: 
         st.video('https://youtu.be/P8IFhqRgEdI')        
-    # st.divider()
+
 
     st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
     clms27 = st.columns([1,1])
@@ -432,7 +427,6 @@ def deletrear():
         st.markdown("<a href='https://edpuzzle.com/media/6561ba3bf53b4c415ee4ec79' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
         st.markdown("<a href='https://edpuzzle.com/media/6561c188f996c941653fc5a0' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
 
-    # st.divider()
             
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vQXb3L7FrMl7nGhW4MFw_6CT2CKW5MKOBCyI0x9HoNvGuLdhMqcN1fecVAXi2xRkTavM_dwXx1r1RQJ/embed?start=false&loop=false&delayms=3000", height=480)
 
@@ -471,8 +465,6 @@ def escuela1():
     with clms26[1]:
         st.video('https://youtu.be/HhilwM-rUPk')
 
-    # st.divider()
-
     st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
     clms27 = st.columns([1,1])
     with clms27[0]:
@@ -488,5 +480,4 @@ def escuela1():
         st.markdown("<a href='https://edpuzzle.com/media/656832c8714d964171966867' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
         st.markdown("<a href='https://edpuzzle.com/media/65683015dc1e1641a09708ad' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/sandbox/main/pages/Images/Screenshot%202023-10-22%20at%203.32.28%20PM.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
 
-    # st.divider()
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vTaL-csLK4bnmmbonxNSjLb0lgzB22X8rQahAOtdtEo0zRHKgQ6RTWEBwIOw2yy4DXaI6PauEFEDu78/embed?start=false&loop=false&delayms=3000", height=480)
