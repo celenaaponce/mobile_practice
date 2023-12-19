@@ -5,8 +5,8 @@ import streamlit.components.v1 as components
 from st_pages import Page, Section,show_pages, add_page_title
 
 def main():
-    login_sidebar_ASL1()
-    st.header("Bienvenido a la clase de ASL 1.")
+    login_sidebar_ASL2()
+    st.header("Bienvenido a la clase de ASL 2.")
     st.header("Se puede mirar nuestro curriculo aqui:")
     tab1, tab2 = st.tabs([ ":white[Halloween/Dia de los Muertos]", 
                                                         ":white[Dia de Accion de Gracias]"])
@@ -17,7 +17,7 @@ def main():
             thanksgiving()
 
 
-def login_sidebar_ASL1():
+def login_sidebar_ASL2():
         show_pages(
     [
         Page("Pagina_Principal.py", "Pagina Principal"),
@@ -31,11 +31,11 @@ def login_sidebar_ASL1():
         Page("pages/8_Diccionario_por_Tema.py", "Diccionario Por Tema"),
         Page("pages/9_Buscar_Palabra.py", "Buscar Palabra"),
         Page("pages/10_Entrar.py", "Entrar"),
-        Page("pages/Introduccion_a_ASL_1.py", "Introducción a ASL 1"),
-        Page("pages/Bravo_1.py", "Conocer la Familia Bravo"),
-        Page("pages/Bravo_2.py", "Desayuno"),
-        Page("pages/Bravo_3.py", "¿Dónde está el contról?"),
-        Page("pages/holidays.py", "Días Festivos")
+        Page("pages/Introduccion_a_ASL_2.py", "Introducción a ASL 2"),
+        Page("pages/Bravo_5.py", "Repaso"),
+        Page("pages/Bravo_6.py", "Colores y Deletrear"),
+        Page("pages/Bravo_7.py", "Escuela"),
+        Page("pages/holidays_2.py", "Días Festivos")
     ]
 )
 
