@@ -8,16 +8,25 @@ def main():
     login_sidebar_ASLAtHome2()
     st.header("Bienvenido a la clase de ASL En Casa.")
     st.header("Se puede mirar nuestro curriculo aqui:")
-    tab1, tab2 = st.tabs([ ":white[Halloween/Dia de los Muertos]", 
-                                                        ":white[Dia de Accion de Gracias]"])
+    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([ ":white[Halloween/Dia de los Muertos]", 
+                                                        ":white[Dia de Accion de Gracias]", ":white[Invierno]", ":white[Navidad]",
+                         ":white[Año Nuevo]", ":white[Dia de los 3 Reyes]"])
 
     with tab1:
             halloween()
     with tab2:
             thanksgiving()
+    with tab3:
+            winter()
+    with tab4:
+            christmas()
+    with tab5:
+            new_year()
+    with tab6:
+            three_king_day()
 
 
-def login_sidebar_ASLAtHome2():
+def login_sidebar_ASL1():
         show_pages(
     [
         Page("Pagina_Principal.py", "Pagina Principal"),
@@ -31,10 +40,11 @@ def login_sidebar_ASLAtHome2():
         Page("pages/8_Diccionario_por_Tema.py", "Diccionario Por Tema"),
         Page("pages/9_Buscar_Palabra.py", "Buscar Palabra"),
         Page("pages/10_Entrar.py", "Entrar"),
-        Page("pages/Introduccion_a_ASL_En_Casa.py"),
-        Page("pages/ASLAtHome_c1.py", "Capitulo 1"),
-        Page("pages/ASLAtHome_c2.py", "Capitulo 2"),
-        Page("pages/holidays_aah.py", "Dias Festivos")
+        Page("pages/Introduccion_a_ASL_1.py", "Introducción a ASL 1"),
+        Page("pages/Bravo_1.py", "Conocer la Familia Bravo"),
+        Page("pages/Bravo_2.py", "Desayuno"),
+        Page("pages/Bravo_3.py", "¿Dónde está el contról?"),
+        Page("pages/holidays.py", "Días Festivos")
     ]
 )
 
@@ -114,5 +124,55 @@ def thanksgiving():
         st.markdown('<h5>La Cena Silenciosa</h5>', unsafe_allow_html=True)
     with clms5[1]:
         st.video('https://youtu.be/pKmaGwUBScA')
+        
+def christmas():
+    clms = st.columns([1,1])
+    with clms[0]:
+        st.title('')
+        st.markdown('<h5>Vocabulario de Navidad</h5>', unsafe_allow_html=True)
+    with clms[1]:
+        st.video('https://youtu.be/0Fq2sIfjA5M')
+    clms1 = st.columns([1,1])
+    with clms1[0]:
+        st.title('')
+        st.markdown('<h5>Cuento de Navidad</h5>', unsafe_allow_html=True)
+    with clms1[1]:
+        st.video('https://youtu.be/4sGozFsfAnc')
+
+def winter():
+    clms = st.columns([1,1])
+    with clms[0]:
+        st.title('')
+        st.markdown('<h5>Vocabulario de Invierno</h5>', unsafe_allow_html=True)
+    with clms[1]:
+        st.video('https://youtu.be/KKiMMFbQPxQ')
+    clms1 = st.columns([1,1])
+    with clms1[0]:
+        st.title('')
+        st.markdown('<h5>Cuento de Invierno</h5>', unsafe_allow_html=True)
+    with clms1[1]:
+        st.video('https://youtu.be/zLrhnfSa8cc')
+
+def new_year():
+    clms = st.columns([1,1])
+    with clms[0]:
+        st.title('')
+        st.markdown('<h5>Vocabulario de Año Nuevo</h5>', unsafe_allow_html=True)
+    with clms[1]:
+        st.video('https://youtu.be/sgR34pRPga8')
+    clms1 = st.columns([1,1])
+    with clms1[0]:
+        st.title('')
+        st.markdown('<h5>Cuento de Año Nuevo</h5>', unsafe_allow_html=True)
+    with clms1[1]:
+        st.video('https://www.youtube.com/watch?v=Z7atC7dX_Ig')
+
+def three_king_day():
+    clms = st.columns([1,1])
+    with clms[0]:
+        st.title('')
+        st.markdown('<h5>Cuento de Dia de Los 3 Reyes</h5>', unsafe_allow_html=True)
+    with clms[1]:
+        st.video('https://youtu.be/SS6FgPqm3RU')
 
 main()
