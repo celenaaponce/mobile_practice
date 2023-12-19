@@ -113,4 +113,3 @@ with outer_col_5[0]:
          switch_page('Buscar_Palabra')
 with outer_col_5[1]:
     st.markdown("<h5 style='text-align: center; color: white;'> Buscar palabra por busqueda</h5>", unsafe_allow_html=True)
-
