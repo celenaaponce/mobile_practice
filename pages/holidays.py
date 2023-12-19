@@ -23,7 +23,7 @@ def main():
     with tab5:
             new_year()
     with tab6:
-            3_king_day()
+            three_king_day()
 
 
 def login_sidebar_ASL1():
@@ -167,7 +167,7 @@ def new_year():
     with clms1[1]:
         st.video('https://www.youtube.com/watch?v=Z7atC7dX_Ig')
 
-def 3_king_day():
+def three_king_day():
     clms = st.columns([1,1])
     with clms[0]:
         st.title('')
