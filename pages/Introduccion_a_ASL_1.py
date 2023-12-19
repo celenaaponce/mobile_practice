@@ -4,10 +4,7 @@ from streamlit_extras.switch_page_button import switch_page
 import streamlit.components.v1 as components
 from pages import holidays
 from st_pages import Page, Section,show_pages, add_page_title
-import gdown
-import auth_custom.streamlit_authenticator as stauth
-import yaml
-from yaml.loader import SafeLoader
+
 
 def main():
     login_sidebar_ASL1()
