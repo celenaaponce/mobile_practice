@@ -1,6 +1,6 @@
 
 import streamlit as st
-from switch_page_button import switch_page
+from streamlit_extras.switch_page_button import switch_page
 from st_pages import Page, show_pages
 import string
 def regular_sidebar():
