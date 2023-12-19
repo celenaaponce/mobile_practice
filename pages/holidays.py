@@ -139,7 +139,7 @@ def christmas():
     with clms1[1]:
         st.video('https://youtu.be/4sGozFsfAnc')
 
-def invierno():
+def winter():
     clms = st.columns([1,1])
     with clms[0]:
         st.title('')
