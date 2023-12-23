@@ -58,13 +58,13 @@ def cuarta_semana():
         st.title('')
         st.markdown('<h5>Introducción a La Lección</h5>', unsafe_allow_html=True)
     with clms21[1]:
-        st.video('https://youtu.be/69GxKWg_Sfw')
+        st.video('https://youtu.be/f68mvaF_gws')
     clms23 = st.columns([1,1])
     with clms23[0]:
         st.title('')
         st.markdown('<h5>Repaso y Explicación</h5>', unsafe_allow_html=True)
     with clms23[1]:
-        st.video('https://youtu.be/UITBHk6W-Vg')
+        st.video('https://youtu.be/w-KsR7K_w_M')
     clms24 = st.columns([1,1])
     with clms24[0]:
         st.title('')
@@ -76,13 +76,13 @@ def cuarta_semana():
         st.title('')
         st.markdown('<h5>Conversación (con subtítulos) 🔈</h5>', unsafe_allow_html=True)
     with clms25[1]: 
-        st.video('https://youtu.be/PdDmd0emQ40')
+        st.video('https://youtu.be/gUJVfoSiZzE')
     clms26 = st.columns([1,1])
     with clms26[0]:
         st.title('')
         st.markdown('<h5>Cultura Sorda</h5>', unsafe_allow_html=True)
     with clms26[1]:
-        st.video('https://youtu.be/5dW7MzA8hRY')
+        st.video('https://youtu.be/I2crdjlUNxw')
 
     st.divider()
 
@@ -92,7 +92,7 @@ def cuarta_semana():
         st.title('')
         st.markdown('<h5>Vocabulario para la semana que viene</h5>', unsafe_allow_html=True)
     with clms27[1]:
-        st.video('https://youtu.be/uGtS3_zEGV8')
+        st.video('https://youtu.be/xB9HOC3pbP0')
     clms28 = st.columns([1,1])
     with clms28[0]:
         st.title('')
@@ -115,7 +115,7 @@ def quinta_semana():
         st.title('')
         st.markdown('<h5>Vocabulario</h5>', unsafe_allow_html=True)
     with clms23[1]:
-        st.video('https://youtu.be/UITBHk6W-Vg')
+        st.video('https://youtu.be/xB9HOC3pbP0')
     clms24 = st.columns([1,1])
     with clms24[0]:
         st.title('')
@@ -127,13 +127,13 @@ def quinta_semana():
         st.title('')
         st.markdown('<h5>Conversación (con subtítulos) 🔈</h5>', unsafe_allow_html=True)
     with clms25[1]: 
-        st.video('https://youtu.be/6Hxpc-49B3Q')
+        st.video('https://youtu.be/VvuDyUDuNlM')
     clms26 = st.columns([1,1])
     with clms26[0]:
         st.title('')
         st.markdown('<h5>Gramatica</h5>', unsafe_allow_html=True)
     with clms26[1]:
-        st.video('https://youtu.be/bWqtdt6RMKs')
+        st.video('https://youtu.be/PwvwsmPIb4s')
     clms29 = st.columns([1,1])
     with clms29[0]:
         st.title('')
@@ -151,7 +151,7 @@ def quinta_semana():
         st.title('')
         st.markdown('<h5>Cuento (con subtítulos) 🔈</h5>', unsafe_allow_html=True)
     with clms31[1]: 
-        st.video('https://youtu.be/QLsApezec98')        
+        st.video('https://youtu.be/G_4yn3R_znc')        
     st.divider()
 
     st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
