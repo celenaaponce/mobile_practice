@@ -64,13 +64,13 @@ def capitulo_3():
     clms3 = st.columns([1,1])
     with clms3[0]:
         st.title('')
-        st.markdown('<h5>Práctica Receptiva/h5>', unsafe_allow_html=True)
+        st.markdown('<h5>Práctica Receptiva</h5>', unsafe_allow_html=True)
     with clms3[1]:
         st.video('https://www.youtube.com/watch?v=5P3RxnJb2RM')
     clms3 = st.columns([1,1])
     with clms3[0]:
         st.title('')
-        st.markdown('<h5>Escenarios/h5>', unsafe_allow_html=True)
+        st.markdown('<h5>Escenarios</h5>', unsafe_allow_html=True)
     with clms3[1]:
         st.video('https://youtu.be/kjaIYw8eYu4')
 
