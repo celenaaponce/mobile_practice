@@ -73,7 +73,7 @@ def capitulo_4():
         st.title('')
         st.markdown('<h5>Escenarios</h5>', unsafe_allow_html=True)
     with clms3[1]:
-        st.video('https://www.youtube.com/watch?v=ox9d05hOxUM')
+        st.video('https://youtu.be/fwbn2vYIveY')
     clms4 = st.columns([1,1])
     with clms4[0]:
         st.title('')
