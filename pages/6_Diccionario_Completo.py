@@ -61,9 +61,15 @@ if 'start' not in st.session_state:
    st.session_state.start = 0   
 
 def download_csv(file_id, output_file):
-    url = f'https://drive.google.com/uc?id={file_id}'
-    gdown.download(url, output_file, quiet=False)
+    url = 'https://drive.google.com/file/d/1n7QzMyGJanRjU-19AYHTsWseomZi_sFl/view?usp=drive_link'
+    path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
+    df = pd.read_csv(path)
+    for chunk in pd.read_csv(path, names=['Palabra', 'Tema', 'Video', 'Imagen', 'Sinómino'], chunksize=10000, skiprows=1):
+      data = pd.DataFrame(chunk)
+    # url = f'https://drive.google.com/uc?id={file_id}'
+    # gdown.download(url, output_file, quiet=False)
     st.session_state.download_completo = True
+    return data
     
 if st.session_state.download_completo == False:
     download_csv(st.secrets["diccionario_completo"], 'Small Preview2.csv')
@@ -74,7 +80,7 @@ def load_words_completo():
           data = pd.DataFrame(chunk)
   return data
     
-word_data = load_words_completo()
+word_data = download_csv(st.secrets["diccionario_completo"], 'Small Preview2.csv')
 word_data = word_data[['Palabra', 'Imagen', 'Video', 'Tema', 'Sinómino']]
 word_data.sort_values(by=['Palabra'])
 
