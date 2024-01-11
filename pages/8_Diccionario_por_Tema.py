@@ -138,7 +138,7 @@ def download_csv(file_id, output_file):
 @st.cache_data
 def load_words_tema():
   csv_length = 0    
-  for chunk in pd.read_csv('Themes2.csv', names=['Palabra', 'Tema', 'Video', 'Imagen', 'Sinómino'], chunksize=10000, skiprows=1):
+  for chunk in pd.read_csv('GitThemeLinks.csv', names=['Palabra', 'Tema', 'Video', 'Imagen', 'Sinómino'], chunksize=10000, skiprows=1):
         data = pd.DataFrame(chunk)
   data = data[['Palabra', 'Imagen', 'Video', 'Tema', 'Sinómino']]
   return data
@@ -154,7 +154,7 @@ with open("css/responsive.css") as file2:
 
 #start with download
 if st.session_state.download_tema == False:
-  download_csv(st.secrets['diccionario_tema'], 'Themes2.csv')
+  download_csv(st.secrets['diccionario_tema'], 'GitThemeLinks.csv')
   st.session_state.download_tema = True
     
 word_data = load_words_tema()
