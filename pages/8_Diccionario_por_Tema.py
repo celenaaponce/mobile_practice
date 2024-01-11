@@ -130,6 +130,8 @@ def get_content(size):
 
 def download_csv(file_id, output_file):
     url = f'https://drive.google.com/uc?id={file_id}'
+    st.write(url)
+    st.write(output_file)
     gdown.download(url, output_file, quiet=False)
     st.session_state.download = True
 
