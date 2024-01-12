@@ -39,6 +39,7 @@ themes = {1: 'Plano de Casa', 2: 'Día de los Muertos', 4: 'Dia de San Valentin'
           10: 'Frutas', 11: 'Verduras', 12: 'Carnes', 13: 'Interior de Casa', 14: 'Bravo 1', 15: 'Bravo 2', 16: 'Bravo 3', 17: 'Bravo 4', 18: 'Números', 19: "Pascua", 20: "Colores"}
 
 def get_content(size):
+      st.header("General")
       content= f"""
         <style>{style}</style>
         <style>{boot}</style>
