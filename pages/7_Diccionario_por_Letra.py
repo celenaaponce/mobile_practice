@@ -78,17 +78,14 @@ def empty():
     placeholder.empty()
     sleep(0.01)
 
-def download_csv(file_id, output_file):
-    url = f'https://drive.google.com/uc?id={file_id}'
-    gdown.download(url, output_file, quiet=False)
-    st.session_state.download_letter = True
-  
 @st.cache_data
-def load_words_letra():
-  csv_length = 0    
-  for chunk in pd.read_csv('Search List2.csv', names=['Palabra', 'Tema', 'Video', 'Imagen', 'Sinómino'], chunksize=10000, skiprows=1):
-          data = pd.DataFrame(chunk)
-  return data
+def download_csv(file_id, output_file):
+    path = 'https://drive.google.com/uc?export=download&id={file_id}'
+    df = pd.read_csv(path)
+    for chunk in pd.read_csv(path, names=['Palabra', 'Tema', 'Video', 'Imagen', 'Sinómino'], chunksize=10000, skiprows=1):
+      data = pd.DataFrame(chunk)
+    st.session_state.download_letter = True
+    return data
 
 def set_start(i):
    st.session_state.letter = i
