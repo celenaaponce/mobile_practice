@@ -152,7 +152,7 @@ if st.session_state.download_tema == False:
   download_csv(st.secrets['diccionario_tema'], 'GitThemeLinks.csv')
   st.session_state.download_tema = True
     
-word_data = load_words_tema()
+word_data = download_csv(st.secrets['diccionario_tema'], 'GitThemeLinks.csv')
 
 if st.session_state.clicked == "":
     size = 20
