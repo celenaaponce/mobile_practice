@@ -128,20 +128,15 @@ def get_content(size):
          """
       return content
 
-def download_csv(file_id, output_file):
-    url = f'https://drive.google.com/uc?id={file_id}'
-    st.write(url)
-    st.write(output_file)
-    gdown.download(url, output_file, quiet=False)
-    st.session_state.download = True
-
 @st.cache_data
-def load_words_tema():
-  csv_length = 0    
-  for chunk in pd.read_csv('GitThemeLinks.csv', names=['Palabra', 'Tema', 'Video', 'Imagen', 'Sinómino'], chunksize=10000, skiprows=1):
-        data = pd.DataFrame(chunk)
-  data = data[['Palabra', 'Imagen', 'Video', 'Tema', 'Sinómino']]
-  return data
+def download_csv(file_id, output_file):
+    csv_length=0
+    path = f'https://drive.google.com/uc?export=download&id={file_id}'
+    for chunk in pd.read_csv(path, names=['Palabra', 'Tema', 'Video', 'Imagen', 'Sinómino'], chunksize=10000, skiprows=1):
+      data = pd.DataFrame(chunk)
+    data = data[['Palabra', 'Imagen', 'Video', 'Tema', 'Sinómino']]
+    st.session_state.download = True
+    return data
 
 with open("css/style.css") as f:
     style = f.read()
