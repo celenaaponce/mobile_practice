@@ -62,7 +62,7 @@ if 'start' not in st.session_state:
 
 @st.cache_data
 def download_csv(file_id, output_file):
-    path = 'https://drive.google.com/uc?export=download&id={file_id}'
+    path = f'https://drive.google.com/uc?export=download&id={file_id}'
     for chunk in pd.read_csv(path, names=['Palabra', 'Tema', 'Video', 'Imagen', 'Sinómino'], chunksize=10000, skiprows=1):
       data = pd.DataFrame(chunk)
     st.session_state.download_completo = True
