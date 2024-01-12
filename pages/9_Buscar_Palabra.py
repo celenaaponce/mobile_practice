@@ -38,11 +38,13 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+@st.cache_data
 def download_csv(file_id, output_file):
-    st.write('downloading')
-    url = f'https://drive.google.com/uc?id={file_id}'
-    gdown.download(url, output_file, quiet=False)
+    path = f'https://drive.google.com/uc?export=download&id={file_id}'
+    for chunk in pd.read_csv(path, names=['Palabra', 'Tema', 'Video', 'Imagen', 'Sinómino'], chunksize=10000, skiprows=1):
+      data = pd.DataFrame(chunk)
     st.session_state.download = True
+    return data
   
 @st.cache_data
 def load_words():
@@ -67,7 +69,7 @@ if 'download' not in st.session_state:
 if st.session_state.download == False:
   download_csv(st.secrets['diccionario_letras'], 'Search List2.csv')
 
-word_data = load_words()
+word_data = download_csv(st.secrets['diccionario_letras'], 'Search List2.csv')
 word_data = word_data[['Palabra', 'Imagen', 'Video', 'Tema', 'Sinómino']]
 
 st.write("")
