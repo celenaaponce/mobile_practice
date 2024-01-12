@@ -156,7 +156,11 @@ def print_list(next_list):
   
 #start with download
 if st.session_state.download_letter == False:
-  word_data = download_csv(st.secrets['diccionario_letras'], 'Search List2.csv')
+  download_csv(st.secrets['diccionario_letras'], 'Search List2.csv')
+
+word_data = download_csv(st.secrets["diccionario_completo"], 'Search List2.csv')
+word_data = word_data[['Palabra', 'Imagen', 'Video', 'Tema', 'Sinómino']]
+word_data.sort_values(by=['Palabra'])
 
 #set up main page with images  
 empty()
