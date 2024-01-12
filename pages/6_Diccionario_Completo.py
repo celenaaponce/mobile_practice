@@ -60,14 +60,13 @@ if 'download_completo' not in st.session_state:
 if 'start' not in st.session_state:
    st.session_state.start = 0   
 
+@st.cache_data
 def download_csv(file_id, output_file):
     url = 'https://drive.google.com/file/d/1n7QzMyGJanRjU-19AYHTsWseomZi_sFl/view?usp=drive_link'
     path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
     df = pd.read_csv(path)
     for chunk in pd.read_csv(path, names=['Palabra', 'Tema', 'Video', 'Imagen', 'Sinómino'], chunksize=10000, skiprows=1):
       data = pd.DataFrame(chunk)
-    # url = f'https://drive.google.com/uc?id={file_id}'
-    # gdown.download(url, output_file, quiet=False)
     st.session_state.download_completo = True
     return data
     
