@@ -96,6 +96,7 @@ image10 = Image.open('lindobebecito.png')
 image11 = Image.open('munecas.png')
 image12 = Image.open('oceancolorido.png')
 image13 = Image.open('muertos.png')
+image14 = Image.open('charla.png')
 outer_col = st.columns([1,1])
 with outer_col[0]:
     st.image(image)
@@ -121,6 +122,10 @@ with outer_col[0]:
     st.image(image12)
     st.button('Océano Colorido', key='Colorido', on_click = open_page, args = ('https://youtu.be/Z-qNfedG3Hk',))
     ChangeButtonColour('Océano Colorido', '#fffff', '#FF725E') 
+
+    st.image(image14)
+    st.button('Charla de Bebé', key='Charla', on_click = open_page, args = ('https://www.youtube.com/watch?v=62NbByFKX7Y',))
+    ChangeButtonColour('Charla de Bebé', '#fffff', '#FF725E') 
 
 with outer_col[1]:
     st.image(image3)
