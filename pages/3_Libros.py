@@ -95,6 +95,7 @@ image9 = Image.open('escuela.png')
 image10 = Image.open('lindobebecito.png')
 image11 = Image.open('munecas.png')
 image12 = Image.open('oceancolorido.png')
+image13 = Image.open('muertos.png')
 outer_col = st.columns([1,1])
 with outer_col[0]:
     st.image(image)
@@ -141,3 +142,7 @@ with outer_col[1]:
     st.image(image11)
     st.button('Muñecas de Nieve por la Noche', key = 'Muñecas', on_click = open_page, args = ('https://youtu.be/zLrhnfSa8cc',))
     ChangeButtonColour('Muñecas de Nieve por la Noche', '#fffff', '#FF725E') 
+
+    st.image(image13)
+    st.button('Día de los Muertos', key = 'Muertos', on_click = open_page, args = ('https://youtu.be/4i582v8lTdI',))
+    ChangeButtonColour('Día de los Muertos', '#fffff', '#FF725E') 
