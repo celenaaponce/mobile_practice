@@ -88,21 +88,56 @@ image = Image.open('jirafas no pueden bailar.jpg')
 image2 = Image.open('la arana muy ocupada.jpg')
 image3 = Image.open('el libro de colores de coneja blanca.jpeg')
 image5 = Image.open('como dan las buenas noches los dinosaurios.jpg')
+image6 = Image.open('banarse.png')
+image7 = Image.open('cabezaapie.png')
+image8 = Image.open('eresunavaca.png')
+image9 = Image.open('escuela.png')
+image10 = Image.open('lindobebecito.png')
+image11 = Image.open('munecas.png')
+image12 = Image.open('oceancolorido.png')
 outer_col = st.columns([1,1])
 with outer_col[0]:
     st.image(image)
-    st.button('Jirafas no Pueden Bailar', key='Jirafas', on_click = open_page, args =('https://www.youtube.com/watch?v=cfetJAwPAho',))
+    st.button('Jirafas no Pueden Bailar', key='Jirafas', on_click = open_page, args =('https://youtu.be/trV9g7OWAss',))
     ChangeButtonColour('Jirafas no Pueden Bailar', '#fffff', '#FF725E') 
 
     st.image(image2)
-    st.button('La Araña Muy Ocupada', key='Araña', on_click = open_page, args = ('https://www.youtube.com/watch?v=u37prsL9Rik',))
+    st.button('La Araña Muy Ocupada', key='Araña', on_click = open_page, args = ('https://youtu.be/mkgxSLa_QFE',))
     ChangeButtonColour('La Araña Muy Ocupada', '#fffff', '#FF725E') 
+
+    st.image(image6)
+    st.button('¡Bañarse! ¡Bañarse! ¡Bañarse!', key='Bañarse', on_click = open_page, args = ('https://youtu.be/qp9jl0ECUwA',))
+    ChangeButtonColour('¡Bañarse! ¡Bañarse! ¡Bañarse!', '#fffff', '#FF725E') 
+
+    st.image(image8)
+    st.button('¿Eres una Vaca?', key='Vaca', on_click = open_page, args = ('https://youtu.be/AShZlHInWEU',))
+    ChangeButtonColour('¿Eres una Vaca?', '#fffff', '#FF725E') 
+
+    st.image(image10)
+    st.button('Lindo Bebécito', key='Bebe', on_click = open_page, args = ('https://youtu.be/X-DT_SDXxO4',))
+    ChangeButtonColour('Lindo Bebécito', '#fffff', '#FF725E') 
+
+    st.image(image12)
+    st.button('Oceáno Colorido', key='Colorido', on_click = open_page, args = ('https://youtu.be/Z-qNfedG3Hk',))
+    ChangeButtonColour('Oceáno Colorido', '#fffff', '#FF725E') 
 
 with outer_col[1]:
     st.image(image3)
-    st.button('El Libro de Colores de Coneja Blanca', key = 'Coneja', on_click = open_page, args=('https://www.youtube.com/watch?v=2qgjqhVc5Aw',))
+    st.button('El Libro de Colores de Coneja Blanca', key = 'Coneja', on_click = open_page, args=('https://youtu.be/xqJVGpVjJZg',))
     ChangeButtonColour('El Libro de Colores de Coneja Blanca', '#fffff', '#FF725E') 
 
     st.image(image5)
     st.button('Como Dan Las Buenas Noches Los Dinosaurios', key = 'Dino', on_click = open_page, args = ('https://www.youtube.com/watch?v=wQCkUbaZLQQ',))
     ChangeButtonColour('Como Dan Las Buenas Noches Los Dinosaurios', '#fffff', '#FF725E') 
+
+    st.image(image7)
+    st.button('De la Cabeza a Los Pies', key = 'Cabeza', on_click = open_page, args = ('https://youtu.be/tvyr6wu4dL4',))
+    ChangeButtonColour('De la Cabeza a Los Pies', '#fffff', '#FF725E') 
+
+    st.image(image9)
+    st.button('Si Llevas Un Ratón a La Escuela', key = 'Escuela', on_click = open_page, args = ('https://youtu.be/HA29CwpR_-0',))
+    ChangeButtonColour('Si Llevas Un Ratón a La Escuela', '#fffff', '#FF725E') 
+
+    st.image(image11)
+    st.button('Muñecas de Nieve por la Noche', key = 'Muñecas', on_click = open_page, args = ('https://youtu.be/zLrhnfSa8cc',))
+    ChangeButtonColour('Muñecas de Nieve por la Noche', '#fffff', '#FF725E') 
