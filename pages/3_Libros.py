@@ -118,8 +118,8 @@ with outer_col[0]:
     ChangeButtonColour('Lindo Bebécito', '#fffff', '#FF725E') 
 
     st.image(image12)
-    st.button('Oceáno Colorido', key='Colorido', on_click = open_page, args = ('https://youtu.be/Z-qNfedG3Hk',))
-    ChangeButtonColour('Oceáno Colorido', '#fffff', '#FF725E') 
+    st.button('Océano Colorido', key='Colorido', on_click = open_page, args = ('https://youtu.be/Z-qNfedG3Hk',))
+    ChangeButtonColour('Océano Colorido', '#fffff', '#FF725E') 
 
 with outer_col[1]:
     st.image(image3)
