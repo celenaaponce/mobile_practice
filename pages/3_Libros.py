@@ -97,6 +97,8 @@ image11 = Image.open('munecas.png')
 image12 = Image.open('oceancolorido.png')
 image13 = Image.open('muertos.png')
 image14 = Image.open('charla.png')
+image15 = Image.open('meal.png')
+image16 = Image.open('bath.png')
 outer_col = st.columns([1,1])
 with outer_col[0]:
     st.image(image)
@@ -127,6 +129,10 @@ with outer_col[0]:
     st.button('Charla de Bebé', key='Charla', on_click = open_page, args = ('https://www.youtube.com/watch?v=62NbByFKX7Y',))
     ChangeButtonColour('Charla de Bebé', '#fffff', '#FF725E') 
 
+    st.image(image16)
+    st.button('Mis Señas de Hora de Comer', key='Comer', on_click = open_page, args = ('https://youtu.be/q7QTDovFA74',))
+    ChangeButtonColour('Mis Señas de Hora de Comer', '#fffff', '#FF725E') 
+
 with outer_col[1]:
     st.image(image3)
     st.button('El Libro de Colores de Coneja Blanca', key = 'Coneja', on_click = open_page, args=('https://youtu.be/xqJVGpVjJZg',))
@@ -151,3 +157,7 @@ with outer_col[1]:
     st.image(image13)
     st.button('Día de los Muertos', key = 'Muertos', on_click = open_page, args = ('https://youtu.be/4i582v8lTdI',))
     ChangeButtonColour('Día de los Muertos', '#fffff', '#FF725E') 
+
+    st.image(image15)
+    st.button('Mis Señas de Hora de Bañar', key = 'Bañar', on_click = open_page, args = ('https://youtu.be/4TmdTAaPYdA',))
+    ChangeButtonColour('Mis Señas de Hora de Bañar', '#fffff', '#FF725E') 
