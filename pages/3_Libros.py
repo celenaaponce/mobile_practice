@@ -129,7 +129,7 @@ with outer_col[0]:
     st.button('Charla de Bebé', key='Charla', on_click = open_page, args = ('https://www.youtube.com/watch?v=62NbByFKX7Y',))
     ChangeButtonColour('Charla de Bebé', '#fffff', '#FF725E') 
 
-    st.image(image16)
+    st.image(image15)
     st.button('Mis Señas de Hora de Comer', key='Comer', on_click = open_page, args = ('https://youtu.be/q7QTDovFA74',))
     ChangeButtonColour('Mis Señas de Hora de Comer', '#fffff', '#FF725E') 
 
@@ -158,6 +158,6 @@ with outer_col[1]:
     st.button('Día de los Muertos', key = 'Muertos', on_click = open_page, args = ('https://youtu.be/4i582v8lTdI',))
     ChangeButtonColour('Día de los Muertos', '#fffff', '#FF725E') 
 
-    st.image(image15)
+    st.image(image16)
     st.button('Mis Señas de Hora de Bañar', key = 'Bañar', on_click = open_page, args = ('https://youtu.be/4TmdTAaPYdA',))
     ChangeButtonColour('Mis Señas de Hora de Bañar', '#fffff', '#FF725E') 
