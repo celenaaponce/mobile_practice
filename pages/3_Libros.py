@@ -103,6 +103,5 @@ with outer_col[1]:
     st.markdown("<a href='https://youtu.be/HA29CwpR_-0' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/escuela.png'></a>", unsafe_allow_html=True)
     st.markdown("<a href='https://youtu.be/zLrhnfSa8cc' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/munecas.png'></a>", unsafe_allow_html=True)
     st.markdown("<a href='https://youtu.be/4i582v8lTdI' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/muertos.png'></a>", unsafe_allow_html=True)
-    st.markdown("<a href='https://www.youtube.com/watch?v=62NbByFKX7Y' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/charla.png'></a>", unsafe_allow_html=True)
     st.markdown("<a href='https://youtu.be/4TmdTAaPYdA' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/bath.png'></a>", unsafe_allow_html=True)
 
