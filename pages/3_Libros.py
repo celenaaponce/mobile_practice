@@ -84,80 +84,25 @@ with outer_col_4[0]:
     inner_col_4 = st.columns([1, 6, 1])
     with inner_col_4[1]:
         st.image(image4)
-image = Image.open('jirafas no pueden bailar.jpg')
-image2 = Image.open('la arana muy ocupada.jpg')
-image3 = Image.open('el libro de colores de coneja blanca.jpeg')
-image5 = Image.open('como dan las buenas noches los dinosaurios.jpg')
-image6 = Image.open('banarse.png')
-image7 = Image.open('cabezaapie.png')
-image8 = Image.open('eresunavaca.png')
-image9 = Image.open('escuela.png')
-image10 = Image.open('lindobebecito.png')
-image11 = Image.open('munecas.png')
-image12 = Image.open('oceancolorido.png')
-image13 = Image.open('muertos.png')
-image14 = Image.open('charla.png')
-image15 = Image.open('meal.png')
-image16 = Image.open('bath.png')
+
 outer_col = st.columns([1,1])
 with outer_col[0]:
-    st.image(image)
-    st.button('Jirafas no Pueden Bailar', key='Jirafas', on_click = open_page, args =('https://youtu.be/trV9g7OWAss',))
-    ChangeButtonColour('Jirafas no Pueden Bailar', '#fffff', '#FF725E') 
-
-    st.image(image2)
-    st.button('La Araña Muy Ocupada', key='Araña', on_click = open_page, args = ('https://youtu.be/mkgxSLa_QFE',))
-    ChangeButtonColour('La Araña Muy Ocupada', '#fffff', '#FF725E') 
-
-    st.image(image6)
-    st.button('¡Bañarse! ¡Bañarse! ¡Bañarse!', key='Bañarse', on_click = open_page, args = ('https://youtu.be/qp9jl0ECUwA',))
-    ChangeButtonColour('¡Bañarse! ¡Bañarse! ¡Bañarse!', '#fffff', '#FF725E') 
-
-    st.image(image8)
-    st.button('¿Eres una Vaca?', key='Vaca', on_click = open_page, args = ('https://youtu.be/AShZlHInWEU',))
-    ChangeButtonColour('¿Eres una Vaca?', '#fffff', '#FF725E') 
-
-    st.image(image10)
-    st.button('Lindo Bebécito', key='Bebe', on_click = open_page, args = ('https://youtu.be/X-DT_SDXxO4',))
-    ChangeButtonColour('Lindo Bebécito', '#fffff', '#FF725E') 
-
-    st.image(image12)
-    st.button('Océano Colorido', key='Colorido', on_click = open_page, args = ('https://youtu.be/Z-qNfedG3Hk',))
-    ChangeButtonColour('Océano Colorido', '#fffff', '#FF725E') 
-
-    st.image(image14)
-    st.button('Charla de Bebé', key='Charla', on_click = open_page, args = ('https://www.youtube.com/watch?v=62NbByFKX7Y',))
-    ChangeButtonColour('Charla de Bebé', '#fffff', '#FF725E') 
-
-    st.image(image15)
-    st.button('Mis Señas de Hora de Comer', key='Comer', on_click = open_page, args = ('https://youtu.be/q7QTDovFA74',))
-    ChangeButtonColour('Mis Señas de Hora de Comer', '#fffff', '#FF725E') 
+    st.markdown("<a href='https://www.youtube.com/watch?v=cfetJAwPAho' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/jirafas%20no%20pueden%20bailar.jpg'></a>", unsafe_allow_html=True)
+    st.markdown("<a href='https://youtu.be/mkgxSLa_QFE' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/la%20arana%20muy%20ocupada.jpg'></a>", unsafe_allow_html=True)
+    st.markdown("<a href='https://youtu.be/qp9jl0ECUwA' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/banarse.png'></a>", unsafe_allow_html=True)
+    st.markdown("<a href='https://youtu.be/AShZlHInWEU' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/eresunavaca.png'></a>", unsafe_allow_html=True)
+    st.markdown("<a href='https://youtu.be/X-DT_SDXxO4' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/lindobebecito.png'></a>", unsafe_allow_html=True)
+    st.markdown("<a href='https://youtu.be/Z-qNfedG3Hk' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/oceanocolorido.png'></a>", unsafe_allow_html=True)
+    st.markdown("<a href='https://www.youtube.com/watch?v=62NbByFKX7Y' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/charla.png'></a>", unsafe_allow_html=True)
+    st.markdown("<a href='https://youtu.be/q7QTDovFA74' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/meal.png'></a>", unsafe_allow_html=True)
 
 with outer_col[1]:
-    st.image(image3)
-    st.button('El Libro de Colores de Coneja Blanca', key = 'Coneja', on_click = open_page, args=('https://youtu.be/xqJVGpVjJZg',))
-    ChangeButtonColour('El Libro de Colores de Coneja Blanca', '#fffff', '#FF725E') 
+    st.markdown("<a href='https://youtu.be/xqJVGpVjJZg' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/el%20libro%20de%20colores%20de%20coneja%20blanca.jpeg'></a>", unsafe_allow_html=True)
+    st.markdown("<a href='https://www.youtube.com/watch?v=wQCkUbaZLQQ' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/como%20dan%20las%20buenas%20noches%20los%20dinosaurios.jpg'></a>", unsafe_allow_html=True)
+    st.markdown("<a href='https://youtu.be/tvyr6wu4dL4' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/cabezaapie.png'></a>", unsafe_allow_html=True)
+    st.markdown("<a href='https://youtu.be/HA29CwpR_-0' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/escuela.png'></a>", unsafe_allow_html=True)
+    st.markdown("<a href='https://youtu.be/zLrhnfSa8cc' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/munecas.png'></a>", unsafe_allow_html=True)
+    st.markdown("<a href='https://youtu.be/4i582v8lTdI' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/muertos.png'></a>", unsafe_allow_html=True)
+    st.markdown("<a href='https://www.youtube.com/watch?v=62NbByFKX7Y' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/charla.png'></a>", unsafe_allow_html=True)
+    st.markdown("<a href='https://youtu.be/4TmdTAaPYdA' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/bath.png'></a>", unsafe_allow_html=True)
 
-    st.image(image5)
-    st.button('Como Dan Las Buenas Noches Los Dinosaurios', key = 'Dino', on_click = open_page, args = ('https://www.youtube.com/watch?v=wQCkUbaZLQQ',))
-    ChangeButtonColour('Como Dan Las Buenas Noches Los Dinosaurios', '#fffff', '#FF725E') 
-
-    st.image(image7)
-    st.button('De la Cabeza a Los Pies', key = 'Cabeza', on_click = open_page, args = ('https://youtu.be/tvyr6wu4dL4',))
-    ChangeButtonColour('De la Cabeza a Los Pies', '#fffff', '#FF725E') 
-
-    st.image(image9)
-    st.button('Si Llevas Un Ratón a La Escuela', key = 'Escuela', on_click = open_page, args = ('https://youtu.be/HA29CwpR_-0',))
-    ChangeButtonColour('Si Llevas Un Ratón a La Escuela', '#fffff', '#FF725E') 
-
-    st.image(image11)
-    st.button('Muñecas de Nieve por la Noche', key = 'Muñecas', on_click = open_page, args = ('https://youtu.be/zLrhnfSa8cc',))
-    ChangeButtonColour('Muñecas de Nieve por la Noche', '#fffff', '#FF725E') 
-
-    st.image(image13)
-    st.button('Día de los Muertos', key = 'Muertos', on_click = open_page, args = ('https://youtu.be/4i582v8lTdI',))
-    ChangeButtonColour('Día de los Muertos', '#fffff', '#FF725E') 
-
-    st.image(image16)
-    st.button('Mis Señas de Hora de Bañar', key = 'Bañar', on_click = open_page, args = ('https://youtu.be/4TmdTAaPYdA',))
-    ChangeButtonColour('Mis Señas de Hora de Bañar', '#fffff', '#FF725E') 
