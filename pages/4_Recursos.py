@@ -17,7 +17,8 @@ show_pages(
     Page("pages/7_Diccionario_por_Letra.py", "Diccionario Por Letra"),
     Page("pages/8_Diccionario_por_Tema.py", "Diccionario Por Tema"),
     Page("pages/9_Buscar_Palabra.py", "Buscar Palabra"),
-    Page("pages/10_Entrar.py", "Entrar")
+    Page("pages/10_Entrar.py", "Entrar"),
+    Page("pages/11_Form.py", "Registrar para Clases")
 ])
 def open_page(url):
     open_script= """
