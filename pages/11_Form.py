@@ -120,7 +120,7 @@ if __name__ == '__main__':
             with col2:
                 st.header("¿Cómo se llama usted?") 
             with col1:
-                    github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/nombre.m4a"
+                    github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/nombre.m4a"
                     audio_code = f"""
                     <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                     <script>
@@ -136,7 +136,7 @@ if __name__ == '__main__':
             with col1:
                 st.header("¿Cuál es su correo electronico?")
             with col2:
-                    github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/email.m4a"
+                    github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/email.m4a"
                     audio_code = f"""
                                 <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                                 <script>
@@ -152,7 +152,7 @@ if __name__ == '__main__':
             with col1:
                 st.header("¿Cuál es su número de teléfono?")
             with col2:
-                    github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/telefono.m4a"
+                    github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/telefono.m4a"
                     audio_code = f"""
                                 <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                                 <script>
@@ -168,7 +168,7 @@ if __name__ == '__main__':
             with col2:
                 st.header("¿Usted ha tomado clases de lengua de señas antes?")
             with col1:
-                    github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/clases.m4a"
+                    github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/clases.m4a"
                     audio_code = f"""
                                 <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                                 <script>
@@ -184,7 +184,7 @@ if __name__ == '__main__':
             with col2:
                 st.header("¿Cuál temas ya sabe usted?")
             with col1:
-                    github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/temas.m4a"
+                    github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/temas.m4a"
                     audio_code = f"""
                                 <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                                 <script>
@@ -199,7 +199,7 @@ if __name__ == '__main__':
             with col2:
                 bravo1 = st.checkbox("familia y básicos (Bravo 1)")
             with col1:
-                    github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/bravo1.m4a"
+                    github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/bravo1.m4a"
                     audio_code = f"""
                                 <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                                 <script>
@@ -214,7 +214,7 @@ if __name__ == '__main__':
             with col2:
                 bravo2 = st.checkbox("desayuno (Bravo 2)")
             with col1:            
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/bravo2.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/bravo2.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -229,7 +229,7 @@ if __name__ == '__main__':
             with col2:
                 bravo3 = st.checkbox("casa (Bravo 3)")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/casa.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/casa.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -244,7 +244,7 @@ if __name__ == '__main__':
             with col2:
                 bravo4 = st.checkbox("comida y ir de compras (Bravo 4)")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/bravo4.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/bravo4.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -259,7 +259,7 @@ if __name__ == '__main__':
             with col2:
                 bravo6 = st.checkbox("colores y letras (Bravo 6)")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/bravo6.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/bravo6.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -274,7 +274,7 @@ if __name__ == '__main__':
             with col2:
                 bravo7 = st.checkbox("escuela (Bravo 7)")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/bravo7.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/bravo7.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -289,7 +289,7 @@ if __name__ == '__main__':
             with col2:
                 asl1 = st.checkbox("hora de comer (ASL En Casa 1)")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/asl1.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/asl1.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -304,7 +304,7 @@ if __name__ == '__main__':
             with col2:  
                 asl2 = st.checkbox("hora de bañar (ASL En Casa 2)")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/asl2.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/asl2.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -319,7 +319,7 @@ if __name__ == '__main__':
             with col2:             
                 asl3 = st.checkbox("hora de cambiar el pañal (ASL En Casa 3)")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/asl3.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/asl3.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -334,7 +334,7 @@ if __name__ == '__main__':
             with col2: 
                 asl4 = st.checkbox("hora de leer (ASL En Casa 4)")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/asl4.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/asl4.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -349,7 +349,7 @@ if __name__ == '__main__':
             with col2: 
                 st.header("¿Cuantos años tiene su hijo sordo?")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/edad.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/edad.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -367,7 +367,7 @@ if __name__ == '__main__':
                 st.header("¿Cuándo se puede tomar clases? (Escoja todos que se puede)")
                 st.subheader("Las horas son de tiempo Pacífico.  Mira a la mapa para saber la hora en su area.")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/tiempo.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/tiempo.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -383,7 +383,7 @@ if __name__ == '__main__':
             with col2:
                 st.subheader("ASL 1 (Primer Semestre)")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/primer.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/primer.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -398,7 +398,7 @@ if __name__ == '__main__':
             with col2:        
                 lunes1 = st.checkbox("Lunes a las 7 pm", key="lunes1")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/lunes7.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/lunes7.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -414,7 +414,7 @@ if __name__ == '__main__':
             with col2:                
                 martes15 = st.checkbox("Martes a las 5 pm", key="martes15")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/martes5.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/martes5.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -430,7 +430,7 @@ if __name__ == '__main__':
             with col2:                
                 martes16 = st.checkbox("Martes a las 6 pm", key="martes16")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/martes6.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/martes6.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -446,7 +446,7 @@ if __name__ == '__main__':
             with col2:                
                 martes7 = st.checkbox("Martes a las 7 pm")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/martes7.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/martes7.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -462,7 +462,7 @@ if __name__ == '__main__':
             with col2:                
                 miercoles6 = st.checkbox("Miércoles a las 6 pm")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/miercoles6.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/miercoles6.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -478,7 +478,7 @@ if __name__ == '__main__':
             with col2:                
                 miercoles7 = st.checkbox("Miércoles a las 7 pm")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/miercoles7.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/miercoles7.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -495,7 +495,7 @@ if __name__ == '__main__':
             with col2:                
                 st.subheader("ASL 2 (Segundo Semestre)")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/segundo.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/segundo.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -510,7 +510,7 @@ if __name__ == '__main__':
             with col2:                
                 lunes5 = st.checkbox("Lunes a las 5 pm")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/lunes5.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/lunes5.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -526,7 +526,7 @@ if __name__ == '__main__':
             with col2:                
                 lunes6 = st.checkbox("Lunes a las 6 pm")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/lunes6.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/lunes6.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -542,7 +542,7 @@ if __name__ == '__main__':
             with col2:                
                 lunes2 = st.checkbox("Lunes a las 7 pm", key="lunes2")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/lunes7.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/lunes7.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -558,7 +558,7 @@ if __name__ == '__main__':
             with col2:                
                 martes2 = st.checkbox("Martes a las 6 pm", key="martes2")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/martes6.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/martes6.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -574,7 +574,7 @@ if __name__ == '__main__':
             with col2:                
                 viernes7 = st.checkbox("Viernes a las 7 pm")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/viernes7.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/viernes7.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -592,7 +592,7 @@ if __name__ == '__main__':
             with col2:                
                 st.subheader("ASL 3 (Tercer Semestre)")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/tercer.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/tercer.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -607,7 +607,7 @@ if __name__ == '__main__':
             with col2:                
                 martes3 = st.checkbox("Martes a las 5 pm", key="martes3")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/martes5.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/martes5.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -623,7 +623,7 @@ if __name__ == '__main__':
             with col2:                
                 martes730 = st.checkbox("Martes a las 7:30 pm")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/martes730.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/martes730.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -639,7 +639,7 @@ if __name__ == '__main__':
             with col2:                
                 jueves12 = st.checkbox("Jueves a las 12 pm")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/jueves12.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/jueves12.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -655,7 +655,7 @@ if __name__ == '__main__':
             with col2:                
                 sabado11 = st.checkbox("Sábado a las 11 am")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/sabado11.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/sabado11.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -673,7 +673,7 @@ if __name__ == '__main__':
             with col2:                
                 st.subheader("ASL En Casa (niños de 0-4 años)")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/encasa.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/encasa.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -688,7 +688,7 @@ if __name__ == '__main__':
             with col2:                
                 lunes7 = st.checkbox("Lunes a las 7 pm")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/lunes7.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/lunes7.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -704,7 +704,7 @@ if __name__ == '__main__':
             with col2:                
                 miercoles5 = st.checkbox("Miércoles a las 5 pm")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/miercoles5.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/miercoles5.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -722,7 +722,7 @@ if __name__ == '__main__':
             with col2:                
                 st.subheader("Necesito otra horario.  Estoy disponible...")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/otro.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/otro.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -737,7 +737,7 @@ if __name__ == '__main__':
             with col2:                
                 sabadoother12 = st.checkbox("Sábado a las 12 pm", key='sabadoother12')
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/sabado12.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/sabado12.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -753,7 +753,7 @@ if __name__ == '__main__':
             with col2:                
                 sabadoother1 = st.checkbox("Sábado a la 1 pm", key='sabadoother1')
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/sabado1.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/sabado1.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -769,7 +769,7 @@ if __name__ == '__main__':
             with col2:                
                 domingoother10 = st.checkbox("Domingo a las 10 am", key='domingoother10')
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/domingo10.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/domingo10.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -785,7 +785,7 @@ if __name__ == '__main__':
             with col2:                
                 domingoother11 = st.checkbox("Domingo a las 11 am", key='domingoother11')
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/domingo11.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/domingo11.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -801,7 +801,7 @@ if __name__ == '__main__':
             with col2:                
                 domingoother12 = st.checkbox("Domingo a las 12 pm", key='domingoother12')
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/domingo12.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/domingo12.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -819,7 +819,7 @@ if __name__ == '__main__':
             with col2:                
                 st.subheader("¿Cuál es el mejor modo de contacto?")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/contacto.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/contacto.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -834,7 +834,7 @@ if __name__ == '__main__':
             with col2:                
                 llamar = st.checkbox("Llamada")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/llamada.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/llamada.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -849,7 +849,7 @@ if __name__ == '__main__':
             with col2:                
                 texto = st.checkbox("Texto")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/texto.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/texto.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
@@ -864,7 +864,7 @@ if __name__ == '__main__':
             with col2:                
                 correo = st.checkbox("Correo Electronico")
             with col1:
-                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/sandbox/main/correoelectronico.m4a"
+                github_audio_url = "https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/Form/correoelectronico.m4a"
                 audio_code = f"""
                             <audio id="myAudio" src="{github_audio_url}" height="5"></audio>
                             <script>
