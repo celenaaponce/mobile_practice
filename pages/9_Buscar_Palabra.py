@@ -6,7 +6,7 @@ sys.path.append('streamlit_website/check')
 
 from check.spanish_word_freq import SpanishWordFreq
 from check.word_chekcer import WordChecker
-
+from st_pages import Page, Section,show_pages
 show_pages(
 [
     Page("Pagina_Principal.py", "Pagina Principal"),
