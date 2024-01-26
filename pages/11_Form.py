@@ -963,6 +963,6 @@ if __name__ == '__main__':
             msg.attach(attachment)
 
 
-            send_email(sender = st.secrets["SENDER_ADDRESS"], password = st.secrets["SENDER_PASSWORD"], receiver = "celena.a.ponce@gmail.com", smtp_server = st.secrets["SMTP_SERVER_ADDRESS"], smtp_port = st.secrets["PORT"], email_message = msg, subject = "")
+            send_email(sender = st.secrets["SENDER_ADDRESS"], password = st.secrets["SENDER_PASSWORD"], receiver = "celena.a.ponce@gmail.com", smtp_server = st.secrets["SMTP_SERVER_ADDRESS"], smtp_port = st.secrets["PORT"], email_message = msg, subject = f"{nombre} Registracion")
             st.header("Recibimos su formulario.  Contactamos pronto con el horario de su clase.  ¡Gracias!")
 
