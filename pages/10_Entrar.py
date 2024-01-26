@@ -5,20 +5,21 @@ from st_pages import Page, show_pages
 import string
 def regular_sidebar():
         show_pages(
-    [
-        Page("Pagina_Principal.py", "Pagina Principal"),
-        Page("pages/1_Diccionario.py", "Diccionario"),
-        Page("pages/2_Clases.py", "Clases"),
-        Page("pages/3_Libros.py", "Libros"),
-        Page("pages/4_Recursos.py", "Recursos"),
-        Page("pages/5_Sobre_Yo.py", "Sobre Yo"),
-        Page("pages/6_Diccionario_Completo.py", "Diccionario Completo"),
-        Page("pages/7_Diccionario_por_Letra.py", "Diccionario Por Letra"),
-        Page("pages/8_Diccionario_por_Tema.py", "Diccionario Por Tema"),
-        Page("pages/9_Buscar_Palabra.py", "Buscar Palabra"),
-        Page("pages/10_Entrar.py", "Entrar")
-    ])
-        
+        [
+            Page("Pagina_Principal.py", "Pagina Principal"),
+            Page("pages/1_Diccionario.py", "Diccionario"),
+            Page("pages/2_Clases.py", "Clases"),
+            Page("pages/3_Libros.py", "Libros"),
+            Page("pages/4_Recursos.py", "Recursos"),
+            Page("pages/5_Sobre_Yo.py", "Sobre Yo"),
+            Page("pages/6_Diccionario_Completo.py", "Diccionario Completo"),
+            Page("pages/7_Diccionario_por_Letra.py", "Diccionario Por Letra"),
+            Page("pages/8_Diccionario_por_Tema.py", "Diccionario Por Tema"),
+            Page("pages/9_Buscar_Palabra.py", "Buscar Palabra"),
+            Page("pages/10_Entrar.py", "Entrar"),
+            Page("pages/11_Form.py", "Registrar para Clases")
+        ])
+                
 def login_sidebar_ASL1():
         show_pages(
     [
@@ -32,6 +33,7 @@ def login_sidebar_ASL1():
         Page("pages/7_Diccionario_por_Letra.py", "Diccionario Por Letra"),
         Page("pages/8_Diccionario_por_Tema.py", "Diccionario Por Tema"),
         Page("pages/9_Buscar_Palabra.py", "Buscar Palabra"),
+        Page("pages/11_Form.py", "Registrar para Clases"),
         Page("pages/10_Entrar.py", "Entrar"),
         Page("pages/Introduccion_a_ASL_1.py", "Introducción a ASL 1"),
         Page("pages/Bravo_1.py", "Conocer la Familia Bravo"),
@@ -54,6 +56,7 @@ def login_sidebar_ASL2():
         Page("pages/7_Diccionario_por_Letra.py", "Diccionario Por Letra"),
         Page("pages/8_Diccionario_por_Tema.py", "Diccionario Por Tema"),
         Page("pages/9_Buscar_Palabra.py", "Buscar Palabra"),
+        Page("pages/11_Form.py", "Registrar para Clases"),
         Page("pages/10_Entrar.py", "Entrar"),
         Page("pages/Introduccion_a_ASL_2.py", "Introducción a ASL 2"),
         Page("pages/Bravo_5.py", "Repaso"),
@@ -76,6 +79,7 @@ def login_sidebar_ASLAtHome2():
         Page("pages/7_Diccionario_por_Letra.py", "Diccionario Por Letra"),
         Page("pages/8_Diccionario_por_Tema.py", "Diccionario Por Tema"),
         Page("pages/9_Buscar_Palabra.py", "Buscar Palabra"),
+        Page("pages/11_Form.py", "Registrar para Clases"),
         Page("pages/10_Entrar.py", "Entrar"),
         Page("pages/Introduccion_a_ASL_En_Casa.py"),
         Page("pages/ASLAtHome_c1.py", "Capitulo 1"),
