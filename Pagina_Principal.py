@@ -18,6 +18,7 @@ show_pages(
     Page("pages/8_Diccionario_por_Tema.py", "Diccionario Por Tema"),
     Page("pages/9_Buscar_Palabra.py", "Buscar Palabra"),
     Page("pages/10_Entrar.py", "Entrar"),
+    Page("pages/11_Form.py", "Registrar para Clases")
 ])
 def ChangeButtonColour(widget_label, font_color, background_color='transparent'):
     htmlstr = f"""
