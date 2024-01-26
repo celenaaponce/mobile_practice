@@ -102,14 +102,14 @@ def send_email(sender, password, receiver, smtp_server, smtp_port, email_message
 if __name__ == '__main__':
     set_styles()
     message = ""
-    img5pm = Image.open('5pm.jpeg')
-    img6pm = Image.open('6pm.jpeg')
-    img7pm = Image.open('7pm.jpeg')
-    img730pm = Image.open('730pm.jpeg')
-    img11am = Image.open('11am.jpeg')
-    img12pm = Image.open('12pm.jpeg')
-    img1pm = Image.open('1pm.jpeg')
-    img10am = Image.open('10am.jpeg')
+    img5pm = Image.open('Form/5pm.jpeg')
+    img6pm = Image.open('Form/6pm.jpeg')
+    img7pm = Image.open('Form/7pm.jpeg')
+    img730pm = Image.open('Form/730pm.jpeg')
+    img11am = Image.open('Form/11am.jpeg')
+    img12pm = Image.open('Form/12pm.jpeg')
+    img1pm = Image.open('Form/1pm.jpeg')
+    img10am = Image.open('Form/10am.jpeg')
         # JavaScript code for playing audio on image click
 
     with st.form("Tomar clase de ASL"):
