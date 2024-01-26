@@ -7,6 +7,21 @@ sys.path.append('streamlit_website/check')
 from check.spanish_word_freq import SpanishWordFreq
 from check.word_chekcer import WordChecker
 
+show_pages(
+[
+    Page("Pagina_Principal.py", "Pagina Principal"),
+    Page("pages/1_Diccionario.py", "Diccionario"),
+    Page("pages/2_Clases.py", "Clases"),
+    Page("pages/3_Libros.py", "Libros"),
+    Page("pages/4_Recursos.py", "Recursos"),
+    Page("pages/5_Sobre_Yo.py", "Sobre Yo"),
+    Page("pages/6_Diccionario_Completo.py", "Diccionario Completo"),
+    Page("pages/7_Diccionario_por_Letra.py", "Diccionario Por Letra"),
+    Page("pages/8_Diccionario_por_Tema.py", "Diccionario Por Tema"),
+    Page("pages/9_Buscar_Palabra.py", "Buscar Palabra"),
+    Page("pages/10_Entrar.py", "Entrar"),
+    Page("pages/11_Form.py", "Registrar para Clases")
+])
 st.set_page_config(layout="wide", page_title="Buscar Palabra")
 
 hide_streamlit_style = """
