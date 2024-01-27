@@ -93,7 +93,7 @@ with outer_col[0]:
     st.markdown("<a href='https://youtu.be/qp9jl0ECUwA' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/banarse.png'></a>", unsafe_allow_html=True)
     st.markdown("<a href='https://youtu.be/AShZlHInWEU' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/eresunavaca.png'></a>", unsafe_allow_html=True)
     st.markdown("<a href='https://youtu.be/X-DT_SDXxO4' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/lindobebecito.png'></a>", unsafe_allow_html=True)
-    st.markdown("<a href='https://youtu.be/Z-qNfedG3Hk' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/oceancolorido.png'></a>", unsafe_allow_html=True)
+    st.markdown("<a href='https://youtu.be/Z-qNfedG3Hk' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/oceanocolorido.png'></a>", unsafe_allow_html=True)
     st.markdown("<a href='https://www.youtube.com/watch?v=62NbByFKX7Y' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/charla.png'></a>", unsafe_allow_html=True)
     st.markdown("<a href='https://youtu.be/q7QTDovFA74' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/meal.png'></a>", unsafe_allow_html=True)
 
