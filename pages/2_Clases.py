@@ -86,5 +86,5 @@ with outer_col_3[1]:
     inner_col_3 = st.columns([1, 6, 1])
     with inner_col_3[1]:
         st.image(image3)
-    st.button('Registrar para Clases', key='Clases', on_click = open_page, args =('https://forms.gle/LennkBdrMvUrF7WQ8',))
+    st.button('Registrar para Clases', key='Clases', on_click = open_page, args =('https://aslparalatinos.streamlit.app/Registrar%20para%20Clases',))
     ChangeButtonColour('Registrar para Clases', '#fffff', '#92E3A9') 
