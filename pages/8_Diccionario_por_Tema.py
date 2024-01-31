@@ -166,7 +166,6 @@ if st.session_state.clicked == "":
 if st.session_state.clicked != "" and not (reset1 or reset2):
     page_two.empty()
     placeholder.empty()
-    word_data = load_words_tema()
     tema = themes[int(st.session_state.clicked[6:])]
     alpha_list = word_data.loc[word_data['Tema']== tema]
     alpha_list.sort_values(by=['Tema'])
@@ -189,7 +188,6 @@ if st.session_state.clicked != "" and not (reset1 or reset2):
            
 if increment:
     page_one.empty()
-    word_data = load_words_tema()
     tema = themes[int(st.session_state.clicked[6:])]
     alpha_list = word_data.loc[word_data['Tema']== tema]
     alpha_list.sort_values(by=['Tema'])
