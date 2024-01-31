@@ -88,7 +88,7 @@ with outer_col_4[0]:
 
 outer_col = st.columns([1,1])
 with outer_col[0]:
-    st.markdown("<a href='https://www.youtube.com/watch?v=cfetJAwPAho' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/jirafas%20no%20pueden%20bailar.jpg'></a>", unsafe_allow_html=True)
+    st.markdown("<a href='https://youtu.be/trV9g7OWAss?si=JDXrHR_5RjPnjYTa' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/jirafas%20no%20pueden%20bailar.jpg'></a>", unsafe_allow_html=True)
     st.markdown("<a href='https://youtu.be/mkgxSLa_QFE' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/la%20arana%20muy%20ocupada.jpg'></a>", unsafe_allow_html=True)
     st.markdown("<a href='https://youtu.be/qp9jl0ECUwA' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/banarse.png'></a>", unsafe_allow_html=True)
     st.markdown("<a href='https://youtu.be/AShZlHInWEU' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/eresunavaca.png'></a>", unsafe_allow_html=True)
