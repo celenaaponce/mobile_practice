@@ -66,13 +66,13 @@ def segunda_semana():
         st.title('')
         st.markdown('<h5>Introducción a La Familia (con subtitlos) 🔈</h5>', unsafe_allow_html=True)
     with clms22[1]:
-        st.video('https://youtu.be/gK3cUfN1Lfw')
+        st.video('https://youtu.be/5hp9m0BTTB4?si=eNI9aNMf7O7q8bQY')
     clms23 = st.columns([1,1])
     with clms23[0]:
         st.title('')
         st.markdown('<h5>Repaso y Explicación</h5>', unsafe_allow_html=True)
     with clms23[1]:
-        st.video('https://youtu.be/TnwmFK1Odqo')
+        st.video('https://youtu.be/pmLq0Hes-AE?si=HenUobgIYjw3iysd')
     clms24 = st.columns([1,1])
     with clms24[0]:
         st.title('')
@@ -84,13 +84,13 @@ def segunda_semana():
         st.title('')
         st.markdown('<h5>Conversación (con subtítulos) 🔈</h5>', unsafe_allow_html=True)
     with clms25[1]: 
-        st.video('https://youtu.be/5gYPPZFOO6M')
+        st.video('https://youtu.be/pg_A3DOROAk?si=PkXA0MOqawAMs4cV')
     clms26 = st.columns([1,1])
     with clms26[0]:
         st.title('')
         st.markdown('<h5>Cultura Sorda</h5>', unsafe_allow_html=True)
     with clms26[1]:
-        st.video('https://youtu.be/tKMpJxq7wNk')
+        st.video('https://youtu.be/IAzyXBqyBLU?si=GGtZZF9cR9P4BaZI')
 
     st.divider()
 
@@ -100,7 +100,7 @@ def segunda_semana():
         st.title('')
         st.markdown('<h5>Vocabulario para la semana que viene</h5>', unsafe_allow_html=True)
     with clms27[1]:
-        st.video('https://youtu.be/WsoxPTw9j9U')
+        st.video('https://youtu.be/HfsmWDTOjys?si=d4Ws78IFcP2fPRyk')
     clms28 = st.columns([1,1])
     with clms28[0]:
         st.title('')
@@ -112,7 +112,7 @@ def segunda_semana():
 
     st.divider()
             
-    components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vQd8Y-xcWg9rS517V1gkm3m7O_sEKq_OSo4nQxS2RI2TFew0eR1yjqb1_mhLUfZ9CW1hrApe8mbHNLj/embed?start=false&loop=false&delayms=3000", height=480)
+    components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vTeE3U675SCp8oa7iL3tegS7S3sTs5vJ0Aj88nnY-982lGX-uUu1sXq5ctdv8QlDX9NlJiSpEcUhOhD/embed?start=false&loop=false&delayms=3000", height=480)
 
 def tercera_semana():
     set_styles()
@@ -123,7 +123,7 @@ def tercera_semana():
         st.title('')
         st.markdown('<h5>Repaso y Explicación</h5>', unsafe_allow_html=True)
     with clms23[1]:
-        st.video('https://youtu.be/35oau3bfsnY')
+        st.video('https://youtu.be/3XcBL8fEpcI?si=3JZgBz5avB88fQo_')
     clms24 = st.columns([1,1])
     with clms24[0]:
         st.title('')
@@ -135,13 +135,13 @@ def tercera_semana():
         st.title('')
         st.markdown('<h5>Conversación (con subtítulos) 🔈</h5>', unsafe_allow_html=True)
     with clms25[1]: 
-        st.video('https://youtu.be/M9k6WcksVp0')
+        st.video('https://youtu.be/yrFuvImZGH0?si=g63d-f3DI6xKVnqm')
     clms26 = st.columns([1,1])
     with clms26[0]:
         st.title('')
         st.markdown('<h5>Gramatica</h5>', unsafe_allow_html=True)
     with clms26[1]:
-        st.video('https://youtu.be/T-69bZ33l90')
+        st.video('https://youtu.be/LZFrhNALSgg?si=B60ir9iAXZuHtDop')
     clms29 = st.columns([1,1])
     with clms29[0]:
         st.title('')
@@ -159,7 +159,7 @@ def tercera_semana():
         st.title('')
         st.markdown('<h5>Cuento (con subtítulos) 🔈</h5>', unsafe_allow_html=True)
     with clms31[1]: 
-        st.video('https://youtu.be/NDjz2eiNOv0')        
+        st.video('https://youtu.be/5AoLtmMEk8s?si=bJWzu7z8hZs6fzpN')        
     st.divider()
 
     st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
@@ -178,6 +178,6 @@ def tercera_semana():
         st.markdown("<a href='https://edpuzzle.com/media/6340a73092852240f8ac3087' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/pages/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
 
     st.divider()
-    components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vTxPJGXEYZG_-N-G7ypLyhScw07aukwDGxidek6zeh1iCQYRaRfuyTZ76xHec4iOGFz9fjTX31aICJ1/embed?start=false&loop=false&delayms=3000", height=480)
+    components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vRtK9-_F-5WfUL0Gg84Z2WUnlEXXsy1yIkz5h6AmrYGL2dt7cat8e8hFw8ih9ru6rio2HBPQb6cLi3D/embed?start=false&loop=false&delayms=3000", height=480)
 
 main()
