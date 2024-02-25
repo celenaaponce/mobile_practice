@@ -13,8 +13,6 @@ def main():
     with tab1:
             spring()
 
-
-
 def login_sidebar_ASL1():
         show_pages(
     [
