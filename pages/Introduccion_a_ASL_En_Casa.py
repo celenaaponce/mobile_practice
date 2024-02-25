@@ -29,7 +29,7 @@ def login_sidebar_ASL_En_Casa():
         # Page("pages/Bravo_1.py", "Conocer la Familia Bravo"),
         # Page("pages/Bravo_2.py", "Desayuno"),
         # Page("pages/Bravo_3.py", "¿Dónde está el contról?"),
-        Page("pages/holidays_spring.py", "Días Festivos")
+        Page("pages/holidays_spring_aah.py", "Días Festivos")
     ]
 )
 
