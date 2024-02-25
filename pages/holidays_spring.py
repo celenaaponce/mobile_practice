@@ -60,8 +60,10 @@ def spring():
     with clms3[0]:
         st.title('')
         st.markdown('<h5>Cuento de la Primavera</h5>', unsafe_allow_html=True)
-    with clms3[1]:
-        st.video('https://youtu.be/UR5sbc6vHBY')
+    # with clms3[1]:
+    #     st.video('https://youtu.be/UR5sbc6vHBY')
+    components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vQWQGDfD9frtoRelg1LUY82AfX61Uncc62N2cOlLlR6m_rVaBFQLd0y7sEROoLbOwN3LHV0aCIIcHPA/embed?start=false&loop=false&delayms=3000", height=480)
+
 
 
 main()
