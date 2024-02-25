@@ -6,8 +6,8 @@ from pages import holidays
 from st_pages import Page, Section,show_pages, add_page_title
 
 def main():
-        login_sidebar_ASL2()
-        st.header("Bienvenido a la clase de ASL 2.")
+        login_sidebar_ASL3()
+        st.header("Bienvenido a la clase de ASL 3.")
         st.header("Se puede mirar nuestro curriculo aqui:")
         escuela1()
 
@@ -37,11 +37,11 @@ def login_sidebar_ASL2():
         Page("pages/8_Diccionario_por_Tema.py", "Diccionario Por Tema"),
         Page("pages/9_Buscar_Palabra.py", "Buscar Palabra"),
         Page("pages/10_Entrar.py", "Entrar"),
-        Page("pages/Introduccion_a_ASL_2.py", "Introducción a ASL 2"),
-        Page("pages/Bravo_5.py", "Repaso"),
-        Page("pages/Bravo_6.py", "Colores y Deletrear"),
-        Page("pages/Bravo_7.py", "Escuela"),
-        Page("pages/holidays_2.py", "Días Festivos")
+        Page("pages/Introduccion_a_ASL_3.py", "Introducción a ASL 3"),
+        # Page("pages/Bravo_5.py", "Repaso"),
+        # Page("pages/Bravo_6.py", "Colores y Deletrear"),
+        # Page("pages/Bravo_7.py", "Escuela"),
+        Page("pages/holidays_spring_3.py", "Días Festivos")
     ]
 )
 
