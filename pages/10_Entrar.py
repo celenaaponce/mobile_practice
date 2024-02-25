@@ -161,7 +161,7 @@ elif classoption == 'ASL En Casa':
 
 elif classoption == 'ASL 3':
         login_sidebar_ASL3()
-        switch_page("Introduccion_a_ASL_3")
+        switch_page("Introducción_a_ASL_3")
 else:
         regular_sidebar()
         check_password()
