@@ -3,7 +3,7 @@ import pandas as pd
 import sys
 import gdown
 sys.path.append('streamlit_website/check')
-
+st.session_state['password_correct'] = False
 from check.spanish_word_freq import SpanishWordFreq
 from check.word_chekcer import WordChecker
 from st_pages import Page, Section,show_pages
