@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 from streamlit_extras.switch_page_button import switch_page
 import streamlit.components.v1 as components
-from pages import holidays
+# from pages import holidays
 from st_pages import Page, Section,show_pages, add_page_title
 
 
