@@ -117,7 +117,7 @@ def check_password():
     def login_form():
         """Form with widgets to collect user information"""
         with st.form("Credentials"):
-            st.write(st.secrets['password'])
+
             option = st.selectbox(
                     '¿Cual clase?',
                     ('ASL 1', 'ASL 2', 'ASL 3', 'ASL En Casa'), key='option')
