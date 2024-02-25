@@ -31,7 +31,7 @@ def login_sidebar_ASL2():
         # Page("pages/Bravo_1.py", "Conocer la Familia Bravo"),
         # Page("pages/Bravo_2.py", "Desayuno"),
         # Page("pages/Bravo_3.py", "¿Dónde está el contról?"),
-        Page("pages/holidays_spring2.py", "Días Festivos")
+        Page("pages/holidays_spring_2.py", "Días Festivos")
     ]
 )
 
