@@ -8,7 +8,7 @@ def main():
     login_sidebar_ASL1()
     st.header("Bienvenido a la clase de ASL 1.")
     st.header("Se puede mirar nuestro curriculo aqui:")
-    tab1 = st.tabs([ ":white[Primavera]"])
+    tab1, = st.tabs([ ":white[Primavera]"])
 
     with tab1:
             spring()
