@@ -8,7 +8,7 @@ import gdown
 from time import sleep
 from st_click_detector import click_detector
 from st_pages import Page, Section,show_pages, add_page_title
-
+st.session_state['password_correct'] = False
 show_pages(
 [
     Page("Pagina_Principal.py", "Pagina Principal"),
