@@ -134,4 +134,5 @@ elif classoption == 'ASL En Casa':
     login_sidebar_ASLAtHome2()
     switch_page("Introduccion_a_ASL_En_Casa")
 else:
+        regular_sidebar()
         check_password()
