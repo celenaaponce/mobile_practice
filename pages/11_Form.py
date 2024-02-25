@@ -19,7 +19,7 @@ from pydub.playback import play
 import time
 from streamlit_js_eval import streamlit_js_eval
 from pages.form_phone import form_phone, Register
-  
+st.session_state['password_correct'] = False  
 show_pages(
 [
     Page("Pagina_Principal.py", "Pagina Principal"),
