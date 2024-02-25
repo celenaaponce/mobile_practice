@@ -93,47 +93,45 @@ def check_password():
     def login_form():
         """Form with widgets to collect user information"""
         with st.form("Credentials"):
-            st.text_input("Correo Electronico", key="username")
+            option = st.selectbox(
+                    '¿Cual clase?',
+                    ('ASL 1', 'ASL 2', 'ASL 3', 'ASL En Casa'), key='option')
             st.text_input("Contraseña", type="password", key="password")
             st.form_submit_button("Entrar", on_click=password_entered)
 
     def password_entered():
         """Checks whether a password entered by the user is correct."""
-        st.session_state['name'] = st.session_state['username']
-        st.session_state['username'] = st.session_state['username'].split('@')[0].translate(str.maketrans('', '', string.punctuation))
-        if st.session_state["username"] in st.secrets[
-            "passwords"] :
-            st.session_state["password_correct"] = True
-            st.session_state['name'] = st.session_state['username']
-            del st.session_state["password"]  # Don't store the username or password.
-            del st.session_state['username']
+        if st.session_state['password'] == st.secrets['password']:
+                    st.session_state["password_correct"] = True
         else:
-            st.session_state["password_correct"] = False
+                st.session_state["password_correct"] = False
     # Return True if the username + password is validated.
     if st.session_state.get("password_correct", False):
         return True
 
     # Show inputs for username + password.
     login_form()
-    if "password_correct" in st.session_state:
-        st.error("😕 Correo Electronico o Contraseña Mal")
-    return False
 
+    return False
 
 if not check_password():
     st.stop()
 
-username = st.session_state['name']
-if username in st.secrets.ASL1:
+if 'option' in st.session_state.keys():
+        classoption = st.session_state['option']
+else:       
+        classoption = ""
+        check_password()
+if classoption == 'ASL 1':
     login_sidebar_ASL1()
     switch_page("Introducción_a_ASL_1")
-    username = ""
-elif username in st.secrets['ASL2']:
 
-    login_sidebar_ASL2()
-    switch_page("Introducción_a_ASL_2")
+elif classoption == 'ASL 2':
+        login_sidebar_ASL2()
+        switch_page("Introducción_a_ASL_2")
     
-else:
-
+elif classoption == 'ASL En Casa':
     login_sidebar_ASLAtHome2()
     switch_page("Introduccion_a_ASL_En_Casa")
+else:
+        check_password()
