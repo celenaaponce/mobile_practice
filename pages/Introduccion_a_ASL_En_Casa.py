@@ -2,16 +2,16 @@ import streamlit as st
 from PIL import Image
 from streamlit_extras.switch_page_button import switch_page
 import streamlit.components.v1 as components
-from pages import holidays
+# from pages import holidays
 from st_pages import Page, Section,show_pages, add_page_title
 
 def main():
-    login_sidebar_ASLAtHome2()
+    login_sidebar_ASL_En_Casa()
     st.header("Bienvenido a la clase de ASL En Casa.")
     st.header("Se puede mirar nuestro curriculo aqui:")
     primera_semana()
 
-def login_sidebar_ASLAtHome2():
+def login_sidebar_ASL_En_Casa():
         show_pages(
     [
         Page("Pagina_Principal.py", "Pagina Principal"),
@@ -25,12 +25,11 @@ def login_sidebar_ASLAtHome2():
         Page("pages/8_Diccionario_por_Tema.py", "Diccionario Por Tema"),
         Page("pages/9_Buscar_Palabra.py", "Buscar Palabra"),
         Page("pages/10_Entrar.py", "Entrar"),
-        Page("pages/Introduccion_a_ASL_En_Casa.py"),
-        Page("pages/ASLAtHome_c1.py", "Capitulo 1"),
-        Page("pages/ASLAtHome_c2.py", "Capitulo 2"),
-        Page("pages/ASLAtHome_c3.py", "Capitulo 3"),
-        Page("pages/ASLAtHome_c4.py", "Capitulo 4"),
-        Page("pages/holidays_aah.py", "Dias Festivos")
+        Page("pages/Introduccion_a_ASL_En_Casa.py", "Introducción a ASL En Casa"),
+        # Page("pages/Bravo_1.py", "Conocer la Familia Bravo"),
+        # Page("pages/Bravo_2.py", "Desayuno"),
+        # Page("pages/Bravo_3.py", "¿Dónde está el contról?"),
+        Page("pages/holidays_spring.py", "Días Festivos")
     ]
 )
 
