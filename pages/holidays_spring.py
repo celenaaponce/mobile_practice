@@ -39,7 +39,7 @@ def spring():
     clms = st.columns([1,1])
     with clms[0]:
         st.title('')
-        st.markdown('<h5>Vocabulario de Spring</h5>', unsafe_allow_html=True)
+        st.markdown('<h5>Vocabulario de la Primavera</h5>', unsafe_allow_html=True)
     with clms[1]:
         st.video('https://www.youtube.com/watch?v=1XRJRt2dlNc')
     clms1 = st.columns([1,1])
