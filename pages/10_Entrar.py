@@ -37,7 +37,7 @@ def login_sidebar_ASL1():
         Page("pages/11_Form.py", "Registrar para Clases"),
         Page("pages/10_Entrar.py", "Entrar"),
         Page("pages/Introduccion_a_ASL_1.py", "Introducción a ASL 1"),
-        # Page("pages/Bravo_1.py", "Conocer la Familia Bravo"),
+        Page("pages/Bravo_1.py", "Conocer la Familia Bravo"),
         # Page("pages/Bravo_2.py", "Desayuno"),
         # Page("pages/Bravo_3.py", "¿Dónde está el contról?"),
         Page("pages/holidays_spring.py", "Días Festivos")
@@ -60,6 +60,7 @@ def login_sidebar_ASL2():
         Page("pages/11_Form.py", "Registrar para Clases"),
         Page("pages/10_Entrar.py", "Entrar"),
         Page("pages/Introduccion_a_ASL_2.py", "Introducción a ASL 2"),
+        Page("pages/Bravo_4.py", "Ir de Compras"),
         # Page("pages/Bravo_5.py", "Repaso"),
         # Page("pages/Bravo_6.py", "Colores y Deletrear"),
         # Page("pages/Bravo_7.py", "Escuela"),
