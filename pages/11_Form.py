@@ -111,7 +111,7 @@ if __name__ == '__main__':
     img1pm = Image.open('Form/1pm.jpeg')
     img10am = Image.open('Form/10am.jpeg')
         # JavaScript code for playing audio on image click
-    st.header("Nuestras clases de primavera ya empezaron.  Si tiene interes en tomar clases, se puede mandarme correo electronico a celena.a.ponce@gmail.com")
+    st.header("Nuestras clases de primavera ya han comenzado. Si usted está interesado en tomar clases, por favor envíeme un correo electrónico a celena.a.ponce@gmail.com")
     # with st.form("Tomar clase de ASL"):
     #     if phone:
     #         r = form_phone() 
