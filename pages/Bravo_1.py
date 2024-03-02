@@ -5,7 +5,7 @@ import streamlit.components.v1 as components
 # from pages import holidays
 from st_pages import Page, Section,show_pages, add_page_title
 
-
+st.session_state['password_correct'] = True
 def main():
     login_sidebar_ASL1()
     st.header("Bienvenido a la clase de ASL 1.")
