@@ -23,7 +23,7 @@ def set_styles():
         </style>
     """, unsafe_allow_html=True)
 
-def login_sidebar_ASL2():
+def login_sidebar_ASL3():
         show_pages(
     [
         Page("Pagina_Principal.py", "Pagina Principal"),
