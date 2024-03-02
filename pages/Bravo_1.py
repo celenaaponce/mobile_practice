@@ -115,7 +115,7 @@ def segunda_semana():
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vTwTwZCMQMldc_sXEFLb5nMns5knZG9PNmSh_UgUB8e_N-DtLMu-NZeoUCVhZcprTtnDOXq8FRP26Vt/embed?start=false&loop=false&delayms=3000", height=480)
 
 def tercera_semana():
-    # set_styles()
+    set_styles()
     # st.subheader('Conocer La Familia Bravo Pt 2')
     # st.markdown("<h4 style='text-align: center; color: white;'><u>Videos</u></h4>", unsafe_allow_html=True)
     # clms23 = st.columns([1,1])
