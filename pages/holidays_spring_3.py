@@ -3,7 +3,7 @@ from PIL import Image
 from streamlit_extras.switch_page_button import switch_page
 import streamlit.components.v1 as components
 from st_pages import Page, Section,show_pages, add_page_title
-
+st.session_state['password_correct'] = True
 def main():
     login_sidebar_ASL3()
     st.header("Bienvenido a la clase de ASL 3.")
@@ -28,7 +28,7 @@ def login_sidebar_ASL3():
         Page("pages/9_Buscar_Palabra.py", "Buscar Palabra"),
         Page("pages/10_Entrar.py", "Entrar"),
         Page("pages/Introduccion_a_ASL_3.py", "Introducción a ASL 3"),
-        # Page("pages/Bravo_1.py", "Conocer la Familia Bravo"),
+        Page("pages/Bravo_7.py", "Escuela"),
         # Page("pages/Bravo_2.py", "Desayuno"),
         # Page("pages/Bravo_3.py", "¿Dónde está el contról?"),
         Page("pages/holidays_spring_3.py", "Días Festivos")
