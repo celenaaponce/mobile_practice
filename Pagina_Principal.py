@@ -74,7 +74,7 @@ with cont_1:
         set_styles()
         st.markdown("<h1 style='text-align: center; color: white;'>¡Aprender Lengua de Señas Americana en Su Propia Idioma!</h1>", unsafe_allow_html=True)
     
-        st.markdown("<h5 style='text-align: center; color: white;'>Para padres Latinos de niños Sordos, sé que hay muchos retos.  Hay bastante que aprender, no solo idioma, pero cultura y más. Mi meta es ayudar padres Latinos entender la lengua de señas americana, sin necesitar saber ingles.  También, quiero ayudar encontrar los recursos que necesitan para que sus hijos pueden tener exitó. </h5>", unsafe_allow_html=True)
+        st.markdown("<h5 style='text-align: center; color: white;'>Para padres latinos de niños sordos, sé que hay muchos retos.  Hay bastante que aprender, no sólo idioma, pero cultura y más. Mi meta es ayudar a padres latinos entender la lengua de señas americana, sin necesitar saber inglés.  También, quiero ayudarles a encontrar los recursos que necesitan para que sus hijos pueden tener éxito. </h5>", unsafe_allow_html=True)
     
     with outer_cols[1]:
         inner_cols = st.columns([1, 6, 1])
@@ -96,7 +96,7 @@ with cont_2:
         set_styles()
         st.markdown("<h2 style='text-align: center; color: white;'>Diccionario</h1>", unsafe_allow_html=True)
     
-        st.markdown("<h5 style='text-align: center; color: white;'>Buscar señas y frases en un diccionario de Español a ASL </h5>", unsafe_allow_html=True)
+        st.markdown("<h5 style='text-align: center; color: white;'>Buscar señas y frases en un diccionario de español a ASL </h5>", unsafe_allow_html=True)
     
     with outer_col_2[0]:
         inner_col_2 = st.columns([1, 6, 1])
@@ -157,7 +157,7 @@ with cont_5:
         set_styles()
         st.markdown("<h2 style='text-align: center; color: white;'>Recursos</h1>", unsafe_allow_html=True)
     
-        st.markdown("<h5 style='text-align: center; color: white;'>Recursos para familias Latinos con hijos Sordos </h5>", unsafe_allow_html=True)
+        st.markdown("<h5 style='text-align: center; color: white;'>Recursos para familias latinas con hijos sordos </h5>", unsafe_allow_html=True)
     
     with outer_col_5[1]:
         inner_col_5 = st.columns([1, 6, 1])
