@@ -68,7 +68,7 @@ with outer_col_2[1]:
     set_styles()
     st.markdown("<h2 style='text-align: center; color: white;'>Diccionario</h1>", unsafe_allow_html=True)
 
-    st.markdown("<h5 style='text-align: center; color: white;'> Este diccionario es señas en la lengua de ASL, con videos. También tiene fotos, y voz español. </h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='text-align: center; color: white;'> Este diccionario es señas en la lengua de ASL, con videos. También tiene fotos, y voz en español. </h5>", unsafe_allow_html=True)
 
 with outer_col_2[0]:
     inner_col_2 = st.columns([1, 6, 1])
@@ -93,7 +93,7 @@ with outer_col_3[0]:
     if letra:
         switch_page('Diccionario_por_Letra')
 with outer_col_3[1]:
-         st.markdown("<h5 style='text-align: center; color: white;'> Buscar palabras por letra </h5>", unsafe_allow_html=True)
+         st.markdown("<h5 style='text-align: center; color: white;'> Buscar palabras por letra inicial </h5>", unsafe_allow_html=True)
 
 outer_col_4 = st.columns([1,1])
 st.divider()
@@ -113,4 +113,4 @@ with outer_col_5[0]:
     if palabra:
          switch_page('Buscar_Palabra')
 with outer_col_5[1]:
-    st.markdown("<h5 style='text-align: center; color: white;'> Buscar palabra por busqueda</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='text-align: center; color: white;'> Buscar palabra usando búsqueda</h5>", unsafe_allow_html=True)
