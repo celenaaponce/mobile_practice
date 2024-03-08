@@ -82,7 +82,7 @@ with outer_col_5[0]:
     set_styles()
     st.markdown("<h2 style='text-align: center; color: white;'>Recursos</h1>", unsafe_allow_html=True)
 
-    st.markdown("<h5 style='text-align: center; color: white;'>Recursos para familias Latinos con hijos Sordos </h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='text-align: center; color: white;'>Recursos para familias latinas con hijos sordos </h5>", unsafe_allow_html=True)
 
 with outer_col_5[1]:
     inner_col_5 = st.columns([1, 6, 1])
@@ -97,14 +97,14 @@ st.markdown("<h3>Manos y Voces</h3> \
 
 st.divider()
 st.markdown("<h3>Escuelas para los Sordos</h3>\
-              <p><a href='https://www.asd-1817.org/deaf-schools' target='_blank'>Escuelas para los Sordos</a> son escuelas de varias niveles, \
-            kinder al 12 grado. Algunos son publicos.  Los que son publicos son gratis y algunos tienen dormitorios donde niños pueden quedar \
-                si no viven cerca. Es un lugar buenisimo para niños sordos aprender más de su cultura y su idioma.</p>", unsafe_allow_html = True)
+              <p><a href='https://www.asd-1817.org/deaf-schools' target='_blank'>Escuelas para los Sordos</a> son escuelas de varías niveles, \
+            desde kinder al 12vo grado. Algunas son publicas.  Las que son públicos son gratis y algunos tienen dormitorios donde los niños pueden quedar \
+                si no viven cerca. Es un lugar buenisimo para niños sordos para aprender más de su cultura y su idioma.</p>", unsafe_allow_html = True)
 
 st.divider()
 st.markdown("<h3>Centros para Sordos</h3>\
               <p><a href='https://www.nad.org/resources/directories/state-agencies-of-deaf-hoh/' target='_blank'>Centros para Sordos</a> son\
-                  lugares que ayudan personas sordos encontrar recursos de cualquier tipo.  Algunos también tienen actividades o otros \
+                  lugares que ayudan a personas sordas a encontrar recursos de cualquier tipo.  Algunos también tienen actividades u otros \
                     servicios.</p>", unsafe_allow_html=True)
 
 st.divider()
