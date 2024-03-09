@@ -51,8 +51,9 @@ def set_styles():
     """, unsafe_allow_html=True)
 
 def segunda_semana():
-    login_sidebar_ASL1()
+    
     set_styles()
+    login_sidebar_ASL1()
     st.subheader('Conocer La Familia Bravo Pt 1')
     st.markdown("<h4 style='text-align: center; color: white;'><u>Videos</u></h4>", unsafe_allow_html=True)
     clms21 = st.columns([1,1])
