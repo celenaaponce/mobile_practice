@@ -180,6 +180,6 @@ def tercera_semana():
         st.markdown("<a href='https://edpuzzle.com/media/6340a73092852240f8ac3087' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/pages/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
 
     st.divider()
-    components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vRtK9-_F-5WfUL0Gg84Z2WUnlEXXsy1yIkz5h6AmrYGL2dt7cat8e8hFw8ih9ru6rio2HBPQb6cLi3D/embed?start=false&loop=false&delayms=3000", height=480)
+    components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vRNv-erCVwdnRW6x8vQHx4BIizUFhJAhXUqz7moBsxTpXS7Wg2sZRHW5FCiLdjd3kdA6EbxTKLWWaMB/embed?start=false&loop=false&delayms=3000", height=480)
 
 main()
