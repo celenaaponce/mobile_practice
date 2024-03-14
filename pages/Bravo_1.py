@@ -118,68 +118,68 @@ def segunda_semana():
 def tercera_semana():
     set_styles()
     login_sidebar_ASL1()
-    # st.subheader('Conocer La Familia Bravo Pt 2')
-    # st.markdown("<h4 style='text-align: center; color: white;'><u>Videos</u></h4>", unsafe_allow_html=True)
-    # clms23 = st.columns([1,1])
-    # with clms23[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Repaso y Explicación</h5>', unsafe_allow_html=True)
-    # with clms23[1]:
-    #     st.video('https://youtu.be/3XcBL8fEpcI?si=3JZgBz5avB88fQo_')
-    # clms24 = st.columns([1,1])
-    # with clms24[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Conversación (sin subtítulos) 🔇</h5>', unsafe_allow_html=True)
-    # with clms24[1]:    
-    #     st.video('https://youtu.be/RAoRBgN_BaQ')
-    # clms25 = st.columns([1,1])
-    # with clms25[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Conversación (con subtítulos) 🔈</h5>', unsafe_allow_html=True)
-    # with clms25[1]: 
-    #     st.video('https://youtu.be/yrFuvImZGH0?si=g63d-f3DI6xKVnqm')
-    # clms26 = st.columns([1,1])
-    # with clms26[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Gramatica</h5>', unsafe_allow_html=True)
-    # with clms26[1]:
-    #     st.video('https://youtu.be/LZFrhNALSgg?si=B60ir9iAXZuHtDop')
-    # clms29 = st.columns([1,1])
-    # with clms29[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Frases</h5>', unsafe_allow_html=True)
-    # with clms29[1]:
-    #     st.video('https://youtu.be/PKULlbXRFic')
-    # clms30 = st.columns([1,1])
-    # with clms30[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Cuento (sin subtítulos) 🔇</h5>', unsafe_allow_html=True)
-    # with clms30[1]:    
-    #     st.video('https://youtu.be/__ZXhLplISE')
-    # clms31 = st.columns([1,1])
-    # with clms31[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Cuento (con subtítulos) 🔈</h5>', unsafe_allow_html=True)
-    # with clms31[1]: 
-    #     st.video('https://youtu.be/5AoLtmMEk8s?si=bJWzu7z8hZs6fzpN')        
-    # st.divider()
+    st.subheader('Conocer La Familia Bravo Pt 2')
+    st.markdown("<h4 style='text-align: center; color: white;'><u>Videos</u></h4>", unsafe_allow_html=True)
+    clms23 = st.columns([1,1])
+    with clms23[0]:
+        st.title('')
+        st.markdown('<h5>Repaso y Explicación</h5>', unsafe_allow_html=True)
+    with clms23[1]:
+        st.video('https://youtu.be/3XcBL8fEpcI?si=ixiMZvgKgJg62cW2')
+    clms24 = st.columns([1,1])
+    with clms24[0]:
+        st.title('')
+        st.markdown('<h5>Conversación (sin subtítulos) 🔇</h5>', unsafe_allow_html=True)
+    with clms24[1]:    
+        st.video('https://youtu.be/RAoRBgN_BaQ')
+    clms25 = st.columns([1,1])
+    with clms25[0]:
+        st.title('')
+        st.markdown('<h5>Conversación (con subtítulos) 🔈</h5>', unsafe_allow_html=True)
+    with clms25[1]: 
+        st.video('https://youtu.be/yrFuvImZGH0?si=-T3RMcc0ySQdeXB_')
+    clms26 = st.columns([1,1])
+    with clms26[0]:
+        st.title('')
+        st.markdown('<h5>Gramatica</h5>', unsafe_allow_html=True)
+    with clms26[1]:
+        st.video('https://youtu.be/LZFrhNALSgg?si=LCEMI0CRoX2Q155n')
+    clms29 = st.columns([1,1])
+    with clms29[0]:
+        st.title('')
+        st.markdown('<h5>Frases</h5>', unsafe_allow_html=True)
+    with clms29[1]:
+        st.video('https://youtu.be/PKULlbXRFic')
+    clms30 = st.columns([1,1])
+    with clms30[0]:
+        st.title('')
+        st.markdown('<h5>Cuento (sin subtítulos) 🔇</h5>', unsafe_allow_html=True)
+    with clms30[1]:    
+        st.video('https://youtu.be/__ZXhLplISE')
+    clms31 = st.columns([1,1])
+    with clms31[0]:
+        st.title('')
+        st.markdown('<h5>Cuento (con subtítulos) 🔈</h5>', unsafe_allow_html=True)
+    with clms31[1]: 
+        st.video('https://youtu.be/5AoLtmMEk8s?si=HZ4s8lKi5b7in_2u')        
+    st.divider()
 
-    # st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
-    # clms27 = st.columns([1,1])
-    # with clms27[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Vocabulario para la semana que viene</h5>', unsafe_allow_html=True)
-    # with clms27[1]:
-    #     st.video('https://youtu.be/uGtS3_zEGV8')
-    # clms28 = st.columns([1,1])
-    # with clms28[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Practica</h5>', unsafe_allow_html=True)
-    # with clms28[1]:
-    #     st.markdown("<a href='https://edpuzzle.com/media/6340a4165be52340dc956cb7' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/pages/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
-    #     st.markdown("<a href='https://edpuzzle.com/media/6340a73092852240f8ac3087' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/pages/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
+    st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
+    clms27 = st.columns([1,1])
+    with clms27[0]:
+        st.title('')
+        st.markdown('<h5>Vocabulario para la semana que viene</h5>', unsafe_allow_html=True)
+    with clms27[1]:
+        st.video('https://youtu.be/uGtS3_zEGV8')
+    clms28 = st.columns([1,1])
+    with clms28[0]:
+        st.title('')
+        st.markdown('<h5>Practica</h5>', unsafe_allow_html=True)
+    with clms28[1]:
+        st.markdown("<a href='https://edpuzzle.com/media/6340a4165be52340dc956cb7' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/pages/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
+        st.markdown("<a href='https://edpuzzle.com/media/6340a73092852240f8ac3087' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/pages/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
 
-    # st.divider()
-    # components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vRtK9-_F-5WfUL0Gg84Z2WUnlEXXsy1yIkz5h6AmrYGL2dt7cat8e8hFw8ih9ru6rio2HBPQb6cLi3D/embed?start=false&loop=false&delayms=3000", height=480)
+    st.divider()
+    components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vRtK9-_F-5WfUL0Gg84Z2WUnlEXXsy1yIkz5h6AmrYGL2dt7cat8e8hFw8ih9ru6rio2HBPQb6cLi3D/embed?start=false&loop=false&delayms=3000", height=480)
 
 main()
