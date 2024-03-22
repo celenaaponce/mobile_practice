@@ -48,7 +48,7 @@ if st.session_state.password_correct == True:
     
     elif st.session_state['option'] == 'ASL 3':
 
-        switch_page("Introducción_a_ASL_3")
+        switch_page("./pages/Introduccion_a_ASL_3")
 # else:
 
 #     st.write('wrong password')
