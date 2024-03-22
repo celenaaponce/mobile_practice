@@ -2,10 +2,16 @@ import streamlit as st
 from PIL import Image
 from streamlit_extras.switch_page_button import switch_page
 import streamlit.components.v1 as components
-from pages.sidebars import login_sidebar_ASLAtHome2
-st.write(st.session_state)
+from modules.nav import MenuButtons
+st.markdown("""
+    <style>
+        div[data-testid="stSidebarNav"]{
+            display: none !important;
+        }
+    </style>
+    """, unsafe_allow_html=True)
 def main():
-    login_sidebar_ASLAtHome2()
+    MenuButtons('ASLEnCasa')
     st.header("Bienvenido a la clase de ASL En Casa.")
     st.header("Se puede mirar nuestro curriculo aqui:")
     tab1, = st.tabs([ ":white[Primavera]"])
