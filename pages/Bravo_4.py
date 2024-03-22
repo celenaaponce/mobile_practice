@@ -2,11 +2,17 @@ import streamlit as st
 from PIL import Image
 from streamlit_extras.switch_page_button import switch_page
 import streamlit.components.v1 as components
-from pages import holidays
-from st_pages import Page, Section,show_pages, add_page_title
-st.session_state['password_correct'] = True
+from pages.sidebars import login_sidebar_ASL2, set_styles
+from modules.nav import MenuButtons
+st.markdown("""
+    <style>
+        div[data-testid="stSidebarNav"]{
+            display: none !important;
+        }
+    </style>
+    """, unsafe_allow_html=True)
 def main():
-    login_sidebar_ASL1()
+    MenuButtons('ASL2')
     st.header("Bienvenido a la clase de ASL 2.")
     st.header("Se puede mirar nuestro curriculo aqui:")
     tab8, tab9 = st.tabs([":white[Ir de Compras Pt 1]", ":white[Ir de Compras Pt 2]"])
@@ -16,41 +22,9 @@ def main():
     with tab9:
             septima_semana()
 
-def login_sidebar_ASL1():
-        show_pages(
-    [
-        Page("Pagina_Principal.py", "Pagina Principal"),
-        Page("pages/1_Diccionario.py", "Diccionario"),
-        Page("pages/2_Clases.py", "Clases"),
-        Page("pages/3_Libros.py", "Libros"),
-        Page("pages/4_Recursos.py", "Recursos"),
-        Page("pages/5_Sobre_Yo.py", "Sobre Yo"),
-        Page("pages/6_Diccionario_Completo.py", "Diccionario Completo"),
-        Page("pages/7_Diccionario_por_Letra.py", "Diccionario Por Letra"),
-        Page("pages/8_Diccionario_por_Tema.py", "Diccionario Por Tema"),
-        Page("pages/9_Buscar_Palabra.py", "Buscar Palabra"),
-        Page("pages/10_Entrar.py", "Entrar"),
-        Page("pages/Introduccion_a_ASL_2.py", "Introducción a ASL 2"),
-        Page("pages/Bravo_4.py", "Ir de Compras"),
-        # Page("pages/Bravo_2.py", "Desayuno"),
-        # Page("pages/Bravo_3.py", "¿Dónde está el contról?"),
-        Page("pages/holidays_spring_2.py", "Días Festivos")
-    ]
-)
-        
-def set_styles():
-    st.write("""
-        <style>
-        a {
-            background-color: #94387f;
-            color: white;
-
-            }
-        </style>
-    """, unsafe_allow_html=True)
-
 def sexta_semana():
-    set_styles()
+    style_html = set_styles('#94387f')
+    st.write(style_html, unsafe_allow_html=True)
     st.subheader('Ir de Compras Pt 1')
     st.markdown("<h4 style='text-align: center; color: white;'><u>Videos</u></h4>", unsafe_allow_html=True)
     clms23 = st.columns([1,1])
@@ -100,7 +74,8 @@ def sexta_semana():
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vRMkndgYUQ5rjWxVstqfyYliiyF8bVHOwW2LtzR0A7JR4MytscEpWmn-IoWF6a7H85cjoMA8b4EOv_g/embed?start=false&loop=false&delayms=3000", height=480)
 
 def septima_semana():
-    set_styles()
+    style_html = set_styles('#94387f')
+    st.write(style_html, unsafe_allow_html=True)
     # st.subheader('¿Dónde está el contról? Pt 2')
     # st.markdown("<h4 style='text-align: center; color: white;'><u>Videos</u></h4>", unsafe_allow_html=True)
     # clms23 = st.columns([1,1])
