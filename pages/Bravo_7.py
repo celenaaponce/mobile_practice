@@ -17,10 +17,10 @@ def main():
         st.header("Se puede mirar nuestro curriculo aqui:")
         tab8, tab9 = st.tabs([":white[Escuela Pt 1]", ":white[Escuela Pt 2]"])
 
-    with tab8:
-            escuela1()
-    with tab9:
-            escuela2()
+        with tab8:
+                escuela1()
+        with tab9:
+                escuela2()
 
 def escuela1():
     style_html = set_styles('#94387f')
