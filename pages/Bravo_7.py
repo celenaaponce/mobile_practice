@@ -78,7 +78,7 @@ def escuela1():
     st.divider()
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vSZrC1cnCuye5H_A68XhXhBj1jBeVSiGdbVDTMa-NI30NP5Xc07czMc5RKwIBZYC265aM0gjoMWGofO/embed?start=false&loop=false&delayms=3000", height=480)
 
-def escuela1():
+def escuela2():
     style_html = set_styles('#94387f')
     st.write(style_html, unsafe_allow_html=True)
     st.subheader('Lección 7: Escuela')
