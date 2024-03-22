@@ -37,7 +37,7 @@ def primera_semana():
         st.title('')
         st.markdown('<h5>Alarma de Reloj para personas Sordos</h5>', unsafe_allow_html=True)
     with clms31[1]:
-        st.markdown("<a href='https://www.diglo.com/vibrating-clocks-and-watches/alarm-clocks;d=3;c=31;s=311' target='_blank'><img style='float: right;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/images/pages/clock.jpg' width='200' height='100'/></a>", unsafe_allow_html=True)     
+        st.markdown("<a href='https://www.diglo.com/vibrating-clocks-and-watches/alarm-clocks;d=3;c=31;s=311' target='_blank'><img style='float: right;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/clock.jpg' width='200' height='100'/></a>", unsafe_allow_html=True)     
     clms32 = st.columns([1,1])
     with clms32[0]:
         st.title('')
