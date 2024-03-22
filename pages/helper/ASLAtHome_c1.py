@@ -3,9 +3,18 @@ from PIL import Image
 from streamlit_extras.switch_page_button import switch_page
 import streamlit.components.v1 as components
 from st_pages import Page, Section,show_pages, add_page_title
+from modules.nav import MenuButtons
 
+st.markdown("""
+    <style>
+        div[data-testid="stSidebarNav"]{
+            display: none !important;
+        }
+    </style>
+    """, unsafe_allow_html=True)
 def main():
-    login_sidebar_ASLAtHome2()
+    MenuButtons("ASLEnCasa")
+    set_styles('#94387f")
     st.header("Bienvenido a la clase de ASL En Casa.")
     st.header("Se puede mirar nuestro curriculo aqui:")
     tab2, tab4 = st.tabs([":white[Capitulo 1 Pt 1]",  ":white[Capitulo 1 Pt 2]"])
@@ -15,38 +24,6 @@ def main():
     with tab4:
             tercera_semana()
 
-def login_sidebar_ASLAtHome2():
-        show_pages(
-    [
-        Page("Pagina_Principal.py", "Pagina Principal"),
-        Page("pages/1_Diccionario.py", "Diccionario"),
-        Page("pages/2_Clases.py", "Clases"),
-        Page("pages/3_Libros.py", "Libros"),
-        Page("pages/4_Recursos.py", "Recursos"),
-        Page("pages/5_Sobre_Yo.py", "Sobre Yo"),
-        Page("pages/6_Diccionario_Completo.py", "Diccionario Completo"),
-        Page("pages/7_Diccionario_por_Letra.py", "Diccionario Por Letra"),
-        Page("pages/8_Diccionario_por_Tema.py", "Diccionario Por Tema"),
-        Page("pages/9_Buscar_Palabra.py", "Buscar Palabra"),
-        Page("pages/10_Entrar.py", "Entrar"),
-        Page("pages/Introduccion_a_ASL_En_Casa.py"),
-        Page("pages/ASLAtHome_c1.py", "Capitulo 1"),
-        Page("pages/ASLAtHome_c2.py", "Capitulo 2"),
-        Page("pages/holidays_aah.py", "Dias Festivos")
-    ]
-)
-
-        
-def set_styles():
-    st.write("""
-        <style>
-        a {
-            background-color: #94387f;
-            color: white;
-
-            }
-        </style>
-    """, unsafe_allow_html=True)
 
 def segunda_semana():
     st.subheader('Capitulo 1 Pt 1')
