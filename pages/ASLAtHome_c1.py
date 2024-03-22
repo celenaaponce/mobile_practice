@@ -14,7 +14,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 def main():
     MenuButtons("ASLEnCasa")
-    set_styles('#94387f")
+    set_styles("#94387f")
     st.header("Bienvenido a la clase de ASL En Casa.")
     st.header("Se puede mirar nuestro curriculo aqui:")
     tab2, tab4 = st.tabs([":white[Capitulo 1 Pt 1]",  ":white[Capitulo 1 Pt 2]"])
