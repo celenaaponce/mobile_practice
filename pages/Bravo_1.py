@@ -12,7 +12,7 @@ st.markdown("""
         }
     </style>
     """, unsafe_allow_html=True)
-st.write(st.session_state)
+
 def main():
     MenuButtons('ASL1')
     st.header("Bienvenido a la clase de ASL 1.")
