@@ -3,6 +3,7 @@ from PIL import Image
 from streamlit_extras.switch_page_button import switch_page
 import streamlit.components.v1 as components
 from modules.nav import MenuButtons
+from pages.sidebars import set_styles
 
 def main():
     MenuButtons('ASL3')
