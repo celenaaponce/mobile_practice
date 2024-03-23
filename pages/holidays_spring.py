@@ -54,7 +54,6 @@ def spring():
 
 def semana_santa():
     clms = st.columns([1,1])
-    st.title('Semana Santa')
     with clms[0]:
         st.title('')
         st.markdown('<h5>Vocabulario General</h5>', unsafe_allow_html=True)
@@ -87,7 +86,6 @@ def semana_santa():
         
 def pais_latino():
     clms = st.columns([1,1])
-    st.title('Paises Latinos')
     with clms[0]:
         st.title('')
         st.markdown('<h5>America Central</h5>', unsafe_allow_html=True)
