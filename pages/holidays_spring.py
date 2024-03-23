@@ -96,7 +96,8 @@ def pais_latino():
         st.title('')
         st.markdown('<h5>America del Sur</h5>', unsafe_allow_html=True)
     with clms1[1]:
-        st.video('https://youtu.be/2MH7znNtk-o')
+        st.video('https://youtu.be/2MH7znNtk-o
+        ')
     clms2 = st.columns([1,1])
     with clms2[0]:
         st.title('')
