@@ -14,7 +14,7 @@ def main():
     MenuButtons('ASLEnCasa')
     st.header("Bienvenido a la clase de ASL En Casa.")
     st.header("Se puede mirar nuestro curriculo aqui:")
-    tab1,tab2, tab3 = st.tabs([ ":white[Primavera]", ":white[Semana Santa]", ":white[Paises Latinos]"])
+    tab1,tab2, tab3, tab4 = st.tabs([ ":white[Primavera]", ":white[Semana Santa]", ":white[Paises Latinos]", ":white[Pascua]"])
 
     with tab1:
             spring()
@@ -22,6 +22,8 @@ def main():
             semana_santa()
     with tab3:
             pais_latino()
+    with tab4:
+            pascua()
 
 
 def spring():
@@ -120,5 +122,24 @@ def pais_latino():
     with clms5[1]:
         st.video('https://youtu.be/v-3nyi1nlO8') 
 
-
+def pascua():
+    clms = st.columns([1,1])
+    with clms[0]:
+        st.title('')
+        st.markdown('<h5>Vocabulario</h5>', unsafe_allow_html=True)
+    with clms[1]:
+        st.video('https://www.youtube.com/watch?v=MnjLnFQwGh0')
+    clms1 = st.columns([1,1])
+    with clms1[0]:
+        st.title('')
+        st.markdown('<h5>Historia de Pascua Religioso</h5>', unsafe_allow_html=True)
+    with clms1[1]:
+        st.video('https://www.youtube.com/watch?v=RONMK52bc8w')
+    clms2 = st.columns([1,1])
+    with clms2[0]:
+        st.title('')
+        st.markdown('<h5>Mi Conejo de Pascua</h5>', unsafe_allow_html=True)
+    with clms2[1]:
+        st.video('https://www.youtube.com/watch?v=4PJhGhRublE')
+    
 main()
