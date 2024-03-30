@@ -14,7 +14,7 @@ def main():
     MenuButtons('ASLEnCasa')
     st.header("Bienvenido a la clase de ASL En Casa.")
     st.header("Se puede mirar nuestro curriculo aqui:")
-    tab1, = st.tabs([ ":white[Primavera]", ":white[Semana Santa]", ":white[Paises Latinos]"])
+    tab1,tab2, tab3 = st.tabs([ ":white[Primavera]", ":white[Semana Santa]", ":white[Paises Latinos]"])
 
     with tab1:
             spring()
