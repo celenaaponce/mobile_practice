@@ -94,7 +94,7 @@ def segunda_semana():
         st.title('')
         st.markdown('<h5>Grabación de la Clase</h5>', unsafe_allow_html=True)
     with clms29[1]:
-        st.video('https://youtu.be/ELpQA9GKl1E')    
+        st.video('https://youtu.be/jsHJ0rCC-Rk')    
 
 def tercera_semana():
     style_html = set_styles('#94387f')
@@ -167,6 +167,6 @@ def tercera_semana():
     #     st.title('')
     #     st.markdown('<h5>Grabación de la Clase</h5>', unsafe_allow_html=True)
     # with clms29[1]:
-    #     st.video('https://youtu.be/XAVjBXo7Xro')    
+    #     st.video('https://youtu.be/tEfuxHw1xvc')    
 
 main()
