@@ -89,12 +89,12 @@ def segunda_semana():
     st.divider()
     
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vT7ivxIqAqCRPzOxAn5dHtu8vnp2-qZ7qcX2GKvBF38GLR1GkytUeJAw6-OEZUWkfR3xKLeDGQpc1Hm/embed?start=false&loop=false&delayms=3000", height=480)
-    # clms20 = st.columns([1,1])
-    # with clms20[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Grabacion de la Clase</h5>', unsafe_allow_html=True)
-    # with clms20[1]: 
-    #     st.video('https://www.youtube.com/watch?v=BtEIgRvVGg8')
+    clms20 = st.columns([1,1])
+    with clms20[0]:
+        st.title('')
+        st.markdown('<h5>Grabación de la Clase</h5>', unsafe_allow_html=True)
+    with clms20[1]: 
+        st.video('https://youtu.be/OvM35kf_S-4')
     st.divider()
 
     
