@@ -66,8 +66,8 @@ def sexta_semana():
         st.title('')
         st.markdown('<h5>Practica</h5>', unsafe_allow_html=True)
     with clms28[1]:
-        st.markdown("<a href='https://edpuzzle.com/media/640e3ec8402db6429355fbc7' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/pages/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
-        st.markdown("<a href='https://edpuzzle.com/media/640e40e2c28bef42d1fbf5b5' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/pages/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
+        st.markdown("<a href='https://edpuzzle.com/media/640e3ec8402db6429355fbc7' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/images/pages/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
+        st.markdown("<a href='https://edpuzzle.com/media/640e40e2c28bef42d1fbf5b5' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/images/pages/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
 
     st.divider()
             
@@ -134,8 +134,8 @@ def septima_semana():
     #     st.title('')
     #     st.markdown('<h5>Practica</h5>', unsafe_allow_html=True)
     # with clms28[1]:
-    #     st.markdown("<a href='https://edpuzzle.com/media/640bd6c89bbb9e42a124866b' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/pages/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
-    #     st.markdown("<a href='https://edpuzzle.com/media/640e37f0b6a56042bd07b94c' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/pages/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
+    #     st.markdown("<a href='https://edpuzzle.com/media/640bd6c89bbb9e42a124866b' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
+    #     st.markdown("<a href='https://edpuzzle.com/media/640e37f0b6a56042bd07b94c' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
 
     # st.divider()
             
