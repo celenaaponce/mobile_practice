@@ -82,9 +82,9 @@ def segunda_semana():
         st.title('')
         st.markdown('<h5>Practica</h5>', unsafe_allow_html=True)
     with clms28[1]:
-        st.markdown("<a href='https://edpuzzle.com/media/633642ed68206040f25bc382' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/pages/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
-        st.markdown("<a href='https://edpuzzle.com/media/633750f5389ee741763d8d57' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/pages/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
-        st.markdown("<a href='https://edpuzzle.com/media/63375bff25e87940d4c32e08' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/pages/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
+        st.markdown("<a href='https://edpuzzle.com/media/633642ed68206040f25bc382' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
+        st.markdown("<a href='https://edpuzzle.com/media/633750f5389ee741763d8d57' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
+        st.markdown("<a href='https://edpuzzle.com/media/63375bff25e87940d4c32e08' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
 
     st.divider()
             
