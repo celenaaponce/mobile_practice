@@ -2,10 +2,19 @@ import streamlit as st
 from PIL import Image
 from streamlit_extras.switch_page_button import switch_page
 import streamlit.components.v1 as components
-from pages.sidebars import login_sidebar_ASL2, set_styles
+from pages.sidebars import login_sidebar_ASL1, set_styles
+from st_pages import Page, Section,show_pages, add_page_title
+from modules.nav import MenuButtons
+st.markdown("""
+    <style>
+        div[data-testid="stSidebarNav"]{
+            display: none !important;
+        }
+    </style>
+    """, unsafe_allow_html=True)
 
 def main():
-        login_sidebar_ASL2()
+        MenuButtons('ASL2')
         st.header("Bienvenido a la clase de ASL 2.")
         st.header("Se puede mirar nuestro curriculo aqui:")
         tab8, tab9 = st.tabs([":white[Colores]", ":white[Deletrear]"])
@@ -72,7 +81,13 @@ def colores():
     st.divider()
             
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vS-egJOarNNRcNvBhPhStuG04-I0IXmy9eflIea8NagDNyx574U7FK8skAPB_9SP0u_W-3CIL67w62D/embed?start=false&loop=false&delayms=3000", height=480)
-
+    clms29 = st.columns([1,1])
+    with clms29[0]:
+        st.title('')
+        st.markdown('<h5>Grabación de la Clase</h5>', unsafe_allow_html=True)
+    with clms29[1]:
+        st.video('https://youtu.be/5B2lkYSmGeI')
+            
 def deletrear():
     style_html = set_styles('#94387f')
     st.write(style_html, unsafe_allow_html=True)
@@ -146,5 +161,11 @@ def deletrear():
     st.divider()
             
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vQXb3L7FrMl7nGhW4MFw_6CT2CKW5MKOBCyI0x9HoNvGuLdhMqcN1fecVAXi2xRkTavM_dwXx1r1RQJ/embed?start=false&loop=false&delayms=3000", height=480)
+    clms29 = st.columns([1,1])
+    with clms29[0]:
+        st.title('')
+        st.markdown('<h5>Grabación de la Clase</h5>', unsafe_allow_html=True)
+    with clms29[1]:
+        st.video('https://youtu.be/DNb4qnIsi2Y')
 
 main()
