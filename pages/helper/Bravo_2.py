@@ -3,8 +3,17 @@ from PIL import Image
 from streamlit_extras.switch_page_button import switch_page
 import streamlit.components.v1 as components
 from pages.sidebars import login_sidebar_ASL1, set_styles
+from st_pages import Page, Section,show_pages, add_page_title
+from modules.nav import MenuButtons
+st.markdown("""
+    <style>
+        div[data-testid="stSidebarNav"]{
+            display: none !important;
+        }
+    </style>
+    """, unsafe_allow_html=True)
 def main():
-    login_sidebar_ASL1()
+    MenuButtons('ASL1')
     st.header("Bienvenido a la clase de ASL 1.")
     st.header("Se puede mirar nuestro curriculo aqui:")
     tab5, tab6 = st.tabs([":white[Desayuno Pt 1]", ":white[Desayuno Pt 2]"])
@@ -71,7 +80,12 @@ def cuarta_semana():
     st.divider()
             
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vRx-1f0WLaGB1vDldBCMIeTmoSYp4jv-bM5m7XaNxyNnitfni5OLSj9bqGMdK27tIpFhsOc1tti7K80/embed?start=false&loop=false&delayms=3000", height=480)
-
+    clms29 = st.columns([1,1])
+    with clms29[0]:
+        st.title('')
+        st.markdown('<h5>Grabación de Clase</h5>', unsafe_allow_html=True)
+    with clms29[1]:
+        st.video('https://youtu.be/VUmJyWlcsb4')
 def quinta_semana():
     style_html = set_styles('#94387f')
     st.write(style_html, unsafe_allow_html=True)
@@ -139,5 +153,10 @@ def quinta_semana():
     st.divider()
             
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vQo7o9uHbvupTeQvsZeZ9gAJjYRvSdixH_4IQSFOsfs8zcl92dx7bNm-uVBa5r04EHKREl6G_KuuUUN/embed?start=false&loop=false&delayms=3000", height=480)
-
+    clms29 = st.columns([1,1])
+    with clms29[0]:
+        st.title('')
+        st.markdown('<h5>Grabación de Clase</h5>', unsafe_allow_html=True)
+    with clms29[1]:
+        st.video('https://youtu.be/rNUwlnOcVkc')
 main()
