@@ -2,11 +2,19 @@ import streamlit as st
 from PIL import Image
 from streamlit_extras.switch_page_button import switch_page
 import streamlit.components.v1 as components
-from pages import holidays
-from pages.sidebars import login_sidebar_ASL2
+from pages.sidebars import login_sidebar_ASL1, set_styles
+from st_pages import Page, Section,show_pages, add_page_title
+from modules.nav import MenuButtons
+st.markdown("""
+    <style>
+        div[data-testid="stSidebarNav"]{
+            display: none !important;
+        }
+    </style>
+    """, unsafe_allow_html=True)
 
 def main():
-        login_sidebar_ASL2()
+        MenuButtons('ASL3')
         st.header("Bienvenido a la clase de ASL 2.")
         st.header("Se puede mirar nuestro curriculo aqui:")
         tab2, tab3, tab4, tab5, tab6 = st.tabs([":white[Repaso General]", ":white[Repaso Leccion 1]", ":white[Repaso Leccion 2]", 
@@ -59,6 +67,20 @@ def repaso_general():
       st.subheader('Cuento (con subtítulos) 🔈')
     with clms29[1]:
       st.video('https://youtu.be/GLXz2s5jBAw')    
+    clms30=st.columns([1,1])
+    with clms30[0]:
+      st.title('')
+      st.title('')
+      st.subheader('Grabación de Clase Pt 1')
+    with clms30[1]:
+      st.video('https://youtu.be/dPt4-MEOemw') 
+    clms31=st.columns([1,1])
+    with clms31[0]:
+      st.title('')
+      st.title('')
+      st.subheader('Grabación de Clase Pt 2')
+    with clms31[1]:
+      st.video('https://youtu.be/u8jWzC6A-DY') 
     st.divider()
 
 def repaso_lecc1():
