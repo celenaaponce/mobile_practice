@@ -89,6 +89,12 @@ def segunda_semana():
     st.divider()
             
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vTwTwZCMQMldc_sXEFLb5nMns5knZG9PNmSh_UgUB8e_N-DtLMu-NZeoUCVhZcprTtnDOXq8FRP26Vt/embed?start=false&loop=false&delayms=3000", height=480)
+    clms29 = st.columns([1,1])
+    with clms29[0]:
+        st.title('')
+        st.markdown('<h5>Grabación de la Clase</h5>', unsafe_allow_html=True)
+    with clms29[1]:
+        st.video('https://youtu.be/ELpQA9GKl1E')    
 
 def tercera_semana():
     style_html = set_styles('#94387f')
@@ -156,5 +162,11 @@ def tercera_semana():
 
     # st.divider()
     # components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vRtK9-_F-5WfUL0Gg84Z2WUnlEXXsy1yIkz5h6AmrYGL2dt7cat8e8hFw8ih9ru6rio2HBPQb6cLi3D/embed?start=false&loop=false&delayms=3000", height=480)
+    # clms29 = st.columns([1,1])
+    # with clms29[0]:
+    #     st.title('')
+    #     st.markdown('<h5>Grabación de la Clase</h5>', unsafe_allow_html=True)
+    # with clms29[1]:
+    #     st.video('https://youtu.be/XAVjBXo7Xro')    
 
 main()
