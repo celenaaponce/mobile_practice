@@ -77,6 +77,12 @@ def escuela1():
 
     st.divider()
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vSZrC1cnCuye5H_A68XhXhBj1jBeVSiGdbVDTMa-NI30NP5Xc07czMc5RKwIBZYC265aM0gjoMWGofO/embed?start=false&loop=false&delayms=3000", height=480)
+    clms29 = st.columns([1,1])
+    with clms29[0]:
+        st.title('')
+        st.markdown('<h5>Grabación de la Clase</h5>', unsafe_allow_html=True)
+    with clms29[1]:
+        st.video('https://youtu.be/ELpQA9GKl1E')
 
 def escuela2():
     style_html = set_styles('#94387f')
@@ -141,4 +147,10 @@ def escuela2():
     with clms28[1]:
         st.markdown("<a href='https://edpuzzle.com/media/65a58c5d9978312988b1ace3' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
         st.markdown("<a href='https://edpuzzle.com/media/65a58f163eb8bf37437cf57e' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)
+    clms29 = st.columns([1,1])
+    with clms29[0]:
+        st.title('')
+        st.markdown('<h5>Grabación de la Clase</h5>', unsafe_allow_html=True)
+    with clms29[1]:
+        st.video('https://youtu.be/XAVjBXo7Xro')
 main()
