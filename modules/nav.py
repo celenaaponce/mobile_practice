@@ -63,6 +63,7 @@ def ASL3_sidebar():
             st.sidebar.page_link("pages/Entrar.py", label="Entrar")
             st.sidebar.page_link("pages/Introduccion_a_ASL_3.py", label="Introducción a ASL 3")
             st.sidebar.page_link("pages/Bravo_7.py", label="Escuela")
+            st.sidebar.page_link("pages/Bravo_8.py", label="Más Escuela")
             st.sidebar.page_link("pages/holidays_spring_3.py", label="Días Festivos")
             
 def ASLEnCasa_sidebar():
