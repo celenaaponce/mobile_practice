@@ -80,12 +80,12 @@ def main():
         st.markdown('<h5>Practicar Vocabulario</h5>', unsafe_allow_html=True)
     with clms18[1]:
         st.video('https://www.youtube.com/watch?v=RNjed7e9vXM')
-    # clms19 = st.columns([1,1])
-    # with clms19[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Vocabulario para la Semana que Viene</h5>', unsafe_allow_html=True)
-    # with clms19[1]:
-    #     st.video('https://www.youtube.com/watch?v=RNjed7e9vXM')
+    clms19 = st.columns([1,1])
+    with clms19[0]:
+        st.title('')
+        st.markdown('<h5>Vocabulario para la Semana que Viene</h5>', unsafe_allow_html=True)
+    with clms19[1]:
+        st.video('https://youtu.be/9q4e_fQB6No')
     st.divider()
     
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vT7ivxIqAqCRPzOxAn5dHtu8vnp2-qZ7qcX2GKvBF38GLR1GkytUeJAw6-OEZUWkfR3xKLeDGQpc1Hm/embed?start=false&loop=false&delayms=3000", height=480)
