@@ -17,14 +17,14 @@ def main():
     set_styles("#94387f")
     st.header("Bienvenido a la clase de ASL En Casa.")
     st.header("Se puede mirar nuestro curriculo aqui:")
-    tab2 = st.tabs([":white[Capítulo 1]"])
+#     tab2 = st.tabs([":white[Capítulo 1]"])
 
-    with tab2:
-        segunda_semana()
+#     with tab2:
+#         segunda_semana()
 
 
 
-def segunda_semana():
+# def segunda_semana():
     st.subheader('Capítulo 1')
     st.markdown("<h4 style='text-align: center; color: white;'><u>Videos</u></h4>", unsafe_allow_html=True)
 
