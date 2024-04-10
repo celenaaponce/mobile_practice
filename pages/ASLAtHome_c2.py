@@ -57,7 +57,7 @@ def main():
     with clms13[1]: 
         st.video('https://www.youtube.com/watch?v=r8fk2V9PeXQ&t=3s')
     st.divider()
-    st.text("Extras")
+    st.subheader("Extras")
     clms14 = st.columns([1,1])
     with clms14[0]:
         st.title('')
