@@ -49,7 +49,7 @@ def main():
         st.title('')
         st.markdown('<h5>Frases Receptivas</h5>', unsafe_allow_html=True)
     with clms12[1]: 
-        st.video('https://www.youtube.com/watch?v=TLBdOJycKug')
+        st.video('https://www.youtube.com/watch?v=S_Pjl6Lqzi4&t=5s')
     clms13 = st.columns([1,1])
     with clms13[0]:
         st.title('')
