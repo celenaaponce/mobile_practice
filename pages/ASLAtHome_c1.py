@@ -20,7 +20,7 @@ def main():
     tab2 = st.tabs([":white[Capítulo 1]"])
 
     with tab2:
-            segunda_semana()
+        segunda_semana()
 
 
 
