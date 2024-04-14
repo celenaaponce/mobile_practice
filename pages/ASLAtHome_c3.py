@@ -77,12 +77,12 @@ def main():
     st.divider()
     
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vTBSkeRMDCYb23VjibQuy3rU0mEDXY9Sc9UOkE3UpRTtAEqZkvleiz2iwhrCpdZx55Je4ydLBZ909LM/embed?start=false&loop=false&delayms=3000", height=480)
-    # clms20 = st.columns([1,1])
-    # with clms20[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Grabación de la Clase</h5>', unsafe_allow_html=True)
-    # with clms20[1]: 
-    #     st.video('https://youtu.be/OvM35kf_S-4')
+    clms20 = st.columns([1,1])
+    with clms20[0]:
+        st.title('')
+        st.markdown('<h5>Grabación de la Clase</h5>', unsafe_allow_html=True)
+    with clms20[1]: 
+        st.video('https://youtu.be/TghVvxNlXIc')
     st.divider()
 
     
