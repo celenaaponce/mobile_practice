@@ -87,70 +87,70 @@ def escuela1():
 def escuela2():
     style_html = set_styles('#94387f')
     st.write(style_html, unsafe_allow_html=True)
-    # st.subheader('Lección 7: Escuela')
-    # st.markdown("<h4 style='text-align: center; color: white;'><u>Videos</u></h4>", unsafe_allow_html=True)
-    # clms23 = st.columns([1,1])
-    # with clms23[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Repaso y Explicacion</h5>', unsafe_allow_html=True)
-    # with clms23[1]:
-    #     st.video('https://youtu.be/tupco5kdfUQ')
-    # clms24 = st.columns([1,1])
-    # with clms24[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Conversacion (sin subtitulos) 🔇</h5>', unsafe_allow_html=True)
-    # with clms24[1]:    
-    #     st.video('https://youtu.be/LT-Yx0Ka53Y')
-    # clms25 = st.columns([1,1])
-    # with clms25[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Conversacion (con subtitulos) 🔈</h5>', unsafe_allow_html=True)
-    # with clms25[1]: 
-    #     st.video('https://youtu.be/K_Qx4pLF7Zo')
-    # clms26 = st.columns([1,1])
-    # with clms26[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Gramatica</h5>', unsafe_allow_html=True)
-    # with clms26[1]:
-    #     st.video('https://youtu.be/5UbXbxxtvn8')
-    # clms27 = st.columns([1,1])
-    # with clms27[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Frases</h5>', unsafe_allow_html=True)
-    # with clms27[1]:
-    #     st.video('https://youtu.be/QC2PRsdSplo')
-    # clms28 = st.columns([1,1])
-    # with clms28[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Cuento (sin subtitulos)🔇</h5>', unsafe_allow_html=True)
-    # with clms28[1]:
-    #     st.video('https://youtu.be/q5i0DBAlBec')
-    # clms29 = st.columns([1,1])
-    # with clms29[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Cuento (con subtitulos)🔈</h5>', unsafe_allow_html=True)
-    # with clms29[1]:
-    #     st.video('https://youtu.be/ZGrNpeZ3qaA')
-    # st.divider()
+    st.subheader('Lección 8: Escuela')
+    st.markdown("<h4 style='text-align: center; color: white;'><u>Videos</u></h4>", unsafe_allow_html=True)
+    clms23 = st.columns([1,1])
+    with clms23[0]:
+        st.title('')
+        st.markdown('<h5>Repaso y Explicacion</h5>', unsafe_allow_html=True)
+    with clms23[1]:
+        st.video('https://youtu.be/qpa061F4S5I')
+    clms24 = st.columns([1,1])
+    with clms24[0]:
+        st.title('')
+        st.markdown('<h5>Conversacion (sin subtitulos) 🔇</h5>', unsafe_allow_html=True)
+    with clms24[1]:    
+        st.video('https://youtu.be/zO4QOwWXYvI')
+    clms25 = st.columns([1,1])
+    with clms25[0]:
+        st.title('')
+        st.markdown('<h5>Conversacion (con subtitulos) 🔈</h5>', unsafe_allow_html=True)
+    with clms25[1]: 
+        st.video('https://youtu.be/A1RALGqbysc')
+    clms26 = st.columns([1,1])
+    with clms26[0]:
+        st.title('')
+        st.markdown('<h5>Gramatica</h5>', unsafe_allow_html=True)
+    with clms26[1]:
+        st.video('https://youtu.be/m66UapJ01V8')
+    clms27 = st.columns([1,1])
+    with clms27[0]:
+        st.title('')
+        st.markdown('<h5>Frases</h5>', unsafe_allow_html=True)
+    with clms27[1]:
+        st.video('https://youtu.be/Yrf16_JHUBE')
+    clms28 = st.columns([1,1])
+    with clms28[0]:
+        st.title('')
+        st.markdown('<h5>Cuento (sin subtitulos)🔇</h5>', unsafe_allow_html=True)
+    with clms28[1]:
+        st.video('https://youtu.be/9xyEjE9h4VE')
+    clms29 = st.columns([1,1])
+    with clms29[0]:
+        st.title('')
+        st.markdown('<h5>Cuento (con subtitulos)🔈</h5>', unsafe_allow_html=True)
+    with clms29[1]:
+        st.video('https://youtu.be/RSqR1dC2pWQ')
+    st.divider()
 
-    # st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
-    # clms27 = st.columns([1,1])
-    # with clms27[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Vocabulario para la semana que viene</h5>', unsafe_allow_html=True)
-    # with clms27[1]:
-    #     st.video('https://youtu.be/6tN2j3V6qp4')
-    # clms28 = st.columns([1,1])
-    # with clms28[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Practica</h5>', unsafe_allow_html=True)
-    # with clms28[1]:
-    #     st.markdown("<a href='https://edpuzzle.com/media/65a58c5d9978312988b1ace3' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
-    #     st.markdown("<a href='https://edpuzzle.com/media/65a58f163eb8bf37437cf57e' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)
-    # clms29 = st.columns([1,1])
-    # with clms29[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Grabación de la Clase</h5>', unsafe_allow_html=True)
-    # with clms29[1]:
-    #     st.video('https://youtu.be/XAVjBXo7Xro')
+    st.markdown("<h4 style='text-align: center; color: white;'><u>Tarea</u></h4>", unsafe_allow_html=True)
+    clms27 = st.columns([1,1])
+    with clms27[0]:
+        st.title('')
+        st.markdown('<h5>Vocabulario para la semana que viene</h5>', unsafe_allow_html=True)
+    with clms27[1]:
+        st.video('https://youtu.be/6tN2j3V6qp4')
+    clms28 = st.columns([1,1])
+    with clms28[0]:
+        st.title('')
+        st.markdown('<h5>Practica</h5>', unsafe_allow_html=True)
+    with clms28[1]:
+        st.markdown("<a href='https://edpuzzle.com/media/65a58c5d9978312988b1ace3' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
+        st.markdown("<a href='https://edpuzzle.com/media/65a58f163eb8bf37437cf57e' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)
+    clms29 = st.columns([1,1])
+    with clms29[0]:
+        st.title('')
+        st.markdown('<h5>Grabación de la Clase</h5>', unsafe_allow_html=True)
+    with clms29[1]:
+        st.video('https://youtu.be/cKv_a9xFm2U')
 main()
