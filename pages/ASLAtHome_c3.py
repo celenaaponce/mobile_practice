@@ -67,7 +67,7 @@ def main():
         st.title('')
         st.markdown('<h5>Practicar Vocabulario</h5>', unsafe_allow_html=True)
     with clms18[1]:
-        st.video('https://www.youtube.com/watch?v=RNjed7e9vXM')
+        st.video('https://www.youtube.com/watch?v=ch6EnFZSbi0')
     clms19 = st.columns([1,1])
     with clms19[0]:
         st.title('')
