@@ -81,6 +81,7 @@ def ASLEnCasa_sidebar():
             st.sidebar.page_link("pages/Introduccion_a_ASL_En_Casa.py", label="Introducción a ASL En Casa")
             st.sidebar.page_link("pages/ASLAtHome_c1.py", label="Hora de Comer")
             st.sidebar.page_link("pages/ASLAtHome_c2.py", label="Hora del Baño")
+            st.sidebar.page_link("pages/ASLAtHome_c3.py", label="Hora del Cambio de Pañal")
             st.sidebar.page_link("pages/holidays_spring_aah.py", label="Días Festivos")
 def MenuButtons(user_roles = ''):
     if user_roles == '':
