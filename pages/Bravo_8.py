@@ -139,14 +139,14 @@ def escuela2():
         st.title('')
         st.markdown('<h5>Vocabulario para la semana que viene</h5>', unsafe_allow_html=True)
     with clms27[1]:
-        st.video('https://youtu.be/6tN2j3V6qp4')
+        st.video('https://youtu.be/Un4jmfHU8qw')
     clms28 = st.columns([1,1])
     with clms28[0]:
         st.title('')
         st.markdown('<h5>Practica</h5>', unsafe_allow_html=True)
     with clms28[1]:
-        st.markdown("<a href='https://edpuzzle.com/media/65a58c5d9978312988b1ace3' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
-        st.markdown("<a href='https://edpuzzle.com/media/65a58f163eb8bf37437cf57e' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)
+        st.markdown("<a href='https://edpuzzle.com/media/65de59dd2b6e3c089d1b6806' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
+        st.markdown("<a href='https://edpuzzle.com/media/65de6195690501d5005f9f39' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)
     clms29 = st.columns([1,1])
     with clms29[0]:
         st.title('')
