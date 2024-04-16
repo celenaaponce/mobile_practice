@@ -80,7 +80,7 @@ def colores():
 
     st.divider()
             
-    components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vS-egJOarNNRcNvBhPhStuG04-I0IXmy9eflIea8NagDNyx574U7FK8skAPB_9SP0u_W-3CIL67w62D/embed?start=false&loop=false&delayms=3000", height=480)
+    components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vTuxyGaqhA7fkhYWE_DsmltguPNaigq0Mn0DwXDrkbtTKfpBU1Bmoyl941djFJc_QYSTe5lJBjsX119/embed?start=false&loop=false&delayms=3000", height=480)
     clms29 = st.columns([1,1])
     with clms29[0]:
         st.title('')
@@ -160,7 +160,7 @@ def deletrear():
 
     st.divider()
             
-    components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vQXb3L7FrMl7nGhW4MFw_6CT2CKW5MKOBCyI0x9HoNvGuLdhMqcN1fecVAXi2xRkTavM_dwXx1r1RQJ/embed?start=false&loop=false&delayms=3000", height=480)
+    components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vRfnMs2dLAf9T-nKujPNmVPA5LgeO7m0k1Keb-54XwM_JIvdVVr4n2CDiRiYdyZn1d3quto9EUmhPlI/embed?start=false&loop=false&delayms=3000", height=480)
     clms29 = st.columns([1,1])
     with clms29[0]:
         st.title('')
