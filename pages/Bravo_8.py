@@ -147,6 +147,9 @@ def escuela2():
     with clms28[1]:
         st.markdown("<a href='https://edpuzzle.com/media/65de59dd2b6e3c089d1b6806' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)     
         st.markdown("<a href='https://edpuzzle.com/media/65de6195690501d5005f9f39' target='_blank'><img style='float: left;' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/puzzle.png' width='100' height='100'/></a>", unsafe_allow_html=True)
+    st.divider()
+    components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vRSp1iHB5saKDRRt3qxFlyb2gfVvWrga99D0ibCHtfCmIH_-vLS67YTcz1lyoULv8iWdAjL_JU2lYkl/embed?start=false&loop=false&delayms=3000", height=480)
+
     clms29 = st.columns([1,1])
     with clms29[0]:
         st.title('')
