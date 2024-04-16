@@ -79,7 +79,7 @@ def sexta_semana():
 
     st.divider()
             
-    components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vRNtQCOLJbGm47vieTI6GLxfSgh-IdCzw5yKa6EArwBS2_rKsnr78pV3r9SksJW2gzF2Fuf7E8jzkzM/embed?start=false&loop=false&delayms=3000", height=480)
+    components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vSMEGEGCexGqJWW0jlIQRe4O33Y13ieJjub_6jnNe3pYS9HXvYrDZsraI8ZXgq9azMid5bDGJe0EZsx/embed?start=false&loop=false&delayms=3000", height=480)
     clms29 = st.columns([1,1])
     with clms29[0]:
         st.title('')
@@ -146,7 +146,7 @@ def septima_semana():
 
     st.divider()
             
-    components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vQ8stRFQOfu2FuAFsKrcmFSnmB6MZv4hPdR5FLOoKKik-VRNJE8Py2PHiJ-7B2JXBEie2I_CvnwShjR/embed?start=false&loop=false&delayms=3000", height=480)
+    components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vQp0GIWQi7cPqp6nzvKEqjjPbxlEO5aN7HqmW6a7isU1qiUclt9BeQdJTFwjk_thOQZS-c3ERXu-WV_/embed?start=false&loop=false&delayms=3000", height=480)
     clms29 = st.columns([1,1])
     with clms29[0]:
         st.title('')
