@@ -53,6 +53,12 @@ def spring():
     with clms3[1]:
         st.video('https://youtu.be/spE7JQHC9Zw')
     components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vQWQGDfD9frtoRelg1LUY82AfX61Uncc62N2cOlLlR6m_rVaBFQLd0y7sEROoLbOwN3LHV0aCIIcHPA/embed?start=false&loop=false&delayms=3000", height=480)
+    clms29 = st.columns([1,1])
+    with clms29[0]:
+        st.title('')
+        st.markdown('<h5>Grabación de la Clase</h5>', unsafe_allow_html=True)
+    with clms29[1]:
+        st.video('https://youtu.be/0VXhaIS3ytk')
 
 def semana_santa():
     clms = st.columns([1,1])
@@ -85,6 +91,12 @@ def semana_santa():
         st.markdown('<h5>Cuento de Pascua</h5>', unsafe_allow_html=True)
     with clms4[1]:
         st.video('https://youtu.be/RONMK52bc8w') 
+    clms29 = st.columns([1,1])
+    with clms29[0]:
+        st.title('')
+        st.markdown('<h5>Grabación de la Clase</h5>', unsafe_allow_html=True)
+    with clms29[1]:
+        st.video('https://youtu.be/JbA5HvJg_N0')
         
 def pais_latino():
     clms = st.columns([1,1])
@@ -123,6 +135,12 @@ def pais_latino():
         st.markdown('<h5>America del Norte</h5>', unsafe_allow_html=True)
     with clms5[1]:
         st.video('https://youtu.be/v-3nyi1nlO8') 
+    clms29 = st.columns([1,1])
+    with clms29[0]:
+        st.title('')
+        st.markdown('<h5>Grabación de la Clase</h5>', unsafe_allow_html=True)
+    with clms29[1]:
+        st.video('https://youtu.be/J6KR1Q-WncQ')
 
 def pascua():
     clms = st.columns([1,1])
@@ -143,4 +161,10 @@ def pascua():
         st.markdown('<h5>Mi Conejo de Pascua</h5>', unsafe_allow_html=True)
     with clms2[1]:
         st.video('https://www.youtube.com/watch?v=4PJhGhRublE')
+    clms29 = st.columns([1,1])
+    with clms29[0]:
+        st.title('')
+        st.markdown('<h5>Grabación de la Clase</h5>', unsafe_allow_html=True)
+    with clms29[1]:
+        st.video('https://youtu.be/stPphI_xp2I')
 main()
