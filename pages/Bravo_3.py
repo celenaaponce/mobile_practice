@@ -87,8 +87,8 @@ def sexta_semana():
     with clms29[1]:
         st.video('https://youtu.be/F2YfkhJY7Zo')
 def septima_semana():
-    # style_html = set_styles('#94387f')
-    # st.write(style_html, unsafe_allow_html=True)
+    style_html = set_styles('#94387f')
+    st.write(style_html, unsafe_allow_html=True)
     # st.subheader('¿Dónde está el contról? Pt 2')
     # st.markdown("<h4 style='text-align: center; color: white;'><u>Videos</u></h4>", unsafe_allow_html=True)
     # clms23 = st.columns([1,1])
