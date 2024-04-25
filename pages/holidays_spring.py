@@ -16,7 +16,7 @@ def main():
     MenuButtons('ASL1')
     st.header("Bienvenido a la clase de ASL 1.")
     st.header("Se puede mirar nuestro curriculo aqui:")
-    tab1, tab2, tab3, tab4, tab5, tab6= st.tabs([ ":white[Primavera]", ":white[Semana Santa]", ":white[Paises Latinos]", ":white[Pascua]", :white[Día de las Madres]", ":white[Clasificadores]"])
+    tab1, tab2, tab3, tab4, tab5, tab6= st.tabs([ ":white[Primavera]", ":white[Semana Santa]", ":white[Paises Latinos]", ":white[Pascua]", ":white[Día de las Madres]", ":white[Clasificadores]"])
 
     with tab1:
             spring()
