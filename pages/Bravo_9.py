@@ -91,8 +91,8 @@ def banco1():
     with clms29[0]:
         st.title('')
         st.markdown('<h5>Grabación de la Clase</h5>', unsafe_allow_html=True)
-    with clms29[1]:
-        st.video('https://youtu.be/5B2lkYSmGeI')
+    # with clms29[1]:
+    #     st.video('https://youtu.be/5B2lkYSmGeI')
             
 def banco2():
     style_html = set_styles('#94387f')
