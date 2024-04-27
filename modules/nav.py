@@ -31,7 +31,7 @@ def ASL1_sidebar():
             st.sidebar.page_link("pages/Introduccion_a_ASL_1.py", label="Introducción a ASL 1")
             st.sidebar.page_link("pages/Bravo_1.py", label="Conocer la Familia Bravo")
             st.sidebar.page_link("pages/Bravo_2.py", label="Desayuno")
-            st.sidebar.page_link("pages/Bravo_3.py", label="Dónde está el control?")
+            st.sidebar.page_link("pages/Bravo_3.py", label="¿Dónde está el contról?")
             st.sidebar.page_link("pages/holidays_spring.py", label="Días Festivos")
             
 def ASL2_sidebar():
