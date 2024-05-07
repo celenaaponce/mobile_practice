@@ -174,53 +174,53 @@ def pascua():
 
 def madres():
     clms = st.columns([1,1])
-    # with clms[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Vocabulario</h5>', unsafe_allow_html=True)
-    # with clms[1]:
-    #     st.video('https://www.youtube.com/watch?v=b3hjbAaMth0')
-    # clms1 = st.columns([1,1])
-    # with clms1[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Spot Ama a su Mamá</h5>', unsafe_allow_html=True)
-    # with clms1[1]:
-    #     st.video('https://www.youtube.com/watch?v=TzYfajBnCAQ')
-    # clms29 = st.columns([1,1])
-    # with clms29[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Grabación de la Clase</h5>', unsafe_allow_html=True)
-    # with clms29[1]:
-    #     st.video('https://youtu.be/hf_C7G4fI4I')
+    with clms[0]:
+        st.title('')
+        st.markdown('<h5>Vocabulario</h5>', unsafe_allow_html=True)
+    with clms[1]:
+        st.video('https://www.youtube.com/watch?v=b3hjbAaMth0')
+    clms1 = st.columns([1,1])
+    with clms1[0]:
+        st.title('')
+        st.markdown('<h5>Spot Ama a su Mamá</h5>', unsafe_allow_html=True)
+    with clms1[1]:
+        st.video('https://www.youtube.com/watch?v=TzYfajBnCAQ')
+    clms29 = st.columns([1,1])
+    with clms29[0]:
+        st.title('')
+        st.markdown('<h5>Grabación de la Clase</h5>', unsafe_allow_html=True)
+    with clms29[1]:
+        st.video('https://youtu.be/hf_C7G4fI4I')
 
 def clasificadores():
     clms = st.columns([1,1])
-    # with clms[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Explicación de Clasificadores</h5>', unsafe_allow_html=True)
-    # with clms[1]:
-    #     st.video('https://www.youtube.com/watch?v=3nOq-Uf2s_8')
-    # clms1 = st.columns([1,1])
-    # with clms1[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Clasificadores Semánticos</h5>', unsafe_allow_html=True)
-    # with clms1[1]:
-    #     st.video('https://www.youtube.com/watch?v=ey-CIuDQitI')
-    # clms2 = st.columns([1,1])
-    # with clms2[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Clasificadores de Instrumentos</h5>', unsafe_allow_html=True)
-    # with clms2[1]:
-    #     st.video('https://www.youtube.com/watch?v=QLaSaKvpNeI')
-    # clms3 = st.columns([1,1])
-    # with clms3[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Juego de Clasificadores</h5>', unsafe_allow_html=True)
-    # with clms3[1]:
-    #     st.video('https://edpuzzle.com/media/66288bcd6f8573a03611e1c7')
-    # clms29 = st.columns([1,1])
-    # with clms29[0]:
-    #     st.title('')
-    #     st.markdown('<h5>Grabación de la Clase</h5>', unsafe_allow_html=True)
-    # with clms29[1]:
-    #     st.video('https://youtu.be/BPX98o0BgBw')
+    with clms[0]:
+        st.title('')
+        st.markdown('<h5>Explicación de Clasificadores</h5>', unsafe_allow_html=True)
+    with clms[1]:
+        st.video('https://www.youtube.com/watch?v=3nOq-Uf2s_8')
+    clms1 = st.columns([1,1])
+    with clms1[0]:
+        st.title('')
+        st.markdown('<h5>Clasificadores Semánticos</h5>', unsafe_allow_html=True)
+    with clms1[1]:
+        st.video('https://www.youtube.com/watch?v=ey-CIuDQitI')
+    clms2 = st.columns([1,1])
+    with clms2[0]:
+        st.title('')
+        st.markdown('<h5>Clasificadores de Instrumentos</h5>', unsafe_allow_html=True)
+    with clms2[1]:
+        st.video('https://www.youtube.com/watch?v=QLaSaKvpNeI')
+    clms3 = st.columns([1,1])
+    with clms3[0]:
+        st.title('')
+        st.markdown('<h5>Juego de Clasificadores</h5>', unsafe_allow_html=True)
+    with clms3[1]:
+        st.video('https://edpuzzle.com/media/66288bcd6f8573a03611e1c7')
+    clms29 = st.columns([1,1])
+    with clms29[0]:
+        st.title('')
+        st.markdown('<h5>Grabación de la Clase</h5>', unsafe_allow_html=True)
+    with clms29[1]:
+        st.video('https://youtu.be/BPX98o0BgBw')
 main()
