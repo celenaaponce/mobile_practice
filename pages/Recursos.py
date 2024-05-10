@@ -70,6 +70,7 @@ st.markdown("<h3>Council de Manos</h3>\
 
 st.divider()
 st.markdown("<h3>Recursos para Negocios Sin Ánimo de Lucro</h3>\
-              <p><a href='https://cms.childtrends.org/wp-content/uploads/2016/09/2016-51LatinoCommunicationsGuide.pdf' target='_blank'>El Instituto Hispano<\a> ha elaborado una guía para trabajar \
-              con las comunidades hispanohablantes. En ella se explican las prácticas adecuadas y se ofrece una \
-              infraestructura de comunicación. </p>", unsafe_allow_html=True)
+              <p><a href='https://cms.childtrends.org/wp-content/uploads/2016/09/2016-51LatinoCommunicationsGuide.pdf' target='_blank'>El Instituto Hispano</a> ha elaborado una guía para trabajar\
+                  con las comunidades hispanohablantes. En ella se explican las prácticas adecuadas y se ofrece una \
+                     infraestructura de comunicación.</p>", unsafe_allow_html=True)
+
