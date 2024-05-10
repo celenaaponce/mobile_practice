@@ -58,7 +58,7 @@ with outer_col[0]:
     st.markdown("<a href='https://youtu.be/4PJhGhRublE' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/bunny.jpeg'></a>", unsafe_allow_html=True)
     st.markdown("<a href='https://youtu.be/TzYfajBnCAQ' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/spot.jpeg'></a>", unsafe_allow_html=True)
     st.markdown("<a href='https://youtu.be/spE7JQHC9Zw' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/spring.jpeg'></a>", unsafe_allow_html=True)
-    st.markdown("<a href='https://youtu.be/ce7ftN5dVJs' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/Ananya.png'></a>", unsafe_allow_html=True)
+    st.markdown("<a href='https://youtu.be/ce7ftN5dVJs' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/Ananaya.png'></a>", unsafe_allow_html=True)
 with outer_col[1]:
     st.markdown("<a href='https://youtu.be/xqJVGpVjJZg' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/el%20libro%20de%20colores%20de%20coneja%20blanca.jpeg'></a>", unsafe_allow_html=True)
     st.markdown("<a href='https://www.youtube.com/watch?v=wQCkUbaZLQQ' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/como%20dan%20las%20buenas%20noches%20los%20dinosaurios.jpg'></a>", unsafe_allow_html=True)
