@@ -55,6 +55,8 @@ with outer_col[0]:
     st.markdown("<a href='https://youtu.be/Z-qNfedG3Hk' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/oceanocolorido.png'></a>", unsafe_allow_html=True)
     st.markdown("<a href='https://www.youtube.com/watch?v=62NbByFKX7Y' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/charla.png'></a>", unsafe_allow_html=True)
     st.markdown("<a href='https://youtu.be/q7QTDovFA74' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/meal.png'></a>", unsafe_allow_html=True)
+    st.markdown("<a href='https://youtu.be/4PJhGhRublE' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/bunny.jpeg'></a>", unsafe_allow_html=True)
+    st.markdown("<a href='https://youtu.be/TzYfajBnCAQ' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/spot.jpeg'></a>", unsafe_allow_html=True)
 
 with outer_col[1]:
     st.markdown("<a href='https://youtu.be/xqJVGpVjJZg' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/el%20libro%20de%20colores%20de%20coneja%20blanca.jpeg'></a>", unsafe_allow_html=True)
@@ -65,5 +67,8 @@ with outer_col[1]:
     st.markdown("<a href='https://youtu.be/4i582v8lTdI' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/muertos.png'></a>", unsafe_allow_html=True)
     st.markdown("<a href='https://youtu.be/4TmdTAaPYdA' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/bath.png'></a>", unsafe_allow_html=True)
     st.markdown("<a href='https://youtu.be/P9Iqri1OHd4' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/valentin.png'></a>", unsafe_allow_html=True)
+    st.markdown("<a href='https://youtu.be/k3RtcrTMl-Q' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/poop.jpg'></a>", unsafe_allow_html=True)
+    st.markdown("<a href='https://youtu.be/RONMK52bc8w' target='_blank'><img width='300' src='https://raw.githubusercontent.com/celenaaponce/mobile_practice/main/images/pascua.webp'></a>", unsafe_allow_html=True)
+
 
 
