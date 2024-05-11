@@ -74,3 +74,7 @@ st.markdown("<h3>Recursos para Negocios Sin Ánimo de Lucro</h3>\
                   con las comunidades hispanohablantes. En ella se explican las prácticas adecuadas y se ofrece una \
                      infraestructura de comunicación.</p>", unsafe_allow_html=True)
 
+st.divider()
+st.markdown("<h3>Diccionario de Español a ASL</h3>\
+              <p><a href='https://www.teacherspayteachers.com/Store/Spanish-Asl-Resources' target='_blank'>Teachers Pay Teachers</a> tiene mis diccionarios que\
+                  se puede comprar si quieren para imprimir</p>", unsafe_allow_html=True)
