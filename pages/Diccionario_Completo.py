@@ -51,8 +51,17 @@ if 'download_completo' not in st.session_state:
    st.session_state.download_completo = False
     
 if 'start' not in st.session_state:
-   st.session_state.start = 0   
+   st.session_state.start = 0  
+    
+def replace_dimensions(template):
+    x = "width='210'"
+    y = "height='158'"    
+    return template.replace("width='x'", str(x)).replace("height='y'", str(y))
 
+def replace_dimensions_img(template):
+    z = "width=150"  
+    return template.replace("width=z", str(z))
+    
 @st.cache_data
 def download_csv(file_id, output_file):
     path = f'https://drive.google.com/uc?export=download&id={file_id}'
@@ -70,8 +79,10 @@ def load_words_completo():
           data = pd.DataFrame(chunk)
   return data
     
-word_data = download_csv(st.secrets["diccionario_completo"], 'Small Preview2.csv')
+word_data = download_csv(st.secrets["diccionario_test"], 'Small Preview2.csv')
 word_data = word_data[['Palabra', 'Imagen', 'Video', 'Tema', 'Sinómino']]
+word_data['Video'] = word_data['Video'].apply(replace_dimensions)
+word_data['Imagen'] = word_data['Imagen'].apply(replace_dimensions_img)
 word_data.sort_values(by=['Palabra'])
 
 #change states
