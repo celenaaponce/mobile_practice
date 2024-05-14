@@ -71,7 +71,7 @@ def download_csv(file_id, output_file):
     return data
     
 if st.session_state.download_completo == False:
-    download_csv(st.secrets["diccionario_completo"], 'Small Preview2.csv')
+    download_csv(st.secrets["diccionario_test"], 'Small Preview2.csv')
 
 @st.cache_data
 def load_words_completo():  
