@@ -97,7 +97,8 @@ st.header("Buscar Palabra")
 word = st.text_input("Buscar Palabra", label_visibility="hidden")
 
 word_list = word_data.loc[word_data['Palabra']==word]
-
+word_data['Palabra_no_acc'] = word_data['Palabra'].str.normalize('NFKD').str.encode('ascii', errors='ignore').str.decode('utf-8')
+word_list_no_acc = word_data.loc[word_data['Palabra_no_acc']==word]
 if not word_list.empty:
     table = word_list.to_html(classes='mystyle', escape=False, index=False)
 
@@ -111,14 +112,12 @@ if not word_list.empty:
             html_string,
         unsafe_allow_html=True)
     
-else:
-    word_data['Palabra'] = word_data['Palabra'].str.normalize('NFKD').str.encode('ascii', errors='ignore').str.decode('utf-8')
-    word_list = word_data.loc[word_data['Palabra']==word]
-    if not word_list.empty:
-        table = word_list.to_html(classes='mystyle', escape=False, index=False)
-    
+elif not word_list_no_acc.empty and word != "":
+        word_list_no_acc = word_list_no_acc.drop('Palabra_no_acc', axis=1)
+        table = word_list_no_acc.to_html(classes='mystyle', escape=False, index=False)
+
         html_string = f'''
-    
+
             <body>
                 {table}
             </body>
@@ -126,20 +125,38 @@ else:
         st.markdown(
                 html_string,
             unsafe_allow_html=True)
-if word_list.empty and word != "":
-    word_list = word_data.loc[word_data['Palabra'].str.contains(word)]
-    table = word_list.to_html(classes='mystyle', escape=False, index=False)
+else:
+    if word != "":
+        word_list = word_data.loc[word_data['Palabra'].str.startswith(word)]
+        word_list_no_acc = word_data.loc[word_data['Palabra_no_acc'].str.startswith(word)]
+        word_list = word_list.drop('Palabra_no_acc', axis=1)
+        if not word_list.empty:
+            table = word_list.to_html(classes='mystyle', escape=False, index=False)
 
-    html_string = f'''
+            html_string = f'''
 
-        <body>
-            {table}
-        </body>
-        '''
-    st.markdown(
-            html_string,
-        unsafe_allow_html=True)     
-if word_list.empty and word != "":
+                <body>
+                    {table}
+                </body>
+                '''
+            st.markdown(
+                    html_string,
+                unsafe_allow_html=True) 
+        elif not word_list_no_acc.empty:   
+            word_list_no_acc = word_list_no_acc.drop('Palabra_no_acc', axis=1)
+            table = word_list_no_acc.to_html(classes='mystyle', escape=False, index=False)
+
+            html_string = f'''
+
+                <body>
+                    {table}
+                </body>
+                '''
+            st.markdown(
+                    html_string,
+                unsafe_allow_html=True)
+if word_list.empty and word != "" and word_list_no_acc.empty:
+    
     filePath = "pages/helper/10000_frecuencias.txt"
 
     spanishWords = SpanishWordFreq(filePath)
