@@ -69,7 +69,16 @@ if 'count' not in st.session_state:
 def empty():
     placeholder.empty()
     sleep(0.01)
+    
+def replace_dimensions(template):
+    x = "width='410'"
+    y = "height='317'"    
+    return template.replace("width='x'", str(x)).replace("height='y'", str(y))
 
+def replace_dimensions_img(template):
+    z = "width=300"  
+    return template.replace("width=z", str(z))
+    
 @st.cache_data
 def download_csv(file_id, output_file):
     path = f'https://drive.google.com/uc?export=download&id={file_id}'
@@ -148,10 +157,12 @@ def print_list(next_list):
   
 #start with download
 if st.session_state.download_letter == False:
-  download_csv(st.secrets['diccionario_letras'], 'Search List2.csv')
+  download_csv(st.secrets['diccionario_test'], 'Search List2.csv')
 
-word_data = download_csv(st.secrets["diccionario_letras"], 'Search List2.csv')
+word_data = download_csv(st.secrets["diccionario_test"], 'Search List2.csv')
 word_data = word_data[['Palabra', 'Imagen', 'Video', 'Tema', 'Sinómino']]
+word_data['Video'] = word_data['Video'].apply(replace_dimensions)
+word_data['Imagen'] = word_data['Imagen'].apply(replace_dimensions_img)
 word_data.sort_values(by=['Palabra'])
 
 #set up main page with images  
