@@ -100,6 +100,7 @@ word_list = word_data.loc[word_data['Palabra']==word]
 word_data['Palabra_no_acc'] = word_data['Palabra'].str.normalize('NFKD').str.encode('ascii', errors='ignore').str.decode('utf-8')
 word_list_no_acc = word_data.loc[word_data['Palabra_no_acc']==word]
 if not word_list.empty:
+    st.write('case1')
     table = word_list.to_html(classes='mystyle', escape=False, index=False)
 
     html_string = f'''
@@ -113,6 +114,7 @@ if not word_list.empty:
         unsafe_allow_html=True)
     
 elif not word_list_no_acc.empty and word != "":
+        st.write('case2')
         word_list_no_acc = word_list_no_acc.drop('Palabra_no_acc', axis=1)
         table = word_list_no_acc.to_html(classes='mystyle', escape=False, index=False)
 
@@ -127,6 +129,7 @@ elif not word_list_no_acc.empty and word != "":
             unsafe_allow_html=True)
 else:
     if word != "":
+        st.write('case3')
         word_list = word_data.loc[word_data['Palabra'].str.startswith(word)]
         word_list_no_acc = word_data.loc[word_data['Palabra_no_acc'].str.startswith(word)]
         word_list = word_list.drop('Palabra_no_acc', axis=1)
