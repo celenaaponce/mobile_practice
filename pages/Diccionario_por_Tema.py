@@ -163,22 +163,24 @@ if st.session_state.download_tema == False:
     
 word_data = download_csv(st.secrets['diccionario_test'], 'GitThemeLinks.csv')
 
-if st.session_state.clicked == "":
+if 'page' not in st.session_state:
+    st.session_state.page = 'main'
+def main_page():
     size = 20
     with placeholder.container():
-      content = get_content(size)
-      clicked = click_detector(content)
+        content = get_content(size)
+        clicked = click_detector(content)
+        if clicked != "":
+            st.session_state.clicked = clicked
+            st.session_state.page = 'first_page'
+            st.rerun()
 
-    st.session_state.clicked = clicked
-
-if st.session_state.clicked != "" and not (reset1 or reset2):
-    page_two.empty()
-    placeholder.empty()
+def first_page():
     tema = themes[int(st.session_state.clicked[6:])]
     alpha_list = word_data.loc[word_data['Tema'].str.contains(tema)]
     alpha_list['Tema'] = alpha_list['Tema'].apply(split_html_list)
     expanded_df = alpha_list.explode('Tema').reset_index(drop=True)
-    expanded_df = expanded_df.loc[expanded_df['Tema']==tema]
+    expanded_df = expanded_df.loc[expanded_df['Tema'] == tema]
     alpha_list = expanded_df.drop('Tema', axis=1)
     alpha_list['Video'] = alpha_list['Video'].apply(replace_dimensions)
     alpha_list['Imagen'] = alpha_list['Imagen'].apply(replace_dimensions_img)
@@ -186,26 +188,29 @@ if st.session_state.clicked != "" and not (reset1 or reset2):
     next_list = alpha_list[0:10]
     table = next_list.to_html(classes='mystyle', escape=False, index=False)
     html_string = f'''
-
         <body>
             {table}
         </body>
-        '''
+    '''
     with page_one.container():
-        st.markdown(
-                html_string,
-            unsafe_allow_html=True)
-        col1, col2, col3 = st.columns([1,1,1])
+        st.markdown(html_string, unsafe_allow_html=True)
+        col1, col2, col3 = st.columns([1, 1, 1])
         increment = col3.button("Proximas Palabras")
         reset1 = col2.button("Empezar de Nuevo", key="First")
-           
-if increment:
-    page_one.empty()
+        if increment:
+            st.session_state.page = 'second_page'
+            st.rerun()
+        if reset1:
+            st.session_state.page = 'main'
+            st.session_state.clicked = ''
+            st.rerun()
+
+def second_page():
     tema = themes[int(st.session_state.clicked[6:])]
     alpha_list = word_data.loc[word_data['Tema'].str.contains(tema)]
     alpha_list['Tema'] = alpha_list['Tema'].apply(split_html_list)
     expanded_df = alpha_list.explode('Tema').reset_index(drop=True)
-    expanded_df = expanded_df.loc[expanded_df['Tema']==tema]
+    expanded_df = expanded_df.loc[expanded_df['Tema'] == tema]
     alpha_list = expanded_df.drop('Tema', axis=1)
     alpha_list['Video'] = alpha_list['Video'].apply(replace_dimensions)
     alpha_list['Imagen'] = alpha_list['Imagen'].apply(replace_dimensions_img)
@@ -216,22 +221,28 @@ if increment:
         <body>
             {table}
         </body>
-        '''
+    '''
     with page_two.container():
-        st.markdown(
-                html_string,
-            unsafe_allow_html=True)
-        col1, col2, col3 = st.columns([1,1,1])
+        st.markdown(html_string, unsafe_allow_html=True)
+        col1, col2, col3 = st.columns([1, 1, 1])
         reset2 = col1.button("Palabras Anteriores", key="Second")
         reset1 = col2.button("Empezar de Nuevo")
+        if reset2:
+            st.session_state.page = 'first_page'
+            st.rerun()
+        if reset1:
+            st.session_state.page = 'main'
+            st.session_state.clicked = ''
+            st.rerun()
 
-if reset1 or reset2:
-    page_one.empty()
-    page_two.empty()
-    st.session_state.count = 0
-    st.session_state.clicked = ""
-    size = 20
-    with placeholder.container():
-        content = get_content(size)
-        clicked = click_detector(content)
+# Determine which page to display
+placeholder = st.empty()
+page_one = st.empty()
+page_two = st.empty()
 
+if st.session_state.page == 'main':
+    main_page()
+elif st.session_state.page == 'first_page':
+    first_page()
+elif st.session_state.page == 'second_page':
+    second_page()
