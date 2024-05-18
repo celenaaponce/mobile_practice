@@ -92,6 +92,7 @@ word_data = download_csv(st.secrets['diccionario_test'], 'Search List2.csv')
 word_data = word_data[['Palabra', 'Imagen', 'Video', 'Tema', 'Sinómino']]
 word_data['Video'] = word_data['Video'].apply(replace_dimensions)
 word_data['Imagen'] = word_data['Imagen'].apply(replace_dimensions_img)
+word_data = word_data.drop('Tema', axis=1)
 st.write("")
 st.header("Buscar Palabra")
 word = st.text_input("Buscar Palabra", label_visibility="hidden")
