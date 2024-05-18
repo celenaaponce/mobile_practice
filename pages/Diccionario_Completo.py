@@ -5,6 +5,12 @@ import pandas as pd
 from pathlib import Path 
 from pages.sidebars import regular_sidebar
 st.set_page_config(layout="wide", page_title="Diccionario Completo")
+m = st.markdown("""
+<style>
+div.stButton > button:first-child {
+    background-color: #94387f;
+    color:#ffffff;
+}""", unsafe_allow_html=True)
 st.markdown("""
     <style>
         div[data-testid="stSidebarNav"]{
