@@ -6,6 +6,12 @@ from modules.nav import MenuButtons
 from bs4 import BeautifulSoup
 
 st.set_page_config(layout="wide", page_title="Diccionario Por Tema")
+m = st.markdown("""
+<style>
+div.stButton > button:first-child {
+    background-color: #94387f;
+    color:#ffffff;
+}""", unsafe_allow_html=True)
 st.markdown("""
     <style>
         div[data-testid="stSidebarNav"]{
