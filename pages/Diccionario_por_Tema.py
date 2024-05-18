@@ -3,6 +3,8 @@ import pandas as pd
 from pages.sidebars import regular_sidebar
 from st_click_detector import click_detector
 from modules.nav import MenuButtons
+from bs4 import BeautifulSoup
+
 st.set_page_config(layout="wide", page_title="Diccionario Por Tema")
 st.markdown("""
     <style>
@@ -121,7 +123,20 @@ def get_content(size):
          </div>
          """
       return content
+    
+def split_html_list(row):
+    soup = BeautifulSoup(row, 'html.parser')
+    return [li.text for li in soup.find_all('li')]
+    
+def replace_dimensions(template):
+    x = "width='410'"
+    y = "height='317'"    
+    return template.replace("width='x'", str(x)).replace("height='y'", str(y))
 
+def replace_dimensions_img(template):
+    z = "width=300"  
+    return template.replace("width=z", str(z))
+    
 @st.cache_data
 def download_csv(file_id, output_file):
     csv_length=0
@@ -143,10 +158,10 @@ with open("css/responsive.css") as file2:
 
 #start with download
 if st.session_state.download_tema == False:
-  download_csv(st.secrets['diccionario_tema'], 'GitThemeLinks.csv')
+  download_csv(st.secrets['diccionario_test'], 'GitThemeLinks.csv')
   st.session_state.download_tema = True
     
-word_data = download_csv(st.secrets['diccionario_tema'], 'GitThemeLinks.csv')
+word_data = download_csv(st.secrets['diccionario_test'], 'GitThemeLinks.csv')
 
 if st.session_state.clicked == "":
     size = 20
@@ -182,8 +197,12 @@ if st.session_state.clicked != "" and not (reset1 or reset2):
 if increment:
     page_one.empty()
     tema = themes[int(st.session_state.clicked[6:])]
-    alpha_list = word_data.loc[word_data['Tema']== tema]
-    alpha_list.sort_values(by=['Tema'])
+    alpha_list['Tema'] = alpha_list['Tema'].apply(split_html_list)
+    expanded_df = alpha_list.explode('Tema').reset_index(drop=True)
+    expanded_df = expanded_df.loc[expanded_df['Tema']==tema]
+    alpha_list = expanded_df.drop('Tema', axis=1)
+    alpha_list['Video'] = alpha_list['Video'].apply(replace_dimensions)
+    alpha_list['Imagen'] = alpha_list['Imagen'].apply(replace_dimensions_img)
     max_len = len(alpha_list)
     next_list = alpha_list[10:]
     table = next_list.to_html(classes='mystyle', escape=False, index=False)
