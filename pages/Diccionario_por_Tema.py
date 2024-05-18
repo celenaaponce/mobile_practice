@@ -202,6 +202,7 @@ if st.session_state.clicked != "" and not (reset1 or reset2):
 if increment:
     page_one.empty()
     tema = themes[int(st.session_state.clicked[6:])]
+    alpha_list = word_data.loc[word_data['Tema'].str.contains(tema)]
     alpha_list['Tema'] = alpha_list['Tema'].apply(split_html_list)
     expanded_df = alpha_list.explode('Tema').reset_index(drop=True)
     expanded_df = expanded_df.loc[expanded_df['Tema']==tema]
