@@ -176,8 +176,12 @@ if st.session_state.clicked != "" and not (reset1 or reset2):
     placeholder.empty()
     tema = themes[int(st.session_state.clicked[6:])]
     alpha_list = word_data.loc[word_data['Tema'].str.contains(tema)]
-    alpha_list = word_data.loc[word_data['Tema']== tema]
-    alpha_list.sort_values(by=['Tema'])
+    alpha_list['Tema'] = alpha_list['Tema'].apply(split_html_list)
+    expanded_df = alpha_list.explode('Tema').reset_index(drop=True)
+    expanded_df = expanded_df.loc[expanded_df['Tema']==tema]
+    alpha_list = expanded_df.drop('Tema', axis=1)
+    alpha_list['Video'] = alpha_list['Video'].apply(replace_dimensions)
+    alpha_list['Imagen'] = alpha_list['Imagen'].apply(replace_dimensions_img)
     max_len = len(alpha_list)
     next_list = alpha_list[0:10]
     table = next_list.to_html(classes='mystyle', escape=False, index=False)
