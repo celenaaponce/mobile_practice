@@ -6,6 +6,12 @@ from st_click_detector import click_detector
 from pages.sidebars import regular_sidebar
 from modules.nav import MenuButtons
 st.set_page_config(layout="wide", page_title="Diccionario Por Letra")
+m = st.markdown("""
+<style>
+div.stButton > button:first-child {
+    background-color: #94387f;
+    color:#ffffff;
+}""", unsafe_allow_html=True)
 st.session_state['password_correct'] = False
 st.markdown("""
     <style>
