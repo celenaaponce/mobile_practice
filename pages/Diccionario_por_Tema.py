@@ -164,10 +164,10 @@ with open("css/responsive.css") as file2:
 
 #start with download
 if st.session_state.download_tema == False:
-  download_csv(st.secrets['diccionario_test'], 'GitThemeLinks.csv')
+  download_csv(st.secrets['diccionario_add'], 'GitThemeLinks.csv')
   st.session_state.download_tema = True
     
-word_data = download_csv(st.secrets['diccionario_test'], 'GitThemeLinks.csv')
+word_data = download_csv(st.secrets['diccionario_add'], 'GitThemeLinks.csv')
 
 if 'page' not in st.session_state:
     st.session_state.page = 'main'
