@@ -1,0 +1,11 @@
+version: '1.0'
+
+build:
+  # Define the build steps
+  steps:
+    - name: Install dependencies
+      run: pip install --no-cache-dir -r requirements.txt
+
+run:
+  type: web
+  command: streamlit run Pagina_Principal.py --server.port 8080
