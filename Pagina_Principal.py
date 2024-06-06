@@ -2,7 +2,6 @@ import streamlit as st
 import streamlit.components.v1 as components
 from streamlit_extras.switch_page_button import switch_page
 from pages.sidebars import regular_sidebar, ChangeButtonColour
-from st_pages import Page, Section,show_pages, add_page_title
 
 
 st.markdown("""
