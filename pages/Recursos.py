@@ -1,5 +1,4 @@
 import streamlit as st
-from PIL import Image
 from pages.sidebars import regular_sidebar, set_styles
 from streamlit.components.v1 import html
 from modules.nav import MenuButtons
