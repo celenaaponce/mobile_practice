@@ -2,8 +2,6 @@
 import streamlit as st
 from streamlit_extras.switch_page_button import switch_page
 from pages.sidebars import regular_sidebar, login_sidebar_ASL1, login_sidebar_ASL2, login_sidebar_ASL3, login_sidebar_ASLAtHome2
-
-import streamlit as st
 from streamlit import session_state as ss
 from modules.nav import MenuButtons
 from pages.account import get_roles
