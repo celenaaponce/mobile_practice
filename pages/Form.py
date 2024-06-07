@@ -1,30 +1,17 @@
 import streamlit as st
-import streamlit.components.v1 as components
-from streamlit_extras.switch_page_button import switch_page
-from streamlit.components.v1 import html
-from st_pages import Page,show_pages
 import csv
 from email.mime.multipart import MIMEMultipart
 import mimetypes
 from email import encoders
-from email.message import Message
 from email.mime.audio import MIMEAudio
 from email.mime.base import MIMEBase
 from email.mime.image import MIMEImage
 from email.mime.text import MIMEText
 from PIL import Image
 import smtplib
-from pydub import AudioSegment
-from pydub.playback import play
-import time
 from streamlit_js_eval import streamlit_js_eval
 from pages.form_phone import form_phone, Register
-  import streamlit as st
-from streamlit import session_state as ss
 from modules.nav import MenuButtons
-from pages.account import get_roles
-
-
 
 MenuButtons('')
 # show_pages(
