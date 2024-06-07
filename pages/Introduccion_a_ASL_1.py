@@ -1,10 +1,7 @@
 import streamlit as st
-from PIL import Image
-from streamlit_extras.switch_page_button import switch_page
 import streamlit.components.v1 as components
 from pages.sidebars import login_sidebar_ASL1, set_styles
 from modules.nav import MenuButtons
-from pages.account import get_roles
 st.markdown("""
     <style>
         div[data-testid="stSidebarNav"]{
