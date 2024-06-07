@@ -1,9 +1,7 @@
 import streamlit as st
 import pandas as pd
-from pathlib import Path 
 from time import sleep
 from st_click_detector import click_detector
-from pages.sidebars import regular_sidebar
 from modules.nav import MenuButtons
 st.set_page_config(layout="wide", page_title="Diccionario Por Letra")
 m = st.markdown("""
