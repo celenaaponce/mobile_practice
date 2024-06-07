@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from pages.sidebars import regular_sidebar
 from st_click_detector import click_detector
 from modules.nav import MenuButtons
 from bs4 import BeautifulSoup
