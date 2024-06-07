@@ -1,11 +1,6 @@
 import streamlit as st
 import pandas as pd
-import sys
-from pages.sidebars import regular_sidebar
-import streamlit as st
-from streamlit import session_state as ss
 from modules.nav import MenuButtons
-from pages.account import get_roles
 from check.spanish_word_freq import SpanishWordFreq
 from check.word_chekcer import WordChecker
 
