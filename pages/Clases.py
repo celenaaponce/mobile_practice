@@ -1,12 +1,7 @@
 import streamlit as st
-from PIL import Image
-import streamlit.components.v1 as components
+import streamlit.components.v1 as components, html
 from pages.sidebars import regular_sidebar, ChangeButtonColour, set_styles
-from streamlit.components.v1 import html
-import streamlit as st
-from streamlit import session_state as ss
 from modules.nav import MenuButtons
-from pages.account import get_roles
 st.markdown("""
     <style>
         div[data-testid="stSidebarNav"]{
