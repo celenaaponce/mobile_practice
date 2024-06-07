@@ -1,12 +1,8 @@
 import streamlit as st
-from PIL import Image
 from streamlit_extras.switch_page_button import switch_page
 from pages.sidebars import regular_sidebar, ChangeButtonColour, set_styles
 import streamlit.components.v1 as components
-import streamlit as st
-from streamlit import session_state as ss
 from modules.nav import MenuButtons
-from pages.account import get_roles
 
 st.markdown("""
     <style>
