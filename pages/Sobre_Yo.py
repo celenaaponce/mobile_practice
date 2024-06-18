@@ -3,6 +3,7 @@ import streamlit.components.v1 as components
 from streamlit.components.v1 import html
 from pages.sidebars import regular_sidebar, set_styles
 from modules.nav import MenuButtons
+from PIL import Image
 st.markdown("""
     <style>
         div[data-testid="stSidebarNav"]{
