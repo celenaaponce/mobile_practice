@@ -12,7 +12,7 @@ st.markdown("""
         }
     </style>
     """, unsafe_allow_html=True)
-CONFIG_FILENAME = 'config.yaml'
+CONFIG_FILENAME = 'pages/config.yaml'
 
 if 'is_register' not in ss:
     ss.is_register = False
